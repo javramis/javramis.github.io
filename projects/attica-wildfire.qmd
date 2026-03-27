@@ -1,0 +1,85 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-header}
+::: {.container}
+
+[← Back to Research](../research.qmd){.back-link}
+
+# Wildfire Vulnerability Mapping, Attica Greece
+
+::: {.project-meta}
+<span><strong>Course:</strong> GIS & Spatial Data Analysis</span>
+<span><strong>Instructor:</strong> Prof. Gordon McCord</span>
+<span><strong>Term:</strong> Fall 2025</span>
+<span><strong>Tools:</strong> QGIS · R · MCDA</span>
+:::
+
+:::
+:::
+
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## The Question
+
+Which municipalities in the Attica region of Greece face the highest wildfire vulnerability, and where should infrastructure investment be prioritized to reduce risk under Greece's €2.1 billion AEGIS civil protection program?
+
+## Why It Matters
+
+The Attica region — which includes Athens — has experienced some of Europe's most devastating wildfires, including the 2018 Mati fire that killed over 100 people. FEMA-style regulatory maps in Greece have long been criticized for the same limitations as their U.S. counterparts: backward-looking, static, and not calibrated to the overlapping vulnerability factors that determine real-world risk.
+
+## Methodology
+
+This project designed and executed a full **Multi-Criteria Decision Analysis (MCDA)** — the same family of analytical tools used in cost-benefit analysis and quantitative policy evaluation, now applied spatially.
+
+**Data sources:**
+- 24 years of fire incident records (point data by municipality)
+- Emergency service proximity (response time isochrones)
+- Census-derived population density (municipality level)
+
+**Workflow:**
+1. Assembled and cleaned all three datasets in R
+2. Standardized coordinate reference systems across sources in QGIS
+3. Ran weighted spatial overlays to produce a composite vulnerability index
+4. Produced a multi-panel map series with municipality risk rankings
+
+**Weighting schema:** Each criterion was weighted based on policy relevance — population density weighted highest given the life-safety implications, followed by emergency service proximity, followed by historical fire frequency.
+
+## Key Outputs
+
+::: {.project-visual}
+*[Map 1: Raw fire incident density by municipality — add your image here]*
+::: {.visual-caption}
+24-year fire incident density across Attica municipalities. Darker areas indicate higher historical fire frequency.
+:::
+:::
+
+::: {.project-visual}
+*[Map 2: Composite MCDA vulnerability index — add your image here]*
+::: {.visual-caption}
+Weighted composite vulnerability scores by municipality. Combines fire history, emergency service proximity, and population density.
+:::
+:::
+
+::: {.project-visual}
+*[Map 3: Priority infrastructure investment zones — add your image here]*
+::: {.visual-caption}
+Final policy output: ranked infrastructure investment zones directly applicable to Greece's AEGIS program priorities.
+:::
+:::
+
+## What I Found
+
+The analysis identified a clear cluster of high-vulnerability municipalities in the northeastern and northwestern Attica periphery — areas with high historical fire frequency, low emergency service coverage, and growing residential development. These are the zones where AEGIS investment would produce the highest marginal reduction in life-safety risk.
+
+## What I Learned
+
+This project crystallized why I find MCDA applied spatially so compelling: it takes the rigorous policy analytical framework I learned in coursework and gives it a communication layer that works for anyone. A policymaker who has never heard of a weighted spatial overlay can look at the final map and immediately understand which municipalities need attention and why. That's the whole point.
+
+## Code & Files
+
+[View on GitHub](https://github.com/javramis){.cta-secondary style="padding: 0.6rem 1.4rem; border: 1.5px solid #1a1a2e; color: #1a1a2e; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block;"}
+
+:::

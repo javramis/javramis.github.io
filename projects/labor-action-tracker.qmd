@@ -1,0 +1,78 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-header}
+::: {.container}
+
+[← Back to Research](../research.qmd){.back-link}
+
+# Predicting Strike vs. Protest Events
+
+::: {.project-meta}
+<span><strong>Course:</strong> Big Data: Policy, Governing & Management</span>
+<span><strong>Instructor:</strong> Prof. Rod Albuyeh</span>
+<span><strong>Term:</strong> Fall 2025</span>
+<span><strong>Tools:</strong> R · caret · XGBoost · Random Forest · pROC</span>
+:::
+
+:::
+:::
+
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## The Question
+
+Can we predict whether a U.S. labor action event will be classified as a **strike** versus a **protest** — and which economic and geographic conditions are most predictive?
+
+## Data
+
+**Labor Action Tracker (LAT)** from Cornell's School of Industrial Labor Relations, covering 2021–2025. Merged at ZIP/ZCTA level with:
+
+- **DCI** — Distressed Communities Index (2015–2023)
+- **SDI** — Social Deprivation Index (2015–2019)
+- **IRS tax statistics** — 2022 income aggregates by ZIP
+
+Final modeling dataset: thousands of events with complete predictor coverage after geographic join validation (>98% ZCTA coverage).
+
+## Methodology
+
+**Data pipeline highlights:**
+- Temporal train/test split (train: pre-Dec 2023; test: Dec 2023–Jan 2025) — never let future data touch training
+- Saved factor levels exclusively from training data and applied consistently to test set
+- Only filtered on missing outcome variable — never on predictors
+- Built 20+ binary industry indicators from semicolon-delimited tags
+- Log-transformed participant counts with median imputation on training data only
+
+**Models compared:**
+
+| Model | Approach |
+|---|---|
+| Logistic Regression | Baseline interpretable model |
+| Random Forest | Ensemble, handles nonlinearity |
+| XGBoost | Gradient boosting, best AUC |
+
+**Evaluation:** AUC/ROC curves, confusion matrices, variable importance plots.
+
+## Key Outputs
+
+::: {.project-visual}
+*[ROC curves comparing three models — add your image here]*
+::: {.visual-caption}
+ROC curves for logistic regression, Random Forest, and XGBoost on held-out test set.
+:::
+:::
+
+::: {.project-visual}
+*[Variable importance plot — add your image here]*
+::: {.visual-caption}
+Variable importance from final model. Public sector industry indicators and geographic distress indices emerge as key predictors.
+:::
+:::
+
+## Code & Files
+
+[View on GitHub](https://github.com/javramis){.cta-secondary style="padding: 0.6rem 1.4rem; border: 1.5px solid #1a1a2e; color: #1a1a2e; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block;"}
+
+:::

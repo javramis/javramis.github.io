@@ -1,0 +1,29 @@
+---
+title: ""
+page-layout: full
+---
+::: {.project-header}
+::: {.container}
+[← Back to Research](../research.qmd){.back-link}
+# Conflicts in Northern South America by Köppen-Geiger Climate Classification
+::: {.project-meta}
+<span><strong>Course:</strong> GIS & Spatial Data Analysis</span>
+<span><strong>Term:</strong> Fall 2025</span>
+<span><strong>Tools:</strong> QGIS · UCDP/PRIO v25 · Beck et al. 2018</span>
+:::
+:::
+:::
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## Overview
+
+Spatial overlay of UCDP/PRIO conflict event data (2024) with Beck et al. 2018 Köppen-Geiger climate classification zones across Northern South America, including Central America, Colombia, Venezuela, and surrounding regions.
+
+::: {.project-visual}
+*[Add your conflict/climate map image here]*
+::: {.visual-caption}
+Conflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events. Background = climate zones per Beck et al. 2018. Source: UCDP/PRIO v25 (2024), GADM v4.1.
+:::
+:::
+
+:::

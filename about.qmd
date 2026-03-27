@@ -1,0 +1,90 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.container}
+::: {.about-grid}
+
+::: {}
+### Max Avramis
+
+**javramis@ucsd.edu**  
+Chicago, IL (relocating June 2026)  
+
+[LinkedIn](https://www.linkedin.com/in/maxavramis) · [GitHub](https://github.com/javramis)
+
+---
+
+**Education**
+
+UC San Diego, GPS  
+*Master of Public Policy* · 2026  
+Business Regulation & Government Innovation
+
+Pace University  
+*Bachelor of Fine Arts* · 2020
+
+---
+
+**Skills**
+
+::: {.skills-list}
+<span>R</span><span>Python</span><span>QGIS</span><span>Google Earth Engine</span><span>SQL</span><span>GitHub</span><span>Quarto</span><span>ggplot2</span><span>caret</span><span>metafor</span><span>tidyverse</span><span>XGBoost</span><span>Random Forest</span><span>Excel</span><span>SharePoint</span>
+:::
+
+**Languages**
+
+::: {.skills-list}
+<span>English (native)</span><span>Spanish (intermediate)</span><span>Greek (beginner)</span>
+:::
+:::
+
+::: {}
+## About
+
+I came to policy school from a career as a professional actor, which left me with a particular sensitivity to audience — to whether an idea is actually being communicated, not just being said.
+
+What really drew me into GIS and data science was realizing these tools could do something no other analytical framework could: make a rigorous, multi-variable argument legible to essentially anyone in any room. I had spent a year building a foundation in quantitative policy analysis — cost-effectiveness, benefit-cost analysis, and my personal favorite, multi-criteria decision analysis. GIS gave me the communication layer. Combining them felt like gaining a universal language.
+
+That instinct runs through everything I build: the question is never just *"is this accurate?"* but *"will this land for the person making the decision?"*
+
+---
+
+## Research Focus
+
+My work sits at the intersection of **spatial analysis**, **machine learning**, and **policy research** — with a particular interest in:
+
+- Climate and disaster risk mapping (flood hazards, wildfire vulnerability)
+- Global health infrastructure and pandemic preparedness
+- Education technology and learning inequality
+- Labor markets and AI regulation
+
+---
+
+## Experience
+
+**Health Forecasting Alliance (VitalWave)** · Strategy & Research Consultant · *Jan 2026–Present*  
+UCSD GPS Capstone with Brooke Partridge, CEO of VitalWave
+
+**The Basement, UCSD (Blackstone LaunchPad)** · i4X Innovation Fellow · *Dec 2025–Present*  
+Capital Program Management AI tool for UCSD Healthcare
+
+**The Asia Foundation** · Programs Intern · *Jul–Aug 2025*  
+Innovation & Impact Fund dashboard; Let's Read donor strategy
+
+**UC San Diego, Dept. of Theatre & Dance** · Teaching Assistant · *FA 2025–SP 2026*  
+Theatre 101; 4.75/5 teaching evaluation
+
+**US Embassy Luxembourg** · Personal Assistant to the Ambassador · *2018, 2020*  
+Recipient of the Ambassador's Award
+
+---
+
+## Download CV
+
+[Download CV (PDF)]{.cta-primary style="padding: 0.6rem 1.4rem; background: #1a1a2e; color: #fff; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 1rem;"}
+
+:::
+:::
+:::

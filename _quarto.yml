@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Max Avramis"
+  favicon: assets/img/favicon.ico
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/javramis
+      - icon: linkedin
+        href: https://www.linkedin.com/in/maxavramis
+
+  page-footer:
+    left: "© 2026 Max Avramis"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    css: custom.scss
+    toc: false
+    smooth-scroll: true

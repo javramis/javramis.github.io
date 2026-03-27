@@ -1,0 +1,124 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero}
+::: {.container}
+
+::: {.hero-eyebrow}
+Policy Researcher · Spatial Analyst · Data Scientist
+:::
+
+# Making *complex arguments*  
+legible to anyone in the room.
+
+::: {.hero-sub}
+I'm Max Avramis — a graduate researcher at UC San Diego's School of Global Policy and Strategy combining GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land.
+:::
+
+::: {.hero-cta}
+[View Research](research.qmd){.cta-primary}
+[About Me](about.qmd){.cta-secondary}
+:::
+
+:::
+:::
+
+---
+
+::: {.container style="padding: 4rem 0;"}
+
+::: {.section-label}
+Featured Projects
+:::
+
+::: {.project-grid}
+
+<a href="projects/attica-wildfire.qmd" class="project-card">
+<div class="card-img" style="background: #2d4a22;">
+🔥 Attica Wildfire MCDA
+</div>
+<div class="card-body">
+<div class="card-tag">GIS · Policy Analysis</div>
+<div class="card-title">Wildfire Vulnerability Mapping, Attica Greece</div>
+<div class="card-desc">Multi-criteria decision analysis integrating 24 years of fire incident data, emergency service proximity, and population density to identify infrastructure investment priorities for Greece's €2.1B AEGIS program.</div>
+<div class="card-tools">
+<span>QGIS</span><span>R</span><span>MCDA</span><span>Spatial Analysis</span>
+</div>
+</div>
+</a>
+
+<a href="projects/kerr-county-floods.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a5c;">
+🌊 Kerr County Flood Risk
+</div>
+<div class="card-body">
+<div class="card-tag">Remote Sensing · Policy</div>
+<div class="card-title">Flood Risk & Hazard Mapping, Kerr County TX</div>
+<div class="card-desc">Satellite-based audit of FEMA flood maps following the catastrophic July 4, 2025 Camp Mystic flash flood. Used CHIRPS, Sentinel-1 SAR, and Dynamic World to expose structural gaps in regulatory risk mapping.</div>
+<div class="card-tools">
+<span>Google Earth Engine</span><span>CHIRPS</span><span>Sentinel-1 SAR</span><span>QGIS</span>
+</div>
+</div>
+</a>
+
+<a href="projects/edtech-meta-analysis.qmd" class="project-card">
+<div class="card-img" style="background: #3a2a5c;">
+📊 Ed-Tech Meta-Analysis
+</div>
+<div class="card-body">
+<div class="card-tag">Quantitative Research · Policy</div>
+<div class="card-title">Does Ed-Tech Narrow or Widen Achievement Gaps?</div>
+<div class="card-desc">Cross-national meta-analysis of 8 RCTs testing whether adaptive ed-tech effects vary with national infrastructure. Found a consistent negative gradient: lower electricity access → larger learning gains.</div>
+<div class="card-tools">
+<span>R · metafor</span><span>J-PAL/IZA Data</span><span>Meta-regression</span>
+</div>
+</div>
+</a>
+
+<a href="projects/labor-action-tracker.qmd" class="project-card">
+<div class="card-img" style="background: #5c2a1a;">
+⚙️ Labor Action ML
+</div>
+<div class="card-body">
+<div class="card-tag">Machine Learning · Big Data</div>
+<div class="card-title">Predicting Strike vs. Protest Events</div>
+<div class="card-desc">ML pipeline comparing logistic regression, Random Forest, and XGBoost on the Cornell Labor Action Tracker (2021–2025), merged with DCI, SDI, and IRS socioeconomic data at ZIP level.</div>
+<div class="card-tools">
+<span>R · caret</span><span>XGBoost</span><span>Random Forest</span><span>AUC/ROC</span>
+</div>
+</div>
+</a>
+
+<a href="projects/hfa-gis.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a4a;">
+🌍 HFA GIS Strategy
+</div>
+<div class="card-body">
+<div class="card-tag">GIS · Global Health · In Progress</div>
+<div class="card-title">174-Country Prioritization Framework for the Health Forecasting Alliance</div>
+<div class="card-desc">Independent research project (Spring 2026) building a GIS-driven weighted MCDA framework to identify which global markets represent the highest-value private-sector partnership opportunities for HFA.</div>
+<div class="card-tools">
+<span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span>
+</div>
+</div>
+</a>
+
+<a href="projects/honolulu-10k.qmd" class="project-card">
+<div class="card-img" style="background: #4a3a1a;">
+🏃 Honolulu 10K
+</div>
+<div class="card-body">
+<div class="card-tag">Personal · R · Excel</div>
+<div class="card-title">Race Results Analysis, Honolulu 10K 2025</div>
+<div class="card-desc">After finishing the Honolulu Start to Park 10K, I downloaded the race data and built my own dataset to see exactly how my family and I placed within our respective age and gender groups. Top 24th percentile, M25–29.</div>
+<div class="card-tools">
+<span>R · ggplot2</span><span>Excel</span><span>Data Wrangling</span>
+</div>
+</div>
+</a>
+
+:::
+
+:::

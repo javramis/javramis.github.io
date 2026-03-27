@@ -1,0 +1,68 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-header}
+::: {.container}
+
+[← Back to Research](../research.qmd){.back-link}
+
+# Race Results Analysis — Honolulu Start to Park 10K
+
+::: {.project-meta}
+<span><strong>Type:</strong> Personal Project</span>
+<span><strong>Date:</strong> December 2025</span>
+<span><strong>Tools:</strong> R · ggplot2 · Excel</span>
+:::
+
+:::
+:::
+
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## The Question
+
+After finishing the Honolulu Start to Park 10K, I wanted to know exactly how my family and I performed relative to our respective age and gender groups — not just our raw finishing times.
+
+## What I Did
+
+Downloaded the official race results, built a custom dataset in Excel, and wrote an R script to:
+
+- Parse chip times from Excel datetime format into minutes
+- Calculate within-age-group percentile rankings
+- Produce distribution histograms with individual result markers
+
+```r
+df <- df %>%
+  mutate(
+    chip_min = as.numeric(ChipTime - floor_date(ChipTime, "day"), 
+                          units = "mins")
+  ) %>%
+  arrange(chip_min) %>%
+  mutate(
+    rank_time = row_number(),
+    pct_time  = rank_time / n()
+  )
+```
+
+## Result
+
+**Top 24th percentile, M25–29.** My parents were equally pleased with their results.
+
+::: {.project-visual}
+*[Histogram: M25-29 finishing time distribution with your result marked — add your image here]*
+::: {.visual-caption}
+Distribution of M25–29 finishing times. Orange line marks James Avramis at ~64.3 minutes.
+:::
+:::
+
+## Why It's Here
+
+This project isn't technically impressive. But it illustrates something I believe about data work: the instinct to find a question and build the analysis yourself — even when nobody asked you to — is the thing that actually makes someone good at this. I crossed the finish line and immediately wanted to know more than the race app would tell me. So I built the tool to find out.
+
+## Code
+
+[View on GitHub](https://github.com/javramis){.cta-secondary style="padding: 0.6rem 1.4rem; border: 1.5px solid #1a1a2e; color: #1a1a2e; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block;"}
+
+:::

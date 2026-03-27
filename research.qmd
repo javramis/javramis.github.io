@@ -1,0 +1,142 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.container style="padding: 4rem 0;"}
+
+::: {.section-label}
+All Research & Projects
+:::
+
+## Spatial Analysis & GIS
+
+::: {.project-grid}
+
+<a href="projects/attica-wildfire.qmd" class="project-card">
+<div class="card-img" style="background: #2d4a22;">🔥 Attica Wildfire MCDA</div>
+<div class="card-body">
+<div class="card-tag">GIS · MCDA · Policy</div>
+<div class="card-title">Wildfire Vulnerability Mapping, Attica Greece</div>
+<div class="card-desc">24-year MCDA integrating fire incidents, emergency services, and population density. Outputs applicable to Greece's €2.1B AEGIS civil protection program.</div>
+<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span></div>
+</div>
+</a>
+
+<a href="projects/kerr-county-floods.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a5c;">🌊 Kerr County Flood Risk</div>
+<div class="card-body">
+<div class="card-tag">Remote Sensing · GEE · Policy</div>
+<div class="card-title">Flood Risk & Hazard Mapping, Kerr County TX</div>
+<div class="card-desc">Satellite audit of FEMA flood maps following the July 4, 2025 flash flood. Six-map series exposing structural gaps between regulatory risk and observed inundation.</div>
+<div class="card-tools"><span>GEE</span><span>Sentinel-1</span><span>CHIRPS</span><span>QGIS</span></div>
+</div>
+</a>
+
+<a href="projects/hfa-gis.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a4a;">🌍 HFA GIS Strategy</div>
+<div class="card-body">
+<div class="card-tag">GIS · Global Health · In Progress</div>
+<div class="card-title">174-Country Prioritization Framework — HFA</div>
+<div class="card-desc">GIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.</div>
+<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span></div>
+</div>
+</a>
+
+<a href="projects/south-america-conflicts.qmd" class="project-card">
+<div class="card-img" style="background: #3a1a2a;">🗺️ Climate & Conflict</div>
+<div class="card-body">
+<div class="card-tag">GIS · Cartography</div>
+<div class="card-title">Conflicts in Northern South America by Köppen-Geiger Climate Classification</div>
+<div class="card-desc">Spatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.</div>
+<div class="card-tools"><span>QGIS</span><span>UCDP/PRIO</span><span>Beck et al.</span></div>
+</div>
+</a>
+
+:::
+
+---
+
+## Machine Learning & Quantitative Research
+
+::: {.project-grid}
+
+<a href="projects/edtech-meta-analysis.qmd" class="project-card">
+<div class="card-img" style="background: #3a2a5c;">📊 Ed-Tech Meta-Analysis</div>
+<div class="card-body">
+<div class="card-tag">Meta-regression · R · Policy</div>
+<div class="card-title">Does Ed-Tech Narrow or Widen Achievement Gaps?</div>
+<div class="card-desc">Cross-national meta-regression of 8 RCTs with heterogeneity analysis of J-PAL/IZA Mindspark data (n=535). Key finding: lower electricity access → larger adaptive ed-tech gains.</div>
+<div class="card-tools"><span>R · metafor</span><span>J-PAL/IZA</span><span>Forest Plots</span></div>
+</div>
+</a>
+
+<a href="projects/labor-action-tracker.qmd" class="project-card">
+<div class="card-img" style="background: #5c2a1a;">⚙️ Labor Action ML</div>
+<div class="card-body">
+<div class="card-tag">ML · Big Data · R</div>
+<div class="card-title">Predicting Strike vs. Protest Events</div>
+<div class="card-desc">Full ML pipeline on Cornell's Labor Action Tracker merged with DCI, SDI, and IRS ZIP-level data. Compared logistic regression, Random Forest, and XGBoost with temporal train/test splits.</div>
+<div class="card-tools"><span>R · caret</span><span>XGBoost</span><span>Random Forest</span></div>
+</div>
+</a>
+
+<a href="projects/ucsd-healthcare.qmd" class="project-card">
+<div class="card-img" style="background: #1a4a3a;">🏥 UCSD Healthcare</div>
+<div class="card-body">
+<div class="card-tag">ML · Predictive Modeling · In Progress</div>
+<div class="card-title">Capital Program Cost Forecasting — UCSD Healthcare</div>
+<div class="card-desc">AI-powered vetting tool for UCSD Healthcare's Capital Program Management division. Analyzing 14+ years and 800+ projects ($1M–$70M+) to surface risk signals for incoming project proposals.</div>
+<div class="card-tools"><span>R</span><span>Python</span><span>ML Pipeline</span><span>GitHub</span></div>
+</div>
+</a>
+
+:::
+
+---
+
+## Policy Writing & Strategy
+
+::: {.project-grid}
+
+<a href="projects/ai-regulation.qmd" class="project-card">
+<div class="card-img" style="background: #2a2a3a;">🎭 AI Regulation</div>
+<div class="card-body">
+<div class="card-tag">Policy Analysis · Empirical Research</div>
+<div class="card-title">AI Regulation in the U.S. Acting Industry</div>
+<div class="card-desc">Policy analysis using original BLS QCEW data to quantify AI's impact on performing arts employment. Argues collective bargaining is structurally insufficient — a federal statutory baseline is required.</div>
+<div class="card-tools"><span>BLS QCEW</span><span>R</span><span>Regulatory Analysis</span></div>
+</div>
+</a>
+
+<a href="projects/hfa-strategy.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a4a;">🌐 HFA Strategy</div>
+<div class="card-body">
+<div class="card-tag">Strategy · Global Health · Stakeholder Research</div>
+<div class="card-title">Private-Sector Strategy for the Health Forecasting Alliance</div>
+<div class="card-desc">Stakeholder interviews with VitalWave CTO, CDC Forecasting Analytics, and HFA partners synthesized into a five forces heatmap identifying pharma, dev finance, and tech/AI as priority targets.</div>
+<div class="card-tools"><span>Five Forces</span><span>Platform Economics</span><span>WHO/USAID/IHME</span></div>
+</div>
+</a>
+
+:::
+
+---
+
+## Personal Projects
+
+::: {.project-grid}
+
+<a href="projects/honolulu-10k.qmd" class="project-card">
+<div class="card-img" style="background: #4a3a1a;">🏃 Honolulu 10K</div>
+<div class="card-body">
+<div class="card-tag">Personal · R · Excel</div>
+<div class="card-title">Race Results Analysis, Honolulu 10K 2025</div>
+<div class="card-desc">Downloaded race data, built a custom dataset, and used R + ggplot2 to visualize age/gender group finishing distributions for my family. Top 24th percentile, M25–29.</div>
+<div class="card-tools"><span>R · ggplot2</span><span>Excel</span></div>
+</div>
+</a>
+
+:::
+
+:::

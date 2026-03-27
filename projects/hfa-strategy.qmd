@@ -1,0 +1,22 @@
+---
+title: ""
+page-layout: full
+---
+::: {.project-header}
+::: {.container}
+[← Back to Research](../research.qmd){.back-link}
+# Private-Sector Strategy for the Health Forecasting Alliance
+::: {.project-meta}
+<span><strong>Type:</strong> UCSD GPS Capstone</span>
+<span><strong>Client:</strong> VitalWave / Brooke Partridge</span>
+<span><strong>Term:</strong> Spring 2026</span>
+:::
+:::
+:::
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## Overview
+
+Full write-up coming soon. Stakeholder interviews with VitalWave CTO, CDC Forecasting Analytics lead, and HFA Engagement Manager synthesized into a five forces heatmap and value chain map identifying pharma, development finance, and tech/AI as priority private-sector targets for HFA's partnership strategy.
+
+:::

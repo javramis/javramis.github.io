@@ -1,0 +1,38 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-header}
+::: {.container}
+[← Back to Research](../research.qmd){.back-link}
+# 174-Country GIS Prioritization — Health Forecasting Alliance
+::: {.project-meta}
+<span><strong>Type:</strong> Independent Research Project (GPGN 492)</span>
+<span><strong>Advisor:</strong> Prof. Ulrike Schaede</span>
+<span><strong>Term:</strong> Spring 2026 · In Progress</span>
+<span><strong>Tools:</strong> QGIS · R · MCDA · Five Forces</span>
+:::
+:::
+:::
+
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## Overview
+
+*This project is currently in progress. Full write-up coming Spring 2026.*
+
+Building a GIS-driven weighted prioritization framework across 174 countries to identify which global markets represent the highest-value private-sector partnership opportunities for the Health Forecasting Alliance (HFA) — a network-of-networks connecting regional health data across 37 countries for global pandemic preparedness.
+
+## Deliverables
+
+1. **10 Country Market Profiles** — scored on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness
+2. **Corporate Targeting Matrix** — 15–20 multinationals scored on growth trajectory, CSR history, and HFA strategic fit
+3. **GIS Data Package** — QGIS-ready datasets (CSV + XLSX) with weighted composite scores across 174 countries
+4. **Methodology White Paper** — documenting the multi-criteria scoring framework and its broader applicability
+
+## Background: HFA Private-Sector Strategy (Capstone, 2026)
+
+This project extends my GPS capstone work with VitalWave CEO Brooke Partridge. The capstone identified pharma, development finance, and tech/AI as HFA's priority private-sector targets through stakeholder interviews and five forces analysis. This independent project adds the spatial dimension: *where* should HFA focus first?
+
+:::

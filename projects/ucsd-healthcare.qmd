@@ -1,0 +1,28 @@
+---
+title: ""
+page-layout: full
+---
+::: {.project-header}
+::: {.container}
+[← Back to Research](../research.qmd){.back-link}
+# Capital Program Cost Forecasting — UCSD Healthcare
+::: {.project-meta}
+<span><strong>Type:</strong> i4X Fellowship, The Basement (Blackstone LaunchPad) UCSD</span>
+<span><strong>Client:</strong> UCSD Healthcare Capital Program Management</span>
+<span><strong>Term:</strong> Dec 2025–Jun 2026 · In Progress</span>
+<span><strong>Tools:</strong> R · Python · GitHub · ML Pipeline</span>
+:::
+:::
+:::
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## Overview
+
+*Project in progress. Write-up coming June 2026.*
+
+Building an AI-powered vetting tool for the head of UCSD Healthcare's Capital Program Management division. The tool analyzes 14+ years and 800+ capital construction projects ($1M–$70M+) to surface risk signals and spending benchmarks for incoming project proposals — enabling faster, more defensible approval decisions.
+
+**Team:** 6-person data science team  
+**Role:** Research design, analytical framework, team direction, stakeholder presentations
+
+:::
