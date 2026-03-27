@@ -31,14 +31,14 @@ h1, h2, h3, h4 {
 
 /*-- Navbar --*/
 .navbar {
-  background-color: $primary !important;
-  border-bottom: 3px solid $accent;
+  background-color: #1a1a2e !important;
+  border-bottom: 3px solid #4f7942;
   padding: 1rem 2rem;
 }
 
 .navbar-brand {
   font-family: 'DM Serif Display', serif;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #fff !important;
   letter-spacing: 0.02em;
 }
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
 }
 
 .hero h1 {
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(5rem, 11vw, 10rem);
   line-height: 1.05;
   margin-bottom: 2rem;
 }
@@ -320,7 +320,6 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1rem 0;
-  max-width: 100%;
 }
 
 .skills-list span {
@@ -330,7 +329,6 @@ h1, h2, h3, h4 {
   padding: 0.3rem 0.8rem;
   border-radius: 2px;
   letter-spacing: 0.05em;
-  white-space: nowrap;
 }
 
 /*-- Footer --*/
