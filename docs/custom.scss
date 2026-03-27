@@ -149,7 +149,7 @@ h1, h2, h3, h4 {
 /*-- Project cards --*/
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -294,7 +294,7 @@ h1, h2, h3, h4 {
 /*-- About page --*/
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 4rem;
   align-items: start;
   padding: 4rem 0;
