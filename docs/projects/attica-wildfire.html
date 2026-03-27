@@ -150,41 +150,89 @@ ul.task-list li input[type="checkbox"] {
 <div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
 <section id="the-question" class="level2">
 <h2 class="anchored" data-anchor-id="the-question">The Question</h2>
-<p>Which municipalities in the Attica region of Greece face the highest wildfire vulnerability, and where should infrastructure investment be prioritized to reduce risk under Greece’s €2.1 billion AEGIS civil protection program?</p>
+<p>Which municipalities in the Attica region of Greece face the greatest combined wildfire vulnerability — and where should infrastructure investment be prioritized under Greece’s €2.1 billion AEGIS civil protection program?</p>
 </section>
 <section id="why-it-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
-<p>The Attica region — which includes Athens — has experienced some of Europe’s most devastating wildfires, including the 2018 Mati fire that killed over 100 people. FEMA-style regulatory maps in Greece have long been criticized for the same limitations as their U.S. counterparts: backward-looking, static, and not calibrated to the overlapping vulnerability factors that determine real-world risk.</p>
+<p>On July 23, 2018, the coastal village of Mati became the site of Europe’s deadliest wildfire since 1900. Within hours, 104 people were dead — many found meters from the sea, having fled but unable to escape in time. The post-incident investigation revealed not just extreme weather conditions, but fundamental failures in emergency response coordination: fire service officials were later convicted of criminal negligence for failing to recommend evacuations or warn the public.</p>
+<p>Mati exposed a critical spatial disconnect — between where fires occur and where emergency response capacity exists. In 2023 alone, wildfires caused approximately €1.8 billion in damages across Greece, nearly half of Europe’s total wildfire losses that year. As climate projections indicate southern and eastern Greece will experience up to 40 additional days of high fire danger annually relative to the late 20th century, the case for evidence-based infrastructure planning is urgent.</p>
+<p>Greece’s response — the €2.1 billion AEGIS program, announced in 2024 — represents the country’s largest-ever civil protection procurement, acquiring over 1,000 firefighting vehicles, amphibious aircraft, drones, and fire control centers. But the spatial question remains: <strong>where should this infrastructure go?</strong></p>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Municipality boundaries + population density</td>
+<td>Eurostat GISCO 2024 LAU dataset</td>
+</tr>
+<tr class="even">
+<td>Wildfire incidents 2000–2024</td>
+<td>DataForGreece + Hellenic Fire Service</td>
+</tr>
+<tr class="odd">
+<td>Fire station locations</td>
+<td>Geofabrik OpenStreetMap POI shapefile</td>
+</tr>
+<tr class="even">
+<td>Regional boundary</td>
+<td>GADM 4.1 (gadm41_GRC_2 “Attica”)</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>This project designed and executed a full <strong>Multi-Criteria Decision Analysis (MCDA)</strong> — the same family of analytical tools used in cost-benefit analysis and quantitative policy evaluation, now applied spatially.</p>
-<p><strong>Data sources:</strong> - 24 years of fire incident records (point data by municipality) - Emergency service proximity (response time isochrones) - Census-derived population density (municipality level)</p>
-<p><strong>Workflow:</strong> 1. Assembled and cleaned all three datasets in R 2. Standardized coordinate reference systems across sources in QGIS 3. Ran weighted spatial overlays to produce a composite vulnerability index 4. Produced a multi-panel map series with municipality risk rankings</p>
-<p><strong>Weighting schema:</strong> Each criterion was weighted based on policy relevance — population density weighted highest given the life-safety implications, followed by emergency service proximity, followed by historical fire frequency.</p>
+<section id="fire-exposure-by-municipality" class="level3">
+<h3 class="anchored" data-anchor-id="fire-exposure-by-municipality">1. Fire Exposure by Municipality</h3>
+<p>Individual fire incident points were aggregated to municipality boundaries using QGIS “Join attributes by location (summary)” — effectively a zonal statistics operation. Three metrics were computed per municipality: total fire incidents, cumulative burned area (hectares), and mean fire severity per incident. These were combined into a composite fire exposure score and classified into five graduated categories.</p>
 </section>
-<section id="key-outputs" class="level2">
-<h2 class="anchored" data-anchor-id="key-outputs">Key Outputs</h2>
+<section id="emergency-service-access" class="level3">
+<h3 class="anchored" data-anchor-id="emergency-service-access">2. Emergency Service Access</h3>
+<p>Municipality centroids were computed and distances to nearest fire station calculated using QGIS “Distance to nearest hub (points).” A binary AccessClass variable was created via field calculator: municipalities more than 10km from the nearest station were classified as “Under-served.” The 10km threshold reflects wildfire suppression research establishing that the first 10–30 minutes of initial attack are the most critical — at typical emergency response speeds, 10km represents the difference between arriving when fires are still containable versus arriving when they’ve already grown beyond initial attack capability.</p>
+</section>
+<section id="multi-criteria-priority-classification" class="level3">
+<h3 class="anchored" data-anchor-id="multi-criteria-priority-classification">3. Multi-Criteria Priority Classification</h3>
+<p>The final MCDA step integrated all three dimensions using a CASE expression in the field calculator. Municipalities were flagged as priority if they simultaneously met: cumulative burned area in the upper quartile of the regional distribution, AccessClass = “Under-served (&gt;10km),” and population density above the regional median. This ensures prioritization reflects fire risk, infrastructure gaps, <strong>and</strong> the number of residents affected.</p>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
 <div class="project-visual">
-<p><em>[Map 1: Raw fire incident density by municipality — add your image here]</em> ::: {.visual-caption} 24-year fire incident density across Attica municipalities. Darker areas indicate higher historical fire frequency.</p>
+<p><img src="../assets/img/Map1.jpeg" class="img-fluid"> ::: {.visual-caption} Composite fire exposure classification across Attica municipalities (2000–2024). Dark red = Very High exposure. Fire incident points overlaid. Green diamonds = fire station locations. Note the spatial mismatch: highest fire activity clusters in the northern periphery where station density is lowest.</p>
 </div>
 </section>
 </div>
 <div class="project-visual">
-<p><em>[Map 2: Composite MCDA vulnerability index — add your image here]</em> ::: {.visual-caption} Weighted composite vulnerability scores by municipality. Combines fire history, emergency service proximity, and population density.</p>
+<p><img src="../assets/img/Map2.jpeg" class="img-fluid"> ::: {.visual-caption} Binary access classification: red = Under-served (&gt;10km from nearest station), blue = Within 10km. Under-served municipalities concentrate in the northwestern and southeastern periphery — precisely where historical fire exposure is highest.</p>
 </div>
 <p>:::</p>
 <div class="project-visual">
-<p><em>[Map 3: Priority infrastructure investment zones — add your image here]</em> ::: {.visual-caption} Final policy output: ranked infrastructure investment zones directly applicable to Greece’s AEGIS program priorities.</p>
+<p><img src="../assets/img/Map3.jpeg" class="img-fluid"> ::: {.visual-caption} Multi-criteria priority classification. Four municipalities (dark red) simultaneously exhibit upper-quartile fire exposure, under-served access, and above-median population density.</p>
 </div>
 <p>:::</p>
-<section id="what-i-found" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-found">What I Found</h2>
-<p>The analysis identified a clear cluster of high-vulnerability municipalities in the northeastern and northwestern Attica periphery — areas with high historical fire frequency, low emergency service coverage, and growing residential development. These are the zones where AEGIS investment would produce the highest marginal reduction in life-safety risk.</p>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>Four priority municipalities were identified — three in northwestern Attica bordering the Parnitha and Penteli mountain ranges, one in the eastern sector encompassing communities directly impacted by the 2018 Mati fires. These four municipalities account for approximately 8–12% of Attica’s residents outside the central Athens urban core, yet face compounded vulnerability from both high fire exposure and limited emergency service proximity.</p>
+<p>The analysis confirms a consistent spatial pattern: the fire station network concentrates where fire exposure is lowest (central Athens and coastal corridor), while the high-exposure periphery where Mati-like conditions exist remains under-served. Positioning even one or two additional stations within or adjacent to the priority municipalities could substantially reduce response times for historically fire-prone areas.</p>
 </section>
-<section id="what-i-learned" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-learned">What I Learned</h2>
-<p>This project crystallized why I find MCDA applied spatially so compelling: it takes the rigorous policy analytical framework I learned in coursework and gives it a communication layer that works for anyone. A policymaker who has never heard of a weighted spatial overlay can look at the final map and immediately understand which municipalities need attention and why. That’s the whole point.</p>
+<section id="policy-implications" class="level2">
+<h2 class="anchored" data-anchor-id="policy-implications">Policy Implications</h2>
+<p>Strategic positioning of AEGIS resources toward the identified priority municipalities would directly address the coverage gaps that the 2018 disaster exposed. Greece’s new OroraTech satellite monitoring system offers unprecedented early detection capability — but early detection yields limited benefit if ground-based response assets remain 10+ kilometers from high-risk areas. The spatial analysis provides a transparent, evidence-based framework for allocation decisions that shifts planning from politically-driven resource distribution toward data-informed vulnerability targeting.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>Straight-line distance metrics don’t capture road network complexity, terrain obstacles, or actual drive times — particularly relevant in mountainous Attica. A binary 10km threshold doesn’t differentiate between municipalities 11km and 25km from a station. Future extensions could incorporate network analysis, graduated access classifications, and social vulnerability indices beyond population density.</p>
 </section>
 <section id="code-files" class="level2">
 <h2 class="anchored" data-anchor-id="code-files">Code &amp; Files</h2>

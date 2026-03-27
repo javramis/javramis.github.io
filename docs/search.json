@@ -116,42 +116,56 @@
     "href": "projects/attica-wildfire.html#the-question",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "The Question",
-    "text": "The Question\nWhich municipalities in the Attica region of Greece face the highest wildfire vulnerability, and where should infrastructure investment be prioritized to reduce risk under Greece’s €2.1 billion AEGIS civil protection program?"
+    "text": "The Question\nWhich municipalities in the Attica region of Greece face the greatest combined wildfire vulnerability — and where should infrastructure investment be prioritized under Greece’s €2.1 billion AEGIS civil protection program?"
   },
   {
     "objectID": "projects/attica-wildfire.html#why-it-matters",
     "href": "projects/attica-wildfire.html#why-it-matters",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "Why It Matters",
-    "text": "Why It Matters\nThe Attica region — which includes Athens — has experienced some of Europe’s most devastating wildfires, including the 2018 Mati fire that killed over 100 people. FEMA-style regulatory maps in Greece have long been criticized for the same limitations as their U.S. counterparts: backward-looking, static, and not calibrated to the overlapping vulnerability factors that determine real-world risk."
+    "text": "Why It Matters\nOn July 23, 2018, the coastal village of Mati became the site of Europe’s deadliest wildfire since 1900. Within hours, 104 people were dead — many found meters from the sea, having fled but unable to escape in time. The post-incident investigation revealed not just extreme weather conditions, but fundamental failures in emergency response coordination: fire service officials were later convicted of criminal negligence for failing to recommend evacuations or warn the public.\nMati exposed a critical spatial disconnect — between where fires occur and where emergency response capacity exists. In 2023 alone, wildfires caused approximately €1.8 billion in damages across Greece, nearly half of Europe’s total wildfire losses that year. As climate projections indicate southern and eastern Greece will experience up to 40 additional days of high fire danger annually relative to the late 20th century, the case for evidence-based infrastructure planning is urgent.\nGreece’s response — the €2.1 billion AEGIS program, announced in 2024 — represents the country’s largest-ever civil protection procurement, acquiring over 1,000 firefighting vehicles, amphibious aircraft, drones, and fire control centers. But the spatial question remains: where should this infrastructure go?"
+  },
+  {
+    "objectID": "projects/attica-wildfire.html#data-sources",
+    "href": "projects/attica-wildfire.html#data-sources",
+    "title": "Wildfire Vulnerability Mapping, Attica Greece",
+    "section": "Data Sources",
+    "text": "Data Sources\n\n\n\n\n\n\n\nDataset\nSource\n\n\n\n\nMunicipality boundaries + population density\nEurostat GISCO 2024 LAU dataset\n\n\nWildfire incidents 2000–2024\nDataForGreece + Hellenic Fire Service\n\n\nFire station locations\nGeofabrik OpenStreetMap POI shapefile\n\n\nRegional boundary\nGADM 4.1 (gadm41_GRC_2 “Attica”)"
   },
   {
     "objectID": "projects/attica-wildfire.html#methodology",
     "href": "projects/attica-wildfire.html#methodology",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "Methodology",
-    "text": "Methodology\nThis project designed and executed a full Multi-Criteria Decision Analysis (MCDA) — the same family of analytical tools used in cost-benefit analysis and quantitative policy evaluation, now applied spatially.\nData sources: - 24 years of fire incident records (point data by municipality) - Emergency service proximity (response time isochrones) - Census-derived population density (municipality level)\nWorkflow: 1. Assembled and cleaned all three datasets in R 2. Standardized coordinate reference systems across sources in QGIS 3. Ran weighted spatial overlays to produce a composite vulnerability index 4. Produced a multi-panel map series with municipality risk rankings\nWeighting schema: Each criterion was weighted based on policy relevance — population density weighted highest given the life-safety implications, followed by emergency service proximity, followed by historical fire frequency."
+    "text": "Methodology\n\n1. Fire Exposure by Municipality\nIndividual fire incident points were aggregated to municipality boundaries using QGIS “Join attributes by location (summary)” — effectively a zonal statistics operation. Three metrics were computed per municipality: total fire incidents, cumulative burned area (hectares), and mean fire severity per incident. These were combined into a composite fire exposure score and classified into five graduated categories.\n\n\n2. Emergency Service Access\nMunicipality centroids were computed and distances to nearest fire station calculated using QGIS “Distance to nearest hub (points).” A binary AccessClass variable was created via field calculator: municipalities more than 10km from the nearest station were classified as “Under-served.” The 10km threshold reflects wildfire suppression research establishing that the first 10–30 minutes of initial attack are the most critical — at typical emergency response speeds, 10km represents the difference between arriving when fires are still containable versus arriving when they’ve already grown beyond initial attack capability.\n\n\n3. Multi-Criteria Priority Classification\nThe final MCDA step integrated all three dimensions using a CASE expression in the field calculator. Municipalities were flagged as priority if they simultaneously met: cumulative burned area in the upper quartile of the regional distribution, AccessClass = “Under-served (&gt;10km),” and population density above the regional median. This ensures prioritization reflects fire risk, infrastructure gaps, and the number of residents affected."
   },
   {
-    "objectID": "projects/attica-wildfire.html#key-outputs",
-    "href": "projects/attica-wildfire.html#key-outputs",
+    "objectID": "projects/attica-wildfire.html#results",
+    "href": "projects/attica-wildfire.html#results",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "Key Outputs",
-    "text": "Key Outputs\n\n[Map 1: Raw fire incident density by municipality — add your image here] ::: {.visual-caption} 24-year fire incident density across Attica municipalities. Darker areas indicate higher historical fire frequency."
+    "section": "Results",
+    "text": "Results\n\n ::: {.visual-caption} Composite fire exposure classification across Attica municipalities (2000–2024). Dark red = Very High exposure. Fire incident points overlaid. Green diamonds = fire station locations. Note the spatial mismatch: highest fire activity clusters in the northern periphery where station density is lowest."
   },
   {
-    "objectID": "projects/attica-wildfire.html#what-i-found",
-    "href": "projects/attica-wildfire.html#what-i-found",
+    "objectID": "projects/attica-wildfire.html#key-findings",
+    "href": "projects/attica-wildfire.html#key-findings",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "What I Found",
-    "text": "What I Found\nThe analysis identified a clear cluster of high-vulnerability municipalities in the northeastern and northwestern Attica periphery — areas with high historical fire frequency, low emergency service coverage, and growing residential development. These are the zones where AEGIS investment would produce the highest marginal reduction in life-safety risk."
+    "section": "Key Findings",
+    "text": "Key Findings\nFour priority municipalities were identified — three in northwestern Attica bordering the Parnitha and Penteli mountain ranges, one in the eastern sector encompassing communities directly impacted by the 2018 Mati fires. These four municipalities account for approximately 8–12% of Attica’s residents outside the central Athens urban core, yet face compounded vulnerability from both high fire exposure and limited emergency service proximity.\nThe analysis confirms a consistent spatial pattern: the fire station network concentrates where fire exposure is lowest (central Athens and coastal corridor), while the high-exposure periphery where Mati-like conditions exist remains under-served. Positioning even one or two additional stations within or adjacent to the priority municipalities could substantially reduce response times for historically fire-prone areas."
   },
   {
-    "objectID": "projects/attica-wildfire.html#what-i-learned",
-    "href": "projects/attica-wildfire.html#what-i-learned",
+    "objectID": "projects/attica-wildfire.html#policy-implications",
+    "href": "projects/attica-wildfire.html#policy-implications",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "What I Learned",
-    "text": "What I Learned\nThis project crystallized why I find MCDA applied spatially so compelling: it takes the rigorous policy analytical framework I learned in coursework and gives it a communication layer that works for anyone. A policymaker who has never heard of a weighted spatial overlay can look at the final map and immediately understand which municipalities need attention and why. That’s the whole point."
+    "section": "Policy Implications",
+    "text": "Policy Implications\nStrategic positioning of AEGIS resources toward the identified priority municipalities would directly address the coverage gaps that the 2018 disaster exposed. Greece’s new OroraTech satellite monitoring system offers unprecedented early detection capability — but early detection yields limited benefit if ground-based response assets remain 10+ kilometers from high-risk areas. The spatial analysis provides a transparent, evidence-based framework for allocation decisions that shifts planning from politically-driven resource distribution toward data-informed vulnerability targeting."
+  },
+  {
+    "objectID": "projects/attica-wildfire.html#limitations",
+    "href": "projects/attica-wildfire.html#limitations",
+    "title": "Wildfire Vulnerability Mapping, Attica Greece",
+    "section": "Limitations",
+    "text": "Limitations\nStraight-line distance metrics don’t capture road network complexity, terrain obstacles, or actual drive times — particularly relevant in mountainous Attica. A binary 10km threshold doesn’t differentiate between municipalities 11km and 25km from a station. Future extensions could incorporate network analysis, graduated access classifications, and social vulnerability indices beyond population density."
   },
   {
     "objectID": "projects/attica-wildfire.html#code-files",
