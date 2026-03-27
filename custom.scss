@@ -1,13 +1,6 @@
 /*-- scss:defaults --*/
 
 /*-- scss:rules --*/
-/*-- scss:defaults --*/
-
-/*-- scss:rules --*/
-/*-- scss:defaults --*/
-
-/*-- scss:rules --*/
-/*-- Custom SCSS for Max Avramis Portfolio --*/
 
 /*-- Fonts --*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
@@ -69,18 +62,18 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
   .hero-eyebrow {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: $accent;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   h1 {
-    font-size: clamp(2.8rem, 6vw, 5rem);
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+    font-size: clamp(3.8rem, 8vw, 7rem);
+    line-height: 1.05;
+    margin-bottom: 2rem;
 
     em {
       color: $accent;
@@ -89,9 +82,9 @@ h1, h2, h3, h4 {
   }
 
   .hero-sub {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     color: $text-muted;
-    max-width: 560px;
+    max-width: 640px;
     margin-bottom: 2.5rem;
     font-weight: 300;
   }
@@ -152,6 +145,10 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
