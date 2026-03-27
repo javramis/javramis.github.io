@@ -58,23 +58,23 @@ The final MCDA step integrated all three dimensions using a CASE expression in t
 
 ::: {.project-visual}
 ![](../assets/img/Map1.jpeg)
-::: {.visual-caption}
+
 Composite fire exposure classification across Attica municipalities (2000–2024). Dark red = Very High exposure. Fire incident points overlaid. Green diamonds = fire station locations. Note the spatial mismatch: highest fire activity clusters in the northern periphery where station density is lowest.
-:::
+
 :::
 
 ::: {.project-visual}
 ![](../assets/img/Map2.jpeg)
-::: {.visual-caption}
+
 Binary access classification: red = Under-served (>10km from nearest station), blue = Within 10km. Under-served municipalities concentrate in the northwestern and southeastern periphery — precisely where historical fire exposure is highest.
-:::
+
 :::
 
 ::: {.project-visual}
 ![](../assets/img/Map3.jpeg)
-::: {.visual-caption}
+
 Multi-criteria priority classification. Four municipalities (dark red) simultaneously exhibit upper-quartile fire exposure, under-served access, and above-median population density.
-:::
+
 :::
 
 ## Key Findings
