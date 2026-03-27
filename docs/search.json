@@ -109,7 +109,7 @@
     "href": "projects/attica-wildfire.html",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "",
-    "text": "← Back to Research\n\n\n\nCourse: GIS & Spatial Data Analysis Instructor: Prof. Gordon McCord Term: Fall 2025 Tools: QGIS · R · MCDA\n:::\n:::"
+    "text": "← Back to Research\n\n\n\nCourse: GIS & Spatial Data Analysis Instructor: Prof. Gordon McCord Term: Fall 2025 Tools: QGIS · R · MCDA"
   },
   {
     "objectID": "projects/attica-wildfire.html#the-question",
@@ -144,7 +144,7 @@
     "href": "projects/attica-wildfire.html#results",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "Results",
-    "text": "Results\n\n ::: {.visual-caption} Composite fire exposure classification across Attica municipalities (2000–2024). Dark red = Very High exposure. Fire incident points overlaid. Green diamonds = fire station locations. Note the spatial mismatch: highest fire activity clusters in the northern periphery where station density is lowest."
+    "text": "Results\n\n\nComposite fire exposure classification across Attica municipalities (2000–2024). Dark red = Very High exposure. Fire incident points overlaid. Green diamonds = fire station locations. Note the spatial mismatch: highest fire activity clusters in the northern periphery where station density is lowest.\n\n\n\nBinary access classification: red = Under-served (&gt;10km from nearest station), blue = Within 10km. Under-served municipalities concentrate in the northwestern and southeastern periphery — precisely where historical fire exposure is highest.\n\n\n\nMulti-criteria priority classification. Four municipalities (dark red) simultaneously exhibit upper-quartile fire exposure, under-served access, and above-median population density."
   },
   {
     "objectID": "projects/attica-wildfire.html#key-findings",
@@ -172,7 +172,7 @@
     "href": "projects/attica-wildfire.html#code-files",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
     "section": "Code & Files",
-    "text": "Code & Files\nView on GitHub\n:::"
+    "text": "Code & Files\nView on GitHub"
   },
   {
     "objectID": "projects/edtech-meta-analysis.html",
