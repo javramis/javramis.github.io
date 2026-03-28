@@ -168,11 +168,18 @@
     "text": "Limitations\nStraight-line distance metrics don’t capture road network complexity, terrain obstacles, or actual drive times — particularly relevant in mountainous Attica. A binary 10km threshold doesn’t differentiate between municipalities 11km and 25km from a station. Future extensions could incorporate network analysis, graduated access classifications, and social vulnerability indices beyond population density."
   },
   {
-    "objectID": "projects/attica-wildfire.html#code-files",
-    "href": "projects/attica-wildfire.html#code-files",
+    "objectID": "projects/attica-wildfire.html#files",
+    "href": "projects/attica-wildfire.html#files",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "Code & Files",
-    "text": "Code & Files\nView on GitHub"
+    "section": "Files",
+    "text": "Files"
+  },
+  {
+    "objectID": "projects/attica-wildfire.html#paper-code",
+    "href": "projects/attica-wildfire.html#paper-code",
+    "title": "Wildfire Vulnerability Mapping, Attica Greece",
+    "section": "Paper & Code",
+    "text": "Paper & Code\nRead Full Paper (PDF)"
   },
   {
     "objectID": "projects/edtech-meta-analysis.html",
