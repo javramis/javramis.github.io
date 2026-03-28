@@ -91,9 +91,7 @@ Strategic positioning of AEGIS resources toward the identified priority municipa
 
 Straight-line distance metrics don't capture road network complexity, terrain obstacles, or actual drive times — particularly relevant in mountainous Attica. A binary 10km threshold doesn't differentiate between municipalities 11km and 25km from a station. Future extensions could incorporate network analysis, graduated access classifications, and social vulnerability indices beyond population density.
 
-## Files
-
-## Paper & Code
+## Paper
 
 [Read Full Paper (PDF)](../assets/attica-wildfire-paper.pdf){target="_blank"}
 :::
