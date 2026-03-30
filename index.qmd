@@ -91,20 +91,6 @@ Featured Projects
 </div>
 </a>
 
-<a href="projects/hfa-gis.qmd" class="project-card in-progress">
-<div class="card-img" style="background: #1a3a4a;">
-🌍 HFA GIS Strategy
-</div>
-<div class="card-body">
-<div class="card-tag">GIS · Global Health · In Progress</div>
-<div class="card-title">174-Country Prioritization Framework for the Health Forecasting Alliance</div>
-<div class="card-desc">Independent research project (Spring 2026) building a GIS-driven weighted MCDA framework to identify which global markets represent the highest-value private-sector partnership opportunities for HFA.</div>
-<div class="card-tools">
-<span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span>
-</div>
-</div>
-</a>
-
 <a href="projects/honolulu-10k.qmd" class="project-card">
 <div class="card-img" style="background: #4a3a1a;">
 🏃 Honolulu 10K
@@ -115,6 +101,20 @@ Featured Projects
 <div class="card-desc">After finishing the Honolulu Start to Park 10K, I downloaded the race data and built my own dataset to see exactly how my family and I placed within our respective age and gender groups. Top 24th percentile, M25–29.</div>
 <div class="card-tools">
 <span>R · ggplot2</span><span>Excel</span><span>Data Wrangling</span>
+</div>
+</div>
+</a>
+
+<a href="projects/hfa-gis.qmd" class="project-card in-progress">
+<div class="card-img" style="background: #1a3a4a;">
+🌍 HFA GIS Strategy
+</div>
+<div class="card-body">
+<div class="card-tag">GIS · Global Health · In Progress</div>
+<div class="card-title">174-Country Prioritization Framework for the Health Forecasting Alliance</div>
+<div class="card-desc">Independent research project (Spring 2026) building a GIS-driven weighted MCDA framework to identify which global markets represent the highest-value private-sector partnership opportunities for HFA.</div>
+<div class="card-tools">
+<span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span>
 </div>
 </div>
 </a>
