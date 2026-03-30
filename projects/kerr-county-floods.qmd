@@ -63,7 +63,6 @@ I overlaid FEMA's Special Flood Hazard Area boundaries against the CHIRPS precip
 ![](../assets/img/Kerr-map2.png)
 
 *Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.*
-
 ---
 
 ## Key Findings
@@ -76,6 +75,6 @@ Two structural gaps emerge clearly from the analysis:
 
 ## Policy Implications
 
-The natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change — the same MCDA framework applied in the Attica wildfire analysis, now translated to flash flood risk. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace.
+The natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk specturm. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace.
 
 :::
