@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -174,8 +139,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="project-header">
 <div class="container">
 <p><a href="../research.html" class="back-link">← Back to Research</a></p>
-<section id="does-ed-tech-narrow-or-widen-achievement-gaps" class="level1">
-<h1>Does Ed-Tech Narrow or Widen Achievement Gaps?</h1>
+<section id="does-educational-technology-narrow-or-widen-achievement-gaps" class="level1">
+<h1>Does Educational Technology Narrow or Widen Achievement Gaps?</h1>
 <div class="project-meta">
 <p><span><strong>Course:</strong> Quantitative Analyses of Public Policy Issues</span> <span><strong>Instructor:</strong> Prof.&nbsp;Gaurav Khanna</span> <span><strong>Term:</strong> Winter 2026</span> <span><strong>Tools:</strong> R · metafor · J-PAL/IZA Data</span></p>
 </div>
@@ -185,57 +150,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
 <section id="the-question" class="level2">
 <h2 class="anchored" data-anchor-id="the-question">The Question</h2>
-<p>Do educational technology interventions narrow or widen achievement gaps? And does the answer depend on where you are — specifically, on the infrastructure context of the country where the program is deployed?</p>
+<p>Does educational technology help the students who need it most — or does it widen the gap between the already-advantaged and everyone else? And does the answer depend on where in the world the program is deployed?</p>
 </section>
-<section id="why-it-matters" class="level2">
-<h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
-<p>Educational technology has been proposed as a scalable solution to persistent learning inequality — particularly in low- and middle-income countries where teacher quality, classroom resources, and student baseline levels vary dramatically. But the evidence is stubbornly mixed. Some programs produce gains of half a standard deviation or more; others show null or negative effects.</p>
-<p>Understanding <em>why</em> requires moving past average effects to examine <strong>heterogeneity</strong> — who benefits, under what conditions, and in what contexts.</p>
+<section id="the-short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="the-short-answer">The Short Answer</h2>
+<p>Ed-tech appears to work best precisely where it’s least commonly deployed. Lower infrastructure is associated with larger learning gains. And within programs, the most disadvantaged students benefit at least as much as their better-off peers — sometimes more.</p>
 </section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>This paper combines two complementary analyses:</p>
-<section id="part-i-cross-national-mini-meta-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="part-i-cross-national-mini-meta-analysis">Part I: Cross-National Mini Meta-Analysis</h3>
-<p>I assembled a dataset of <strong>8 randomized controlled trials</strong> of ed-tech interventions across three countries (India, USA, Kiribati), extracting standardized effect sizes (Cohen’s d) from published results and merging with World Bank country-level infrastructure covariates.</p>
-<p><strong>Key methodological decision:</strong> I identified that two U.S. studies (SimCalc) used <em>curriculum-aligned</em> outcome tests — assessments designed specifically around the intervention content — rather than independent standardized assessments used in all other studies. This distinction was <strong>invisible in summary statistics</strong> but turned out to be the dominant confounder in the meta-regression. Catching it required reading every study’s methods section carefully.</p>
-<p>I then ran a weighted random-effects meta-regression in R using the <code>metafor</code> package:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Primary specification</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rma</span>(<span class="at">yi =</span> effect_size, </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">sei =</span> se,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">mods =</span> <span class="sc">~</span> electricity_access <span class="sc">+</span> curriculum_aligned,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> meta_dat,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">weights =</span> <span class="dv">1</span><span class="sc">/</span>se<span class="sc">^</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="two-analyses-one-argument" class="level2">
+<h2 class="anchored" data-anchor-id="two-analyses-one-argument">Two Analyses, One Argument</h2>
+<p>This paper combines two complementary approaches.</p>
+<p><strong>Part I — Cross-National Mini Meta-Analysis:</strong> I assembled a dataset of 8 randomized controlled trials across three countries (India, USA, Kiribati), extracted standardized effect sizes, and ran a meta-regression to test whether ed-tech effects vary with country-level infrastructure — specifically electricity access.</p>
+<p><strong>Part II — Mindspark Microdata:</strong> Using the public replication dataset from Muralidharan, Singh &amp; Ganimian (2019) via J-PAL/IZA (N=535 students across 15 Delhi government schools), I tested whether the Mindspark adaptive learning program produces larger gains for low-SES and low-baseline-achievement students.</p>
 </section>
-<section id="part-ii-mindspark-microdata-heterogeneity-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="part-ii-mindspark-microdata-heterogeneity-analysis">Part II: Mindspark Microdata Heterogeneity Analysis</h3>
-<p>Using the public replication dataset from Muralidharan, Singh &amp; Ganimian (2019) via the J-PAL/IZA archive (n=535 students across 15 Delhi government schools), I estimated treatment-by-subgroup interaction regressions:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SES heterogeneity specification</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(endline_score <span class="sc">~</span> treatment <span class="sc">*</span> low_ses <span class="sc">+</span> baseline_score <span class="sc">+</span> strata_fe,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   <span class="at">data =</span> mindspark)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="the-puzzle-that-started-it-all" class="level2">
+<h2 class="anchored" data-anchor-id="the-puzzle-that-started-it-all">The Puzzle That Started It All</h2>
+<p>The variation in Figure 1 is what this paper sets out to explain. Some programs produce gains of over 0.6 standard deviations. Others barely move the needle. Why?</p>
+<p><img src="../assets/img/edtech-meta-analysis-fig1.png" class="img-fluid"></p>
+<p><em>Figure 1: Forest plot of standardized effect sizes (Cohen’s d) across 8 RCTs, with 95% confidence intervals. Studies ordered by effect size magnitude. The two outliers at the top are SimCalc studies — measured on curriculum-aligned tests, which turns out to be the most important distinction in the dataset.</em></p>
+<hr>
 </section>
+<section id="the-key-finding-infrastructure-matters" class="level2">
+<h2 class="anchored" data-anchor-id="the-key-finding-infrastructure-matters">The Key Finding: Infrastructure Matters</h2>
+<p>The most important variable in the meta-regression isn’t GDP or literacy rate — it’s electricity access, which sits directly on the causal pathway for ed-tech implementation. A child can’t benefit from an adaptive learning device without reliable power.</p>
+<p><img src="../assets/img/edtech-meta-analysis-fig2.png" class="img-fluid"></p>
+<p><em>Figure 2: Effect sizes vs.&nbsp;electricity access, color-coded by intervention type. The gradient shows that lower infrastructure settings are associated with larger learning gains on independent standardized assessments, after controlling for intervention type. This doesn’t mean electricity causes learning — it’s a proxy for the full bundle of educational quality conditions that determine how much value technology adds.</em></p>
+<hr>
+<p>The two SimCalc studies (gray) use curriculum-aligned outcome tests — assessments built around the specific intervention content. This is not a flaw, but it means those gains aren’t directly comparable to programs measured on independent benchmarks. Treating this as a variable to control for rather than a reason to discard those studies reveals the infrastructure gradient more cleanly.</p>
+<p>The preferred meta-regression specification finds an electricity access coefficient of <strong>-0.010 SD per percentage point</strong> — meaning the ~20 percentage point difference between India (79.9%) and the US (100%) implies roughly 0.20 SD larger effects in the Indian context, holding intervention type constant. That’s a substantively meaningful gap.</p>
 </section>
-<section id="key-finding" class="level2">
-<h2 class="anchored" data-anchor-id="key-finding">Key Finding</h2>
-<div class="project-visual">
-<p><em>[Forest plot: Effect sizes across 8 RCTs with 95% CIs — add your image here]</em> ::: {.visual-caption} Forest plot of standardized effect sizes (Cohen’s d) across 8 RCTs. Studies ordered by effect size magnitude. The two SimCalc studies (curriculum-aligned assessments) are visibly higher than the rest.</p>
+<section id="does-mindspark-widen-gaps" class="level2">
+<h2 class="anchored" data-anchor-id="does-mindspark-widen-gaps">Does Mindspark Widen Gaps?</h2>
+<p>The short answer: no.</p>
+<p>Average treatment effects of <strong>0.527 SD in math</strong> and <strong>0.266 SD in Hindi</strong> on independent IRT assessments — closely replicating the published results and confirming the data preparation is correct before running the heterogeneity tests.</p>
+<p><img src="../assets/img/edtech-meta-analysis-fig3.png" class="img-fluid"></p>
+<p><em>Figure 3: Distribution of endline math scores by treatment status. The treatment distribution is visibly shifted right. Mean endline math: treatment = 0.832, control = 0.361.</em></p>
+<hr>
+<p>The heterogeneity regressions interact treatment with SES and baseline achievement. All four interaction coefficients are small and statistically insignificant — but three of four point in the direction of the most disadvantaged students benefiting relatively more. The program does not produce smaller effects for low-SES or low-baseline students. Whether it narrows gaps in a statistically detectable way requires a larger sample.</p>
+</section>
+<section id="what-this-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means">What This Means</h2>
+<p>In low-infrastructure contexts — conflict-displaced schools, climate-displaced communities, humanitarian education programs — students span multiple grade levels in a single classroom, teachers face overwhelming implementation challenges, and the counterfactual to technology is instruction that genuinely cannot meet students where they are. If ed-tech effects are largest precisely where infrastructure is most constrained, programs like Mindspark may offer unusually high returns in exactly these settings.</p>
+<p>The policy implication: deploy in low-infrastructure contexts, choose adaptive over hardware-only where resources allow, and expect near-universal gains rather than gains concentrated among the already-advantaged.</p>
+</section>
+<section id="paper-code" class="level2">
+<h2 class="anchored" data-anchor-id="paper-code">Paper &amp; Code</h2>
+<p><a href="../assets/edtech-meta-analysis-paper.pdf" target="_blank">Read Full Paper (PDF)</a></p>
+</section>
 </div>
-</section>
-</div>
-<p><strong>A consistent negative gradient:</strong> Lower electricity access is associated with <strong>larger</strong> learning gains from adaptive ed-tech, after controlling for intervention type. The program that is hardest to deploy — in the places with the least infrastructure — appears to be most valuable precisely there.</p>
-<p><strong>The Mindspark analysis:</strong> The program does not widen gaps. Both low-SES and low-baseline students show substantial gains, though heterogeneity estimates are imprecise given sample size.</p>
-<p><strong>The implication:</strong> Adaptive ed-tech may be most valuable precisely where it is least commonly deployed.</p>
-<section id="what-i-learned" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-learned">What I Learned</h2>
-<p>The most important moment in this project was not a regression output — it was recognizing that the SimCalc studies were measuring something different. That’s a data validation judgment that no automated pipeline would catch. It changed the entire interpretation of the meta-regression and illustrates why careful reading of study methodology is as important as the quantitative analysis itself.</p>
-</section>
-<section id="code-files" class="level2">
-<h2 class="anchored" data-anchor-id="code-files">Code &amp; Files</h2>
-<p><a href="https://github.com/javramis" class="cta-secondary" style="padding: 0.6rem 1.4rem; border: 1.5px solid #1a1a2e; color: #1a1a2e; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block;">View on GitHub</a></p>
-<p>:::</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

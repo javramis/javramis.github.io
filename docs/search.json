@@ -219,51 +219,65 @@
   {
     "objectID": "projects/edtech-meta-analysis.html",
     "href": "projects/edtech-meta-analysis.html",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
     "section": "",
-    "text": "← Back to Research\n\n\n\nCourse: Quantitative Analyses of Public Policy Issues Instructor: Prof. Gaurav Khanna Term: Winter 2026 Tools: R · metafor · J-PAL/IZA Data\nA consistent negative gradient: Lower electricity access is associated with larger learning gains from adaptive ed-tech, after controlling for intervention type. The program that is hardest to deploy — in the places with the least infrastructure — appears to be most valuable precisely there.\nThe Mindspark analysis: The program does not widen gaps. Both low-SES and low-baseline students show substantial gains, though heterogeneity estimates are imprecise given sample size.\nThe implication: Adaptive ed-tech may be most valuable precisely where it is least commonly deployed."
+    "text": "← Back to Research\n\n\n\nCourse: Quantitative Analyses of Public Policy Issues Instructor: Prof. Gaurav Khanna Term: Winter 2026 Tools: R · metafor · J-PAL/IZA Data"
   },
   {
     "objectID": "projects/edtech-meta-analysis.html#the-question",
     "href": "projects/edtech-meta-analysis.html#the-question",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
     "section": "The Question",
-    "text": "The Question\nDo educational technology interventions narrow or widen achievement gaps? And does the answer depend on where you are — specifically, on the infrastructure context of the country where the program is deployed?"
+    "text": "The Question\nDoes educational technology help the students who need it most — or does it widen the gap between the already-advantaged and everyone else? And does the answer depend on where in the world the program is deployed?"
   },
   {
-    "objectID": "projects/edtech-meta-analysis.html#why-it-matters",
-    "href": "projects/edtech-meta-analysis.html#why-it-matters",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nEducational technology has been proposed as a scalable solution to persistent learning inequality — particularly in low- and middle-income countries where teacher quality, classroom resources, and student baseline levels vary dramatically. But the evidence is stubbornly mixed. Some programs produce gains of half a standard deviation or more; others show null or negative effects.\nUnderstanding why requires moving past average effects to examine heterogeneity — who benefits, under what conditions, and in what contexts."
+    "objectID": "projects/edtech-meta-analysis.html#the-short-answer",
+    "href": "projects/edtech-meta-analysis.html#the-short-answer",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "The Short Answer",
+    "text": "The Short Answer\nEd-tech appears to work best precisely where it’s least commonly deployed. Lower infrastructure is associated with larger learning gains. And within programs, the most disadvantaged students benefit at least as much as their better-off peers — sometimes more."
   },
   {
-    "objectID": "projects/edtech-meta-analysis.html#methodology",
-    "href": "projects/edtech-meta-analysis.html#methodology",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
-    "section": "Methodology",
-    "text": "Methodology\nThis paper combines two complementary analyses:\n\nPart I: Cross-National Mini Meta-Analysis\nI assembled a dataset of 8 randomized controlled trials of ed-tech interventions across three countries (India, USA, Kiribati), extracting standardized effect sizes (Cohen’s d) from published results and merging with World Bank country-level infrastructure covariates.\nKey methodological decision: I identified that two U.S. studies (SimCalc) used curriculum-aligned outcome tests — assessments designed specifically around the intervention content — rather than independent standardized assessments used in all other studies. This distinction was invisible in summary statistics but turned out to be the dominant confounder in the meta-regression. Catching it required reading every study’s methods section carefully.\nI then ran a weighted random-effects meta-regression in R using the metafor package:\n# Primary specification\nrma(yi = effect_size, \n    sei = se,\n    mods = ~ electricity_access + curriculum_aligned,\n    data = meta_dat,\n    weights = 1/se^2)\n\n\nPart II: Mindspark Microdata Heterogeneity Analysis\nUsing the public replication dataset from Muralidharan, Singh & Ganimian (2019) via the J-PAL/IZA archive (n=535 students across 15 Delhi government schools), I estimated treatment-by-subgroup interaction regressions:\n# SES heterogeneity specification\nlm(endline_score ~ treatment * low_ses + baseline_score + strata_fe,\n   data = mindspark)"
+    "objectID": "projects/edtech-meta-analysis.html#two-analyses-one-argument",
+    "href": "projects/edtech-meta-analysis.html#two-analyses-one-argument",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "Two Analyses, One Argument",
+    "text": "Two Analyses, One Argument\nThis paper combines two complementary approaches.\nPart I — Cross-National Mini Meta-Analysis: I assembled a dataset of 8 randomized controlled trials across three countries (India, USA, Kiribati), extracted standardized effect sizes, and ran a meta-regression to test whether ed-tech effects vary with country-level infrastructure — specifically electricity access.\nPart II — Mindspark Microdata: Using the public replication dataset from Muralidharan, Singh & Ganimian (2019) via J-PAL/IZA (N=535 students across 15 Delhi government schools), I tested whether the Mindspark adaptive learning program produces larger gains for low-SES and low-baseline-achievement students."
   },
   {
-    "objectID": "projects/edtech-meta-analysis.html#key-finding",
-    "href": "projects/edtech-meta-analysis.html#key-finding",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
-    "section": "Key Finding",
-    "text": "Key Finding\n\n[Forest plot: Effect sizes across 8 RCTs with 95% CIs — add your image here] ::: {.visual-caption} Forest plot of standardized effect sizes (Cohen’s d) across 8 RCTs. Studies ordered by effect size magnitude. The two SimCalc studies (curriculum-aligned assessments) are visibly higher than the rest."
+    "objectID": "projects/edtech-meta-analysis.html#the-puzzle-that-started-it-all",
+    "href": "projects/edtech-meta-analysis.html#the-puzzle-that-started-it-all",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "The Puzzle That Started It All",
+    "text": "The Puzzle That Started It All\nThe variation in Figure 1 is what this paper sets out to explain. Some programs produce gains of over 0.6 standard deviations. Others barely move the needle. Why?\n\nFigure 1: Forest plot of standardized effect sizes (Cohen’s d) across 8 RCTs, with 95% confidence intervals. Studies ordered by effect size magnitude. The two outliers at the top are SimCalc studies — measured on curriculum-aligned tests, which turns out to be the most important distinction in the dataset."
   },
   {
-    "objectID": "projects/edtech-meta-analysis.html#what-i-learned",
-    "href": "projects/edtech-meta-analysis.html#what-i-learned",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
-    "section": "What I Learned",
-    "text": "What I Learned\nThe most important moment in this project was not a regression output — it was recognizing that the SimCalc studies were measuring something different. That’s a data validation judgment that no automated pipeline would catch. It changed the entire interpretation of the meta-regression and illustrates why careful reading of study methodology is as important as the quantitative analysis itself."
+    "objectID": "projects/edtech-meta-analysis.html#the-key-finding-infrastructure-matters",
+    "href": "projects/edtech-meta-analysis.html#the-key-finding-infrastructure-matters",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "The Key Finding: Infrastructure Matters",
+    "text": "The Key Finding: Infrastructure Matters\nThe most important variable in the meta-regression isn’t GDP or literacy rate — it’s electricity access, which sits directly on the causal pathway for ed-tech implementation. A child can’t benefit from an adaptive learning device without reliable power.\n\nFigure 2: Effect sizes vs. electricity access, color-coded by intervention type. The gradient shows that lower infrastructure settings are associated with larger learning gains on independent standardized assessments, after controlling for intervention type. This doesn’t mean electricity causes learning — it’s a proxy for the full bundle of educational quality conditions that determine how much value technology adds.\n\nThe two SimCalc studies (gray) use curriculum-aligned outcome tests — assessments built around the specific intervention content. This is not a flaw, but it means those gains aren’t directly comparable to programs measured on independent benchmarks. Treating this as a variable to control for rather than a reason to discard those studies reveals the infrastructure gradient more cleanly.\nThe preferred meta-regression specification finds an electricity access coefficient of -0.010 SD per percentage point — meaning the ~20 percentage point difference between India (79.9%) and the US (100%) implies roughly 0.20 SD larger effects in the Indian context, holding intervention type constant. That’s a substantively meaningful gap."
   },
   {
-    "objectID": "projects/edtech-meta-analysis.html#code-files",
-    "href": "projects/edtech-meta-analysis.html#code-files",
-    "title": "Does Ed-Tech Narrow or Widen Achievement Gaps?",
-    "section": "Code & Files",
-    "text": "Code & Files\nView on GitHub\n:::"
+    "objectID": "projects/edtech-meta-analysis.html#does-mindspark-widen-gaps",
+    "href": "projects/edtech-meta-analysis.html#does-mindspark-widen-gaps",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "Does Mindspark Widen Gaps?",
+    "text": "Does Mindspark Widen Gaps?\nThe short answer: no.\nAverage treatment effects of 0.527 SD in math and 0.266 SD in Hindi on independent IRT assessments — closely replicating the published results and confirming the data preparation is correct before running the heterogeneity tests.\n\nFigure 3: Distribution of endline math scores by treatment status. The treatment distribution is visibly shifted right. Mean endline math: treatment = 0.832, control = 0.361.\n\nThe heterogeneity regressions interact treatment with SES and baseline achievement. All four interaction coefficients are small and statistically insignificant — but three of four point in the direction of the most disadvantaged students benefiting relatively more. The program does not produce smaller effects for low-SES or low-baseline students. Whether it narrows gaps in a statistically detectable way requires a larger sample."
+  },
+  {
+    "objectID": "projects/edtech-meta-analysis.html#what-this-means",
+    "href": "projects/edtech-meta-analysis.html#what-this-means",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "What This Means",
+    "text": "What This Means\nIn low-infrastructure contexts — conflict-displaced schools, climate-displaced communities, humanitarian education programs — students span multiple grade levels in a single classroom, teachers face overwhelming implementation challenges, and the counterfactual to technology is instruction that genuinely cannot meet students where they are. If ed-tech effects are largest precisely where infrastructure is most constrained, programs like Mindspark may offer unusually high returns in exactly these settings.\nThe policy implication: deploy in low-infrastructure contexts, choose adaptive over hardware-only where resources allow, and expect near-universal gains rather than gains concentrated among the already-advantaged."
+  },
+  {
+    "objectID": "projects/edtech-meta-analysis.html#paper-code",
+    "href": "projects/edtech-meta-analysis.html#paper-code",
+    "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
+    "section": "Paper & Code",
+    "text": "Paper & Code\nRead Full Paper (PDF)"
   },
   {
     "objectID": "research.html",
