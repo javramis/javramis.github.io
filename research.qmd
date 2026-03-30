@@ -33,16 +33,6 @@ All Research & Projects
 </div>
 </a>
 
-<a href="projects/hfa-gis.qmd" class="project-card in-progress">
-<div class="card-img" style="background: #1a3a4a;">🌍 HFA GIS Strategy</div>
-<div class="card-body">
-<div class="card-tag">GIS · Global Health · In Progress</div>
-<div class="card-title">174-Country Prioritization Framework — HFA</div>
-<div class="card-desc">GIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.</div>
-<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span></div>
-</div>
-</a>
-
 <a href="projects/south-america-conflicts.qmd" class="project-card">
 <div class="card-img" style="background: #3a1a2a;">🗺️ Climate & Conflict</div>
 <div class="card-body">
@@ -53,6 +43,15 @@ All Research & Projects
 </div>
 </a>
 
+<a href="projects/hfa-gis.qmd" class="project-card in-progress">
+<div class="card-img" style="background: #1a3a4a;">🌍 HFA GIS Strategy</div>
+<div class="card-body">
+<div class="card-tag">GIS · Global Health · In Progress</div>
+<div class="card-title">174-Country Prioritization Framework — HFA</div>
+<div class="card-desc">GIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.</div>
+<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span></div>
+</div>
+</a>
 :::
 
 ---
