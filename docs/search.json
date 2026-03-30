@@ -168,18 +168,11 @@
     "text": "Limitations\nStraight-line distance metrics don’t capture road network complexity, terrain obstacles, or actual drive times — particularly relevant in mountainous Attica. A binary 10km threshold doesn’t differentiate between municipalities 11km and 25km from a station. Future extensions could incorporate network analysis, graduated access classifications, and social vulnerability indices beyond population density."
   },
   {
-    "objectID": "projects/attica-wildfire.html#files",
-    "href": "projects/attica-wildfire.html#files",
+    "objectID": "projects/attica-wildfire.html#paper",
+    "href": "projects/attica-wildfire.html#paper",
     "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "Files",
-    "text": "Files"
-  },
-  {
-    "objectID": "projects/attica-wildfire.html#paper-code",
-    "href": "projects/attica-wildfire.html#paper-code",
-    "title": "Wildfire Vulnerability Mapping, Attica Greece",
-    "section": "Paper & Code",
-    "text": "Paper & Code\nRead Full Paper (PDF)"
+    "section": "Paper",
+    "text": "Paper\nRead Full Paper (PDF)"
   },
   {
     "objectID": "projects/edtech-meta-analysis.html",
@@ -354,56 +347,63 @@
     "href": "projects/kerr-county-floods.html",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "",
-    "text": "← Back to Research\n\n\n\nCourse: Advanced GIS & Remote Sensing Instructor: Prof. Morgan Levy Term: Winter 2026 Tools: Google Earth Engine · CHIRPS · Sentinel-1 SAR · Dynamic World · QGIS\n:::\n:::"
+    "text": "← Back to Research\n\n\n\nCourse: Advanced GIS & Remote Sensing Instructor: Prof. Morgan Levy Term: Winter 2026 Tools: Google Earth Engine · CHIRPS · Sentinel-1 SAR · QGIS"
   },
   {
     "objectID": "projects/kerr-county-floods.html#the-question",
     "href": "projects/kerr-county-floods.html#the-question",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "The Question",
-    "text": "The Question\nCan satellite observations help evaluate and update FEMA’s outdated flood hazard maps? And what do those maps miss — specifically in a community that just experienced a catastrophic flood?"
+    "text": "The Question\nCan satellite-derived precipitation data expose structural gaps in FEMA’s regulatory flood maps — and what do those gaps mean for communities that just experienced a catastrophic flood?"
   },
   {
     "objectID": "projects/kerr-county-floods.html#why-it-matters",
     "href": "projects/kerr-county-floods.html#why-it-matters",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Why It Matters",
-    "text": "Why It Matters\nOn July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were outside FEMA’s mapped flood zones. FEMA maps had not been substantially updated in decades. They were built on historical river hydrology data, with no account for rainfall intensity patterns, urban expansion, or climate change.\nThis is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared."
+    "text": "Why It Matters\nOn July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were outside FEMA’s mapped flood zones. FEMA’s Flood Insurance Rate Maps had not been substantially updated in decades. Built on historical river hydrology data, they have no account for rainfall intensity patterns, upstream land use change, or shifting climate conditions.\nThis is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared. The July 4 disaster made this structural failure impossible to ignore."
+  },
+  {
+    "objectID": "projects/kerr-county-floods.html#my-contribution",
+    "href": "projects/kerr-county-floods.html#my-contribution",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "My Contribution",
+    "text": "My Contribution\nThis analysis was completed as part of a six-person team project. The work shown here represents my individual contributions: the CHIRPS precipitation analysis and the FEMA SFHA boundary audit against satellite-observed flood extent."
+  },
+  {
+    "objectID": "projects/kerr-county-floods.html#data-sources",
+    "href": "projects/kerr-county-floods.html#data-sources",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "Data Sources",
+    "text": "Data Sources\n\n\n\n\n\n\n\n\nDataset\nSource\nWhat it measures\n\n\n\n\nCHIRPS precipitation\nUCSB Climate Hazards Group\nDaily rainfall estimates, 1981–present\n\n\nFEMA NFHL\nFEMA\nRegulatory Special Flood Hazard Areas\n\n\nJRC GLOFAS\nEuropean Commission\nModeled 100-year flood hazard zones"
   },
   {
     "objectID": "projects/kerr-county-floods.html#methodology",
     "href": "projects/kerr-county-floods.html#methodology",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Methodology",
-    "text": "Methodology\nWe used four satellite-derived datasets, all accessed via Google Earth Engine, to interrogate FEMA’s existing maps from multiple angles:\n\n\n\n\n\n\n\n\nDataset\nSource\nWhat it measures\n\n\n\n\nCHIRPS precipitation\nUCSB Climate Hazards Group\nDaily rainfall estimates, 1981–present\n\n\nSentinel-1 SAR\nESA Copernicus\nFlood extent via radar backscatter change\n\n\nDynamic World\nGoogle/WRI\nLand cover change, urban expansion\n\n\nJRC GLOFAS\nEuropean Commission JRC\nModeled 100-year flood hazard zones\n\n\nFEMA NFHL\nFEMA\nRegulatory Special Flood Hazard Areas\n\n\n\nKey workflows: - Wrote JavaScript scripts in GEE to filter CHIRPS by date range and extract daily precipitation grids - Ran Sentinel-1 pre/post-event backscatter change detection (June 29 → July 4, 2025) at 10m resolution - Used Dynamic World to quantify urban expansion in Kerr County: ~13% built-area growth from 2016–2025 - Overlaid all layers with JRC 100-year modeled flood zones and FEMA SFHA boundaries"
+    "text": "Methodology\nCHIRPS precipitation analysis: I wrote JavaScript scripts in Google Earth Engine to filter CHIRPS daily precipitation grids by date range (July 3–7, 2025) and geographic boundary, extracting total accumulated rainfall across Kerr County at 5km resolution. This allowed direct comparison of where the heaviest rainfall fell against where FEMA’s regulatory risk boundaries are drawn.\nFEMA SFHA audit: I overlaid FEMA’s Special Flood Hazard Area boundaries against the CHIRPS precipitation surface and JRC 100-year modeled flood zones to identify structural gaps — places where observed precipitation intensity exceeded what the regulatory framework would predict, and where flood-affected areas extended beyond FEMA’s mapped boundaries."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#key-finding",
-    "href": "projects/kerr-county-floods.html#key-finding",
+    "objectID": "projects/kerr-county-floods.html#results",
+    "href": "projects/kerr-county-floods.html#results",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Key Finding",
-    "text": "Key Finding\n\n[Map: CHIRPS precipitation, July 3–7 2025 vs. JRC 100-year flood corridor — add your image here] ::: {.visual-caption} The heaviest precipitation during the July 2025 event fell outside the JRC-modeled flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
+    "section": "Results",
+    "text": "Results\n\nFEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured.\n\n\nTotal CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#what-i-found",
-    "href": "projects/kerr-county-floods.html#what-i-found",
+    "objectID": "projects/kerr-county-floods.html#key-findings",
+    "href": "projects/kerr-county-floods.html#key-findings",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "What I Found",
-    "text": "What I Found\nThree structural gaps in FEMA’s approach:\n\nPrecipitation is not modeled. FEMA maps predict where water goes after entering river channels — not where rainfall is heaviest. CHIRPS shows dramatic within-county variation that FEMA’s maps can’t capture.\nUrban expansion is invisible to static maps. A 13% increase in built area over a decade changes runoff dynamics fundamentally. FEMA has no mechanism to update for this without a formal, expensive remapping process.\nBinary zoning creates false safety. The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — and therefore uninsured."
+    "section": "Key Findings",
+    "text": "Key Findings\nTwo structural gaps emerge clearly from the analysis:\nPrecipitation is not modeled in FEMA maps. FEMA predicts where water goes after entering river channels — not where rainfall is heaviest. The CHIRPS surface shows dramatic within-county variation that FEMA’s static boundaries cannot capture.\nBinary zoning creates false safety. The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — uninsured, and with no regulatory signal that they were at risk."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#future-research-direction",
-    "href": "projects/kerr-county-floods.html#future-research-direction",
+    "objectID": "projects/kerr-county-floods.html#policy-implications",
+    "href": "projects/kerr-county-floods.html#policy-implications",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Future Research Direction",
-    "text": "Future Research Direction\nThe natural next step — which I identified in the project’s future research section — is a multi-criteria flood susceptibility index combining precipitation intensity, topography (DEM), urban expansion, and regulatory boundaries. This is the same MCDA framework I applied to the Attica wildfire context, now translated to flash flood risk. That project is underway."
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#code-files",
-    "href": "projects/kerr-county-floods.html#code-files",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Code & Files",
-    "text": "Code & Files\nView on GitHub\n:::"
+    "section": "Policy Implications",
+    "text": "Policy Implications\nThe natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change — the same MCDA framework applied in the Attica wildfire analysis, now translated to flash flood risk. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace."
   },
   {
     "objectID": "projects/ai-regulation.html",

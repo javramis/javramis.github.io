@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="flood-risk-hazard-mapping-kerr-county-tx" class="level1">
 <h1>Flood Risk &amp; Hazard Mapping, Kerr County TX</h1>
 <div class="project-meta">
-<p><span><strong>Course:</strong> Advanced GIS &amp; Remote Sensing</span> <span><strong>Instructor:</strong> Prof.&nbsp;Morgan Levy</span> <span><strong>Term:</strong> Winter 2026</span> <span><strong>Tools:</strong> Google Earth Engine · CHIRPS · Sentinel-1 SAR · Dynamic World · QGIS</span></p>
+<p><span><strong>Course:</strong> Advanced GIS &amp; Remote Sensing</span> <span><strong>Instructor:</strong> Prof.&nbsp;Morgan Levy</span> <span><strong>Term:</strong> Winter 2026</span> <span><strong>Tools:</strong> Google Earth Engine · CHIRPS · Sentinel-1 SAR · QGIS</span></p>
 </div>
 </section>
 </div>
@@ -150,16 +150,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
 <section id="the-question" class="level2">
 <h2 class="anchored" data-anchor-id="the-question">The Question</h2>
-<p>Can satellite observations help evaluate and update FEMA’s outdated flood hazard maps? And what do those maps miss — specifically in a community that just experienced a catastrophic flood?</p>
+<p>Can satellite-derived precipitation data expose structural gaps in FEMA’s regulatory flood maps — and what do those gaps mean for communities that just experienced a catastrophic flood?</p>
 </section>
 <section id="why-it-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
-<p>On July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were <strong>outside FEMA’s mapped flood zones</strong>. FEMA maps had not been substantially updated in decades. They were built on historical river hydrology data, with no account for rainfall intensity patterns, urban expansion, or climate change.</p>
-<p>This is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared.</p>
+<p>On July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were <strong>outside FEMA’s mapped flood zones</strong>. FEMA’s Flood Insurance Rate Maps had not been substantially updated in decades. Built on historical river hydrology data, they have no account for rainfall intensity patterns, upstream land use change, or shifting climate conditions.</p>
+<p>This is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared. The July 4 disaster made this structural failure impossible to ignore.</p>
 </section>
-<section id="methodology" class="level2">
-<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>We used four satellite-derived datasets, all accessed via <strong>Google Earth Engine</strong>, to interrogate FEMA’s existing maps from multiple angles:</p>
+<section id="my-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-contribution">My Contribution</h2>
+<p>This analysis was completed as part of a six-person team project. The work shown here represents my individual contributions: the CHIRPS precipitation analysis and the FEMA SFHA boundary audit against satellite-observed flood extent.</p>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -180,64 +183,45 @@ ul.task-list li input[type="checkbox"] {
 <td>Daily rainfall estimates, 1981–present</td>
 </tr>
 <tr class="even">
-<td>Sentinel-1 SAR</td>
-<td>ESA Copernicus</td>
-<td>Flood extent via radar backscatter change</td>
-</tr>
-<tr class="odd">
-<td>Dynamic World</td>
-<td>Google/WRI</td>
-<td>Land cover change, urban expansion</td>
-</tr>
-<tr class="even">
-<td>JRC GLOFAS</td>
-<td>European Commission JRC</td>
-<td>Modeled 100-year flood hazard zones</td>
-</tr>
-<tr class="odd">
 <td>FEMA NFHL</td>
 <td>FEMA</td>
 <td>Regulatory Special Flood Hazard Areas</td>
 </tr>
+<tr class="odd">
+<td>JRC GLOFAS</td>
+<td>European Commission</td>
+<td>Modeled 100-year flood hazard zones</td>
+</tr>
 </tbody>
 </table>
-<p><strong>Key workflows:</strong> - Wrote JavaScript scripts in GEE to filter CHIRPS by date range and extract daily precipitation grids - Ran Sentinel-1 pre/post-event backscatter change detection (June 29 → July 4, 2025) at 10m resolution - Used Dynamic World to quantify urban expansion in Kerr County: ~13% built-area growth from 2016–2025 - Overlaid all layers with JRC 100-year modeled flood zones and FEMA SFHA boundaries</p>
 </section>
-<section id="key-finding" class="level2">
-<h2 class="anchored" data-anchor-id="key-finding">Key Finding</h2>
-<div class="project-visual">
-<p><em>[Map: CHIRPS precipitation, July 3–7 2025 vs.&nbsp;JRC 100-year flood corridor — add your image here]</em> ::: {.visual-caption} The heaviest precipitation during the July 2025 event fell <strong>outside</strong> the JRC-modeled flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.</p>
-</div>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p><strong>CHIRPS precipitation analysis:</strong> I wrote JavaScript scripts in Google Earth Engine to filter CHIRPS daily precipitation grids by date range (July 3–7, 2025) and geographic boundary, extracting total accumulated rainfall across Kerr County at 5km resolution. This allowed direct comparison of where the heaviest rainfall fell against where FEMA’s regulatory risk boundaries are drawn.</p>
+<p><strong>FEMA SFHA audit:</strong> I overlaid FEMA’s Special Flood Hazard Area boundaries against the CHIRPS precipitation surface and JRC 100-year modeled flood zones to identify structural gaps — places where observed precipitation intensity exceeded what the regulatory framework would predict, and where flood-affected areas extended beyond FEMA’s mapped boundaries.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p><img src="../assets/img/Kerr-map1.png" class="img-fluid"></p>
+<p><em>FEMA Special Flood Hazard Area (SFHA) boundaries vs.&nbsp;satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured.</em></p>
+<hr>
+<p><img src="../assets/img/Kerr-map2.png" class="img-fluid"></p>
+<p><em>Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.</em></p>
+<hr>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>Two structural gaps emerge clearly from the analysis:</p>
+<p><strong>Precipitation is not modeled in FEMA maps.</strong> FEMA predicts where water goes after entering river channels — not where rainfall is heaviest. The CHIRPS surface shows dramatic within-county variation that FEMA’s static boundaries cannot capture.</p>
+<p><strong>Binary zoning creates false safety.</strong> The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — uninsured, and with no regulatory signal that they were at risk.</p>
+</section>
+<section id="policy-implications" class="level2">
+<h2 class="anchored" data-anchor-id="policy-implications">Policy Implications</h2>
+<p>The natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change — the same MCDA framework applied in the Attica wildfire analysis, now translated to flash flood risk. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace.</p>
 </section>
 </div>
-<div class="project-visual">
-<p><em>[Map: Sentinel-1 SAR flood extent vs.&nbsp;FEMA SFHA — add your image here]</em> ::: {.visual-caption} Sentinel-1 backscatter change detection showing observed flood proxy (blue-green) extending significantly beyond FEMA’s Special Flood Hazard Areas (magenta = outside SFHA).</p>
-</div>
-<p>:::</p>
-<div class="project-visual">
-<p><em>[Map: Dynamic World urban expansion 2016–2025 — add your image here]</em> ::: {.visual-caption} ~13% built-area growth in Kerr County from 2016–2025, primarily expanding outward from existing flood zones — increasing impervious surface runoff in areas not accounted for in current FIRMs.</p>
-</div>
-<p>:::</p>
-<section id="what-i-found" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-found">What I Found</h2>
-<p>Three structural gaps in FEMA’s approach:</p>
-<ol type="1">
-<li><p><strong>Precipitation is not modeled.</strong> FEMA maps predict where water goes after entering river channels — not where rainfall is heaviest. CHIRPS shows dramatic within-county variation that FEMA’s maps can’t capture.</p></li>
-<li><p><strong>Urban expansion is invisible to static maps.</strong> A 13% increase in built area over a decade changes runoff dynamics fundamentally. FEMA has no mechanism to update for this without a formal, expensive remapping process.</p></li>
-<li><p><strong>Binary zoning creates false safety.</strong> The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — and therefore uninsured.</p></li>
-</ol>
-</section>
-<section id="future-research-direction" class="level2">
-<h2 class="anchored" data-anchor-id="future-research-direction">Future Research Direction</h2>
-<p>The natural next step — which I identified in the project’s future research section — is a <strong>multi-criteria flood susceptibility index</strong> combining precipitation intensity, topography (DEM), urban expansion, and regulatory boundaries. This is the same MCDA framework I applied to the Attica wildfire context, now translated to flash flood risk. That project is underway.</p>
-</section>
-<section id="code-files" class="level2">
-<h2 class="anchored" data-anchor-id="code-files">Code &amp; Files</h2>
-<p><a href="https://github.com/javramis" class="cta-secondary" style="padding: 0.6rem 1.4rem; border: 1.5px solid #1a1a2e; color: #1a1a2e; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block;">View on GitHub</a></p>
-<p>:::</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
