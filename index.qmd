@@ -91,7 +91,7 @@ Featured Projects
 </div>
 </a>
 
-<a href="projects/hfa-gis.qmd" class="project-card">
+<a href="projects/hfa-gis.qmd" class="project-card in-progress">
 <div class="card-img" style="background: #1a3a4a;">
 🌍 HFA GIS Strategy
 </div>
