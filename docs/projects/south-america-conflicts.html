@@ -138,21 +138,75 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="project-header">
 <div class="container">
-<p><a href="../research.html" class="back-link">← Back to Research</a> # Conflicts in Northern South America by Köppen-Geiger Climate Classification ::: {.project-meta} <span><strong>Course:</strong> GIS &amp; Spatial Data Analysis</span> <span><strong>Term:</strong> Fall 2025</span> <span><strong>Tools:</strong> QGIS · UCDP/PRIO v25 · Beck et al.&nbsp;2018</span></p>
+<p><a href="../research.html" class="back-link">← Back to Research</a></p>
+<section id="conflicts-in-northern-south-america-by-köppen-geiger-climate-classification" class="level1">
+<h1>Conflicts in Northern South America by Köppen-Geiger Climate Classification</h1>
+<div class="project-meta">
+<p><span><strong>Course:</strong> GIS &amp; Spatial Data Analysis</span> <span><strong>Instructor:</strong> Prof.&nbsp;Gordon McCord</span> <span><strong>Term:</strong> Fall 2025</span> <span><strong>Tools:</strong> QGIS · UCDP/PRIO v25 · Beck et al.&nbsp;2018</span></p>
+</div>
+</section>
 </div>
 </div>
-<p>::: ::: {.container style=“max-width: 860px; margin: 0 auto; padding-bottom: 5rem;”}</p>
+<div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The Question</h2>
+<p>Do violent conflict events cluster in specific climate zones — and what does the spatial overlap between climate type and conflict density tell us about environmental stress as a threat multiplier?</p>
+</section>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Spatial overlay of UCDP/PRIO conflict event data (2024) with Beck et al.&nbsp;2018 Köppen-Geiger climate classification zones across Northern South America, including Central America, Colombia, Venezuela, and surrounding regions.</p>
-<div class="project-visual">
-<p><em>[Add your conflict/climate map image here]</em> ::: {.visual-caption} Conflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events. Background = climate zones per Beck et al.&nbsp;2018. Source: UCDP/PRIO v25 (2024), GADM v4.1.</p>
-</div>
-<p>:::</p>
-<p>:::</p>
-
-
+<p>This analysis overlays the UCDP/PRIO v25 (2024) violent conflict event dataset with Beck et al.&nbsp;(2018) Köppen-Geiger climate classification zones across Northern South America — a region chosen for its unusually high conflict density and stark contrasts between adjacent climate zones.</p>
 </section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Köppen-Geiger climate zones</td>
+<td>Beck et al.&nbsp;(2018), 1-km resolution</td>
+</tr>
+<tr class="even">
+<td>Violent conflict events</td>
+<td>UCDP/PRIO Armed Conflict Dataset v25 (2024)</td>
+</tr>
+<tr class="odd">
+<td>Regional boundary</td>
+<td>GADM v4.1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>After cleaning the Beck et al.&nbsp;climate data in Excel to remove extraneous columns, I imported both layers into QGIS and used Extract by Location and Clip tools to isolate conflict points within Northern South America. The Count Points in Polygon tool calculated total violent conflict events per distinct Köppen-Geiger climate zone. Results were exported to Excel and summarized with a pivot table to produce quantitative conflict counts by zone.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p><img src="../assets/img/south-america-conflicts.jpeg" class="img-fluid"></p>
+<p><em>Conflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events (2024). Background = climate zones per Beck et al.&nbsp;(2018). Data: UCDP/PRIO v25 (2024), GADM v4.1.</em></p>
+<hr>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The equatorial savanna (Aw), equatorial fully humid (Af), and equatorial monsoon (Am) zones exhibit the highest conflict concentration — regions with moderate to high rainfall and strong agricultural potential. Arid zones (BWh, BSh) show substantially fewer conflict events, likely reflecting lower population densities and limited agricultural productivity.</p>
+<p>The pattern supports the climate-conflict hypothesis: climatic variability interacts with political and economic factors to shape instability. As Chassang and Padró i Miquel (2009) note, adverse climatic conditions reduce crop yields, raise food prices, and amplify the opportunity cost of rebellion — particularly when compounded by weak governance. Environmental stressors act not as isolated causes of violence but as threat multipliers that exacerbate existing vulnerabilities.</p>
+</section>
+<section id="paper" class="level2">
+<h2 class="anchored" data-anchor-id="paper">Paper</h2>
+<p><a href="../assets/south-america-conflicts-paper.pdf" target="_blank">Read Full Paper (PDF)</a></p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

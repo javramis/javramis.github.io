@@ -93,16 +93,58 @@
   {
     "objectID": "projects/south-america-conflicts.html",
     "href": "projects/south-america-conflicts.html",
-    "title": "Max Avramis",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "",
-    "text": "← Back to Research # Conflicts in Northern South America by Köppen-Geiger Climate Classification ::: {.project-meta} Course: GIS & Spatial Data Analysis Term: Fall 2025 Tools: QGIS · UCDP/PRIO v25 · Beck et al. 2018\n::: ::: {.container style=“max-width: 860px; margin: 0 auto; padding-bottom: 5rem;”}"
+    "text": "← Back to Research\n\n\n\nCourse: GIS & Spatial Data Analysis Instructor: Prof. Gordon McCord Term: Fall 2025 Tools: QGIS · UCDP/PRIO v25 · Beck et al. 2018"
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#the-question",
+    "href": "projects/south-america-conflicts.html#the-question",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "The Question",
+    "text": "The Question\nDo violent conflict events cluster in specific climate zones — and what does the spatial overlap between climate type and conflict density tell us about environmental stress as a threat multiplier?"
   },
   {
     "objectID": "projects/south-america-conflicts.html#overview",
     "href": "projects/south-america-conflicts.html#overview",
-    "title": "Max Avramis",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Overview",
-    "text": "Overview\nSpatial overlay of UCDP/PRIO conflict event data (2024) with Beck et al. 2018 Köppen-Geiger climate classification zones across Northern South America, including Central America, Colombia, Venezuela, and surrounding regions.\n\n[Add your conflict/climate map image here] ::: {.visual-caption} Conflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events. Background = climate zones per Beck et al. 2018. Source: UCDP/PRIO v25 (2024), GADM v4.1.\n\n:::\n:::"
+    "text": "Overview\nThis analysis overlays the UCDP/PRIO v25 (2024) violent conflict event dataset with Beck et al. (2018) Köppen-Geiger climate classification zones across Northern South America — a region chosen for its unusually high conflict density and stark contrasts between adjacent climate zones."
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#data-sources",
+    "href": "projects/south-america-conflicts.html#data-sources",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Data Sources",
+    "text": "Data Sources\n\n\n\n\n\n\n\nDataset\nSource\n\n\n\n\nKöppen-Geiger climate zones\nBeck et al. (2018), 1-km resolution\n\n\nViolent conflict events\nUCDP/PRIO Armed Conflict Dataset v25 (2024)\n\n\nRegional boundary\nGADM v4.1"
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#methodology",
+    "href": "projects/south-america-conflicts.html#methodology",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Methodology",
+    "text": "Methodology\nAfter cleaning the Beck et al. climate data in Excel to remove extraneous columns, I imported both layers into QGIS and used Extract by Location and Clip tools to isolate conflict points within Northern South America. The Count Points in Polygon tool calculated total violent conflict events per distinct Köppen-Geiger climate zone. Results were exported to Excel and summarized with a pivot table to produce quantitative conflict counts by zone."
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#results",
+    "href": "projects/south-america-conflicts.html#results",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Results",
+    "text": "Results\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events (2024). Background = climate zones per Beck et al. (2018). Data: UCDP/PRIO v25 (2024), GADM v4.1."
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#key-findings",
+    "href": "projects/south-america-conflicts.html#key-findings",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe equatorial savanna (Aw), equatorial fully humid (Af), and equatorial monsoon (Am) zones exhibit the highest conflict concentration — regions with moderate to high rainfall and strong agricultural potential. Arid zones (BWh, BSh) show substantially fewer conflict events, likely reflecting lower population densities and limited agricultural productivity.\nThe pattern supports the climate-conflict hypothesis: climatic variability interacts with political and economic factors to shape instability. As Chassang and Padró i Miquel (2009) note, adverse climatic conditions reduce crop yields, raise food prices, and amplify the opportunity cost of rebellion — particularly when compounded by weak governance. Environmental stressors act not as isolated causes of violence but as threat multipliers that exacerbate existing vulnerabilities."
+  },
+  {
+    "objectID": "projects/south-america-conflicts.html#paper",
+    "href": "projects/south-america-conflicts.html#paper",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Paper",
+    "text": "Paper\nRead Full Paper (PDF)"
   },
   {
     "objectID": "projects/attica-wildfire.html",
@@ -389,7 +431,14 @@
     "href": "projects/kerr-county-floods.html#results",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Results",
-    "text": "Results\n\nFEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured.\n\n\nTotal CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
+    "text": "Results\n\nFEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured."
+  },
+  {
+    "objectID": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
+    "href": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.",
+    "text": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
   },
   {
     "objectID": "projects/kerr-county-floods.html#key-findings",
@@ -403,7 +452,7 @@
     "href": "projects/kerr-county-floods.html#policy-implications",
     "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Policy Implications",
-    "text": "Policy Implications\nThe natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change — the same MCDA framework applied in the Attica wildfire analysis, now translated to flash flood risk. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace."
+    "text": "Policy Implications\nThe natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk specturm. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace."
   },
   {
     "objectID": "projects/ai-regulation.html",
