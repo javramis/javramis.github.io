@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>hfa-gis – Max Avramis</title>
+<title>idews – Max Avramis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -138,28 +138,34 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="project-header">
 <div class="container">
-<p><a href="../research.html" class="back-link">← Back to Research</a> # 174-Country GIS Prioritization — Health Forecasting Alliance ::: {.project-meta} <span><strong>Type:</strong> Independent Research Project (GPGN 492)</span> <span><strong>Advisor:</strong> Prof.&nbsp;Ulrike Schaede</span> <span><strong>Term:</strong> Spring 2026 · In Progress</span> <span><strong>Tools:</strong> QGIS · R · MCDA · Five Forces</span></p>
+<p><a href="../research.html" class="back-link">← Back to Research</a> # Impact Evaluation Plan — Dengue Early Warning System ::: {.project-meta} <span><strong>Type:</strong> Independent Program Evaluation Design</span> <span><strong>Term:</strong> Spring 2026</span> <span><strong>Methods:</strong> Propensity Score Matching · Difference-in-Differences (prospective) · Theory of Change</span></p>
 </div>
 </div>
 <p>:::</p>
 <div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><em>This project is currently in progress. Full write-up coming Spring 2026.</em></p>
-<p>Building a GIS-driven weighted prioritization framework across 174 countries to identify which global markets represent the highest-value private-sector partnership opportunities for the Health Forecasting Alliance (HFA) — a network-of-networks connecting regional health data across 37 countries for global pandemic preparedness.</p>
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The Question</h2>
+<p>Can a barangay-level digital surveillance and machine-learning alert system reduce dengue incidence and mortality in the Philippines — and can that impact be evaluated credibly when the program wasn’t randomly assigned?</p>
 </section>
-<section id="deliverables" class="level2">
-<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
-<ol type="1">
-<li><strong>10 Country Market Profiles</strong> — scored on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness</li>
-<li><strong>Corporate Targeting Matrix</strong> — 15–20 multinationals scored on growth trajectory, CSR history, and HFA strategic fit</li>
-<li><strong>GIS Data Package</strong> — QGIS-ready datasets (CSV + XLSX) with weighted composite scores across 174 countries</li>
-<li><strong>Methodology White Paper</strong> — documenting the multi-criteria scoring framework and its broader applicability</li>
-</ol>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
+<p>The Philippines carries one of Southeast Asia’s highest dengue burdens, and passive surveillance catches only about a fifth of true cases (Undurraga et al., 2017). The 2017 collapse of the national Dengvaxia vaccination program — after the manufacturer disclosed it could worsen outcomes in previously unexposed people — closed off vaccination as a near-term prevention tool, leaving early detection and rapid response as the primary lever available. Climate projections point to a rising burden through 2050. This is the strategic backdrop for a proposed early-warning system: a mobile case-reporting platform, an ML alert layer, and a training program for roughly 4,800 barangay health workers across 150 municipalities.</p>
 </section>
-<section id="background-hfa-private-sector-strategy-capstone-2026" class="level2">
-<h2 class="anchored" data-anchor-id="background-hfa-private-sector-strategy-capstone-2026">Background: HFA Private-Sector Strategy (Capstone, 2026)</h2>
-<p>This project extends my GPS capstone work with VitalWave CEO Brooke Partridge. The capstone identified pharma, development finance, and tech/AI as HFA’s priority private-sector targets through stakeholder interviews and five forces analysis. This independent project adds the spatial dimension: <em>where</em> should HFA focus first?</p>
+<section id="the-design-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-design-problem">The Design Problem</h2>
+<p>A program like this is never randomly assigned — the government targets it at the highest-burden areas. That means a naive before/after comparison mostly measures the targeting rule, not the program. This evaluation plan builds a Propensity Score Matching framework to construct a credible comparison group, with a prospective difference-in-differences layer once real post-deployment data exists.</p>
+</section>
+<section id="proof-of-concept" class="level2">
+<h2 class="anchored" data-anchor-id="proof-of-concept">Proof-of-Concept</h2>
+<p>Since the program hasn’t deployed, the deliverable is the evaluation design itself — stress-tested against real barangay-level data (Project CCHAIN, Epimetrics/HDX) to confirm the matching machinery actually works. In Cagayan de Oro (79 barangays), caliper matching narrowed the treated–control gap in annual dengue cases from 118 to 41 (p &lt; 0.001). A pooled two-city robustness check (172 barangays, 43 matched pairs) returned an almost identical 40-case gap and meaningfully improved covariate balance — evidence that the design scales.</p>
+</section>
+<section id="honest-limits" class="level2">
+<h2 class="anchored" data-anchor-id="honest-limits">Honest Limits</h2>
+<p>The matching pool is small, the proof-of-concept cities are proxies rather than the actual target regions, and treatment assignment is simulated from baseline burden rather than real deployment records. None of that undermines the design — it’s exactly what a proof-of-concept is supposed to surface before a full evaluation runs on real data.</p>
+</section>
+<section id="takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
+<p>A null result on incidence or mortality wouldn’t mean the program failed — it could mean the binding constraint is response capacity rather than detection speed. Building that distinction into the evaluation from the start is what makes it useful to whoever eventually has to decide whether to scale the program up.</p>
 </section>
 </div>
 

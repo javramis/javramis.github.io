@@ -1,0 +1,36 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-header}
+::: {.container}
+[← Back to Research](../research.qmd){.back-link}
+# Health Forecasting Alliance — Private-Sector Strategy
+::: {.project-meta}
+<span><strong>Type:</strong> GPS Capstone → Independent Research</span>
+<span><strong>Term:</strong> Winter–Spring 2026</span>
+<span><strong>Tools:</strong> QGIS · R · MCDA · Five Forces</span>
+:::
+:::
+:::
+
+::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
+
+## Overview
+
+A look at how a global pandemic-preparedness network's private-sector partnership strategy took shape over two terms — moving from stakeholder-facing strategy work to an independent spatial extension of it.
+
+## Winter 2026 — Stakeholder Strategy
+
+The engagement began as a capstone project for a health-forecasting network connecting regional health data across dozens of countries for pandemic preparedness. Through a round of stakeholder interviews, the work mapped the organization's private-sector landscape and used a five forces framework to identify where partnership value was most likely to materialize — landing on pharma, development finance, and tech/AI as the priority categories.
+
+## Spring 2026 — Spatial Extension
+
+The natural follow-on question was *where*, not just *who*. I took the five forces findings and built an independent GIS-driven prioritization framework, scoring candidate countries on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness — turning a qualitative targeting list into a spatial one that could rank markets side by side.
+
+## Takeaway
+
+The sequence — stakeholder research first, spatial analysis second — is a pattern I keep coming back to: qualitative fieldwork tells you *who matters*, and GIS tells you *where to act on it*.
+
+:::

@@ -13,6 +13,16 @@ All Research & Projects
 
 ::: {.project-grid}
 
+<a href="https://nlotfi-web.github.io/hormuz-vulnerability-index/hormuz_vulnerability_index.html" target="_blank" rel="noopener" class="project-card">
+<div class="card-img" style="background: #0f3a3a;">🌊 Strait of Hormuz Vulnerability Index</div>
+<div class="card-body">
+<div class="card-tag">GIS · Geopolitics · Collaborative</div>
+<div class="card-title">Mapping the Chokepoint</div>
+<div class="card-desc">A 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi.</div>
+<div class="card-tools"><span>QGIS</span><span>Python</span><span>GitHub</span></div>
+</div>
+</a>
+
 <a href="projects/attica-wildfire.qmd" class="project-card">
 <div class="card-img" style="background: #2d4a22;">🔥 Attica Wildfire MCDA</div>
 <div class="card-body">
@@ -40,16 +50,6 @@ All Research & Projects
 <div class="card-title">Conflicts in Northern South America by Köppen-Geiger Climate Classification</div>
 <div class="card-desc">Spatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.</div>
 <div class="card-tools"><span>QGIS</span><span>UCDP/PRIO</span><span>Beck et al.</span></div>
-</div>
-</a>
-
-<a href="projects/hfa-gis.qmd" class="project-card in-progress">
-<div class="card-img" style="background: #1a3a4a;">🌍 HFA GIS Strategy</div>
-<div class="card-body">
-<div class="card-tag">GIS · Global Health · In Progress</div>
-<div class="card-title">174-Country Prioritization Framework — HFA</div>
-<div class="card-desc">GIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.</div>
-<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span></div>
 </div>
 </a>
 :::
@@ -108,13 +108,23 @@ All Research & Projects
 </div>
 </a>
 
-<a href="projects/hfa-strategy.qmd" class="project-card">
-<div class="card-img" style="background: #1a3a4a;">🌐 HFA Strategy</div>
+<a href="projects/idews.qmd" class="project-card">
+<div class="card-img" style="background: #4a1a3a;">🦟 iDEWS Impact Evaluation Plan</div>
 <div class="card-body">
-<div class="card-tag">Strategy · Global Health · Stakeholder Research</div>
-<div class="card-title">Private-Sector Strategy for the Health Forecasting Alliance</div>
-<div class="card-desc">Stakeholder interviews with VitalWave CTO, CDC Forecasting Analytics, and HFA partners synthesized into a five forces heatmap identifying pharma, dev finance, and tech/AI as priority targets.</div>
-<div class="card-tools"><span>Five Forces</span><span>Platform Economics</span><span>WHO/USAID/IHME</span></div>
+<div class="card-tag">Program Evaluation · Global Health · PSM</div>
+<div class="card-title">Designing an Impact Evaluation for a Dengue Early Warning System</div>
+<div class="card-desc">Full evaluation design for a proposed barangay-level surveillance and ML alert system across 150 Philippine municipalities — PSM stress-tested on real barangay data, with a matched-sample effect that replicates across two independent city samples.</div>
+<div class="card-tools"><span>Python/R</span><span>PSM</span><span>Program Evaluation</span></div>
+</div>
+</a>
+
+<a href="projects/hfa.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a4a;">🌍 HFA Private-Sector Strategy</div>
+<div class="card-body">
+<div class="card-tag">Strategy · GIS · Global Health</div>
+<div class="card-title">From Stakeholder Strategy to a Spatial Prioritization Framework</div>
+<div class="card-desc">How a health-forecasting network's private-sector partnership strategy evolved from five forces stakeholder research into an independent GIS framework ranking where those partnerships should land first.</div>
+<div class="card-tools"><span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span></div>
 </div>
 </a>
 

@@ -14,7 +14,7 @@ Policy Researcher · Spatial Analyst · Data Scientist
 legible to anyone in the room.
 
 ::: {.hero-sub}
-I'm Max Avramis — a graduate researcher at UC San Diego's School of Global Policy and Strategy combining GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land.
+I'm Max Avramis — a recent Master of Public Policy graduate from UC San Diego's School of Global Policy and Strategy, specializing in American and Comparative Business Regulation and Program Design and Evaluation. I combine GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land. Open to full-time roles and consulting engagements.
 :::
 
 ::: {.hero-cta}
@@ -35,16 +35,44 @@ Featured Projects
 
 ::: {.project-grid}
 
-<a href="projects/attica-wildfire.qmd" class="project-card">
-<div class="card-img" style="background: #2d4a22;">
-🔥 Attica Wildfire MCDA
+<a href="https://nlotfi-web.github.io/hormuz-vulnerability-index/hormuz_vulnerability_index.html" target="_blank" rel="noopener" class="project-card">
+<div class="card-img" style="background: #0f3a3a;">
+🌊 Strait of Hormuz Vulnerability Index
 </div>
 <div class="card-body">
-<div class="card-tag">GIS · Policy Analysis</div>
-<div class="card-title">Wildfire Vulnerability Mapping, Attica Greece</div>
-<div class="card-desc">Multi-criteria decision analysis integrating 24 years of fire incident data, emergency service proximity, and population density to identify infrastructure investment priorities for Greece's €2.1B AEGIS program.</div>
+<div class="card-tag">GIS · Geopolitics · Collaborative</div>
+<div class="card-title">Mapping the Chokepoint</div>
+<div class="card-desc">A 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi. Headline finding: vulnerability isn't volume — the biggest importers are cushioned, thin-margin economies carry the real exposure.</div>
 <div class="card-tools">
-<span>QGIS</span><span>R</span><span>MCDA</span><span>Spatial Analysis</span>
+<span>QGIS</span><span>Python</span><span>GitHub</span>
+</div>
+</div>
+</a>
+
+<a href="projects/idews.qmd" class="project-card">
+<div class="card-img" style="background: #4a1a3a;">
+🦟 iDEWS Impact Evaluation Plan
+</div>
+<div class="card-body">
+<div class="card-tag">Program Evaluation · Global Health · PSM</div>
+<div class="card-title">Designing an Impact Evaluation for a Dengue Early Warning System</div>
+<div class="card-desc">A full evaluation design for a proposed barangay-level surveillance and ML alert system across 150 Philippine municipalities — Propensity Score Matching stress-tested on real barangay data, with a matched-sample effect that holds up almost identically across two independent city samples.</div>
+<div class="card-tools">
+<span>Python/R</span><span>PSM</span><span>Program Evaluation</span>
+</div>
+</div>
+</a>
+
+<a href="projects/edtech-meta-analysis.qmd" class="project-card">
+<div class="card-img" style="background: #3a2a5c;">
+📊 Ed-Tech Meta-Analysis
+</div>
+<div class="card-body">
+<div class="card-tag">Quantitative Research · Policy</div>
+<div class="card-title">Does Ed-Tech Narrow or Widen Achievement Gaps?</div>
+<div class="card-desc">Cross-national meta-analysis of 8 RCTs testing whether adaptive ed-tech effects vary with national infrastructure. Found a consistent negative gradient: lower electricity access → larger learning gains.</div>
+<div class="card-tools">
+<span>R · metafor</span><span>J-PAL/IZA Data</span><span>Meta-regression</span>
 </div>
 </div>
 </a>
@@ -63,16 +91,30 @@ Featured Projects
 </div>
 </a>
 
-<a href="projects/edtech-meta-analysis.qmd" class="project-card">
-<div class="card-img" style="background: #3a2a5c;">
-📊 Ed-Tech Meta-Analysis
+<a href="projects/hfa.qmd" class="project-card">
+<div class="card-img" style="background: #1a3a4a;">
+🌍 HFA Private-Sector Strategy
 </div>
 <div class="card-body">
-<div class="card-tag">Quantitative Research · Policy</div>
-<div class="card-title">Does Ed-Tech Narrow or Widen Achievement Gaps?</div>
-<div class="card-desc">Cross-national meta-analysis of 8 RCTs testing whether adaptive ed-tech effects vary with national infrastructure. Found a consistent negative gradient: lower electricity access → larger learning gains.</div>
+<div class="card-tag">Strategy · GIS · Global Health</div>
+<div class="card-title">From Stakeholder Strategy to a Spatial Prioritization Framework</div>
+<div class="card-desc">How a health-forecasting network's private-sector partnership strategy evolved from five forces stakeholder research into an independent GIS framework ranking where those partnerships should land first.</div>
 <div class="card-tools">
-<span>R · metafor</span><span>J-PAL/IZA Data</span><span>Meta-regression</span>
+<span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span>
+</div>
+</div>
+</a>
+
+<a href="projects/attica-wildfire.qmd" class="project-card">
+<div class="card-img" style="background: #2d4a22;">
+🔥 Attica Wildfire MCDA
+</div>
+<div class="card-body">
+<div class="card-tag">GIS · Policy Analysis</div>
+<div class="card-title">Wildfire Vulnerability Mapping, Attica Greece</div>
+<div class="card-desc">Multi-criteria decision analysis integrating 24 years of fire incident data, emergency service proximity, and population density to identify infrastructure investment priorities for Greece's €2.1B AEGIS program.</div>
+<div class="card-tools">
+<span>QGIS</span><span>R</span><span>MCDA</span><span>Spatial Analysis</span>
 </div>
 </div>
 </a>
@@ -101,20 +143,6 @@ Featured Projects
 <div class="card-desc">After finishing the Honolulu Start to Park 10K, I downloaded the race data and built my own dataset to see exactly how my family and I placed within our respective age and gender groups. Top 24th percentile, M25–29.</div>
 <div class="card-tools">
 <span>R · ggplot2</span><span>Excel</span><span>Data Wrangling</span>
-</div>
-</div>
-</a>
-
-<a href="projects/hfa-gis.qmd" class="project-card in-progress">
-<div class="card-img" style="background: #1a3a4a;">
-🌍 HFA GIS Strategy
-</div>
-<div class="card-body">
-<div class="card-tag">GIS · Global Health · In Progress</div>
-<div class="card-title">174-Country Prioritization Framework for the Health Forecasting Alliance</div>
-<div class="card-desc">Independent research project (Spring 2026) building a GIS-driven weighted MCDA framework to identify which global markets represent the highest-value private-sector partnership opportunities for HFA.</div>
-<div class="card-tools">
-<span>QGIS</span><span>R</span><span>MCDA</span><span>Five Forces</span>
 </div>
 </div>
 </a>

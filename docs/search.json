@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "Max Avramis",
     "section": "",
-    "text": "javramis@ucsd.edu\nChicago, IL (relocating June 2026)\nLinkedIn · GitHub\n\nEducation\nUC San Diego, GPS\nMaster of Public Policy · 2026\nBusiness Regulation & Government Innovation\nPace University\nBachelor of Fine Arts · 2020\n\nSkills\n\nRPythonQGISGoogle Earth EngineSQLGitHubQuartoggplot2caretmetafortidyverseXGBoostRandom ForestExcelSharePoint\n\nLanguages\n\nEnglish (native)Spanish (intermediate)Greek (beginner)\n\n\n\n\n\nI came to policy school from a career as a professional actor, which left me with a particular sensitivity to audience — to whether an idea is actually being communicated, not just being said.\nWhat really drew me into GIS and data science was realizing these tools could do something no other analytical framework could: make a rigorous, multi-variable argument legible to essentially anyone in any room. I had spent a year building a foundation in quantitative policy analysis — cost-effectiveness, benefit-cost analysis, and my personal favorite, multi-criteria decision analysis. GIS gave me the communication layer. Combining them felt like gaining a universal language.\nThat instinct runs through everything I build: the question is never just “is this accurate?” but “will this land for the person making the decision?”\n\n\n\n\nMy work sits at the intersection of spatial analysis, machine learning, and policy research — with a particular interest in:\n\nClimate and disaster risk mapping (flood hazards, wildfire vulnerability)\nGlobal health infrastructure and pandemic preparedness\nEducation technology and learning inequality\nLabor markets and AI regulation\n\n\n\n\n\nHealth Forecasting Alliance (VitalWave) · Strategy & Research Consultant · Jan 2026–Present\nUCSD GPS Capstone with Brooke Partridge, CEO of VitalWave\nThe Basement, UCSD (Blackstone LaunchPad) · i4X Innovation Fellow · Dec 2025–Present\nCapital Program Management AI tool for UCSD Healthcare\nThe Asia Foundation · Programs Intern · Jul–Aug 2025\nInnovation & Impact Fund dashboard; Let’s Read donor strategy\nUC San Diego, Dept. of Theatre & Dance · Teaching Assistant · FA 2025–SP 2026\nTheatre 101; 4.75/5 teaching evaluation\nUS Embassy Luxembourg · Personal Assistant to the Ambassador · 2018, 2020\nRecipient of the Ambassador’s Award\n\n\n\n\nDownload CV (PDF)"
+    "text": "javramis@ucsd.edu\nRelocating to Chicago, IL · October 2026\nLinkedIn · GitHub\n\nEducation\nUC San Diego, GPS\nMaster of Public Policy · 2026\nAmerican and Comparative Business Regulation\nProgram Design and Evaluation\nPace University\nBachelor of Fine Arts · 2020\n\nSkills\n\nRPythonQGISGoogle Earth EngineSQLGitHubQuartoggplot2caretmetafortidyverseXGBoostRandom ForestExcelSharePoint\n\nLanguages\n\nEnglish (native)Spanish (intermediate)Greek (beginner)\n\n\n\n\n\nI came to policy school from a career as a professional actor, which left me with a particular sensitivity to audience — to whether an idea is actually being communicated, not just being said.\nWhat really drew me into GIS and data science was realizing these tools could do something no other analytical framework could: make a rigorous, multi-variable argument legible to essentially anyone in any room. I had spent a year building a foundation in quantitative policy analysis — cost-effectiveness, benefit-cost analysis, and my personal favorite, multi-criteria decision analysis. GIS gave me the communication layer. Combining them felt like gaining a universal language.\nThat instinct runs through everything I build: the question is never just “is this accurate?” but “will this land for the person making the decision?”\n\n\n\n\nMy work sits at the intersection of spatial analysis, machine learning, and policy research — with a particular interest in:\n\nClimate and disaster risk mapping (flood hazards, wildfire vulnerability)\nGlobal health infrastructure and pandemic preparedness\nEducation technology and learning inequality\nLabor markets and AI regulation\n\n\n\n\n\nHealth Forecasting Alliance (VitalWave) · Strategy & Research Consultant · Jan 2026–Present\nUCSD GPS Capstone with Brooke Partridge, CEO of VitalWave\nThe Basement, UCSD (Blackstone LaunchPad) · i4X Innovation Fellow · Dec 2025–Present\nCapital Program Management AI tool for UCSD Healthcare\nThe Asia Foundation · Programs Intern · Jul–Aug 2025\nInnovation & Impact Fund dashboard; Let’s Read donor strategy\nUC San Diego, Dept. of Theatre & Dance · Teaching Assistant · FA 2025–SP 2026\nTheatre 101; 4.75/5 teaching evaluation\nUS Embassy Luxembourg · Personal Assistant to the Ambassador · 2018, 2020\nRecipient of the Ambassador’s Award\n\n\n\n\nDownload CV (PDF)"
   },
   {
     "objectID": "about.html#about",
@@ -91,60 +91,74 @@
     "text": "Code & Files\nView on GitHub\n:::"
   },
   {
-    "objectID": "projects/south-america-conflicts.html",
-    "href": "projects/south-america-conflicts.html",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html",
+    "href": "projects/kerr-county-floods.html",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "",
-    "text": "← Back to Research\n\n\n\nCourse: GIS & Spatial Data Analysis Instructor: Prof. Gordon McCord Term: Fall 2025 Tools: QGIS · UCDP/PRIO v25 · Beck et al. 2018"
+    "text": "← Back to Research\n\n\n\nCourse: Advanced GIS & Remote Sensing Instructor: Prof. Morgan Levy Term: Winter 2026 Tools: Google Earth Engine · CHIRPS · Sentinel-1 SAR · QGIS"
   },
   {
-    "objectID": "projects/south-america-conflicts.html#the-question",
-    "href": "projects/south-america-conflicts.html#the-question",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html#the-question",
+    "href": "projects/kerr-county-floods.html#the-question",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "The Question",
-    "text": "The Question\nDo violent conflict events cluster in specific climate zones — and what does the spatial overlap between climate type and conflict density tell us about environmental stress as a threat multiplier?"
+    "text": "The Question\nCan satellite-derived precipitation data expose structural gaps in FEMA’s regulatory flood maps — and what do those gaps mean for communities that just experienced a catastrophic flood?"
   },
   {
-    "objectID": "projects/south-america-conflicts.html#overview",
-    "href": "projects/south-america-conflicts.html#overview",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
-    "section": "Overview",
-    "text": "Overview\nThis analysis overlays the UCDP/PRIO v25 (2024) violent conflict event dataset with Beck et al. (2018) Köppen-Geiger climate classification zones across Northern South America — a region chosen for its unusually high conflict density and stark contrasts between adjacent climate zones."
+    "objectID": "projects/kerr-county-floods.html#why-it-matters",
+    "href": "projects/kerr-county-floods.html#why-it-matters",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nOn July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were outside FEMA’s mapped flood zones. FEMA’s Flood Insurance Rate Maps had not been substantially updated in decades. Built on historical river hydrology data, they have no account for rainfall intensity patterns, upstream land use change, or shifting climate conditions.\nThis is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared. The July 4 disaster made this structural failure impossible to ignore."
   },
   {
-    "objectID": "projects/south-america-conflicts.html#data-sources",
-    "href": "projects/south-america-conflicts.html#data-sources",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html#my-contribution",
+    "href": "projects/kerr-county-floods.html#my-contribution",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "My Contribution",
+    "text": "My Contribution\nThis analysis was completed as part of a six-person team project. The work shown here represents my individual contributions: the CHIRPS precipitation analysis and the FEMA SFHA boundary audit against satellite-observed flood extent."
+  },
+  {
+    "objectID": "projects/kerr-county-floods.html#data-sources",
+    "href": "projects/kerr-county-floods.html#data-sources",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Data Sources",
-    "text": "Data Sources\n\n\n\n\n\n\n\nDataset\nSource\n\n\n\n\nKöppen-Geiger climate zones\nBeck et al. (2018), 1-km resolution\n\n\nViolent conflict events\nUCDP/PRIO Armed Conflict Dataset v25 (2024)\n\n\nRegional boundary\nGADM v4.1"
+    "text": "Data Sources\n\n\n\n\n\n\n\n\nDataset\nSource\nWhat it measures\n\n\n\n\nCHIRPS precipitation\nUCSB Climate Hazards Group\nDaily rainfall estimates, 1981–present\n\n\nFEMA NFHL\nFEMA\nRegulatory Special Flood Hazard Areas\n\n\nJRC GLOFAS\nEuropean Commission\nModeled 100-year flood hazard zones"
   },
   {
-    "objectID": "projects/south-america-conflicts.html#methodology",
-    "href": "projects/south-america-conflicts.html#methodology",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html#methodology",
+    "href": "projects/kerr-county-floods.html#methodology",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Methodology",
-    "text": "Methodology\nAfter cleaning the Beck et al. climate data in Excel to remove extraneous columns, I imported both layers into QGIS and used Extract by Location and Clip tools to isolate conflict points within Northern South America. The Count Points in Polygon tool calculated total violent conflict events per distinct Köppen-Geiger climate zone. Results were exported to Excel and summarized with a pivot table to produce quantitative conflict counts by zone."
+    "text": "Methodology\nCHIRPS precipitation analysis: I wrote JavaScript scripts in Google Earth Engine to filter CHIRPS daily precipitation grids by date range (July 3–7, 2025) and geographic boundary, extracting total accumulated rainfall across Kerr County at 5km resolution. This allowed direct comparison of where the heaviest rainfall fell against where FEMA’s regulatory risk boundaries are drawn.\nFEMA SFHA audit: I overlaid FEMA’s Special Flood Hazard Area boundaries against the CHIRPS precipitation surface and JRC 100-year modeled flood zones to identify structural gaps — places where observed precipitation intensity exceeded what the regulatory framework would predict, and where flood-affected areas extended beyond FEMA’s mapped boundaries."
   },
   {
-    "objectID": "projects/south-america-conflicts.html#results",
-    "href": "projects/south-america-conflicts.html#results",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html#results",
+    "href": "projects/kerr-county-floods.html#results",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Results",
-    "text": "Results\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events (2024). Background = climate zones per Beck et al. (2018). Data: UCDP/PRIO v25 (2024), GADM v4.1."
+    "text": "Results\n\nFEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured."
   },
   {
-    "objectID": "projects/south-america-conflicts.html#key-findings",
-    "href": "projects/south-america-conflicts.html#key-findings",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "objectID": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
+    "href": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.",
+    "text": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
+  },
+  {
+    "objectID": "projects/kerr-county-floods.html#key-findings",
+    "href": "projects/kerr-county-floods.html#key-findings",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
     "section": "Key Findings",
-    "text": "Key Findings\nThe equatorial savanna (Aw), equatorial fully humid (Af), and equatorial monsoon (Am) zones exhibit the highest conflict concentration — regions with moderate to high rainfall and strong agricultural potential. Arid zones (BWh, BSh) show substantially fewer conflict events, likely reflecting lower population densities and limited agricultural productivity.\nThe pattern supports the climate-conflict hypothesis: climatic variability interacts with political and economic factors to shape instability. As Chassang and Padró i Miquel (2009) note, adverse climatic conditions reduce crop yields, raise food prices, and amplify the opportunity cost of rebellion — particularly when compounded by weak governance. Environmental stressors act not as isolated causes of violence but as threat multipliers that exacerbate existing vulnerabilities."
+    "text": "Key Findings\nTwo structural gaps emerge clearly from the analysis:\nPrecipitation is not modeled in FEMA maps. FEMA predicts where water goes after entering river channels — not where rainfall is heaviest. The CHIRPS surface shows dramatic within-county variation that FEMA’s static boundaries cannot capture.\nBinary zoning creates false safety. The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — uninsured, and with no regulatory signal that they were at risk."
   },
   {
-    "objectID": "projects/south-america-conflicts.html#paper",
-    "href": "projects/south-america-conflicts.html#paper",
-    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
-    "section": "Paper",
-    "text": "Paper\nRead Full Paper (PDF)"
+    "objectID": "projects/kerr-county-floods.html#policy-implications",
+    "href": "projects/kerr-county-floods.html#policy-implications",
+    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "section": "Policy Implications",
+    "text": "Policy Implications\nThe natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk specturm. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace."
   },
   {
     "objectID": "projects/attica-wildfire.html",
@@ -217,6 +231,118 @@
     "text": "Paper\nRead Full Paper (PDF)"
   },
   {
+    "objectID": "projects/hfa.html",
+    "href": "projects/hfa.html",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "← Back to Research # Health Forecasting Alliance — Private-Sector Strategy ::: {.project-meta} Type: GPS Capstone → Independent Research Term: Winter–Spring 2026 Tools: QGIS · R · MCDA · Five Forces\n:::"
+  },
+  {
+    "objectID": "projects/hfa.html#overview",
+    "href": "projects/hfa.html#overview",
+    "title": "Max Avramis",
+    "section": "Overview",
+    "text": "Overview\nA look at how a global pandemic-preparedness network’s private-sector partnership strategy took shape over two terms — moving from stakeholder-facing strategy work to an independent spatial extension of it."
+  },
+  {
+    "objectID": "projects/hfa.html#winter-2026-stakeholder-strategy",
+    "href": "projects/hfa.html#winter-2026-stakeholder-strategy",
+    "title": "Max Avramis",
+    "section": "Winter 2026 — Stakeholder Strategy",
+    "text": "Winter 2026 — Stakeholder Strategy\nThe engagement began as a capstone project for a health-forecasting network connecting regional health data across dozens of countries for pandemic preparedness. Through a round of stakeholder interviews, the work mapped the organization’s private-sector landscape and used a five forces framework to identify where partnership value was most likely to materialize — landing on pharma, development finance, and tech/AI as the priority categories."
+  },
+  {
+    "objectID": "projects/hfa.html#spring-2026-spatial-extension",
+    "href": "projects/hfa.html#spring-2026-spatial-extension",
+    "title": "Max Avramis",
+    "section": "Spring 2026 — Spatial Extension",
+    "text": "Spring 2026 — Spatial Extension\nThe natural follow-on question was where, not just who. I took the five forces findings and built an independent GIS-driven prioritization framework, scoring candidate countries on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness — turning a qualitative targeting list into a spatial one that could rank markets side by side."
+  },
+  {
+    "objectID": "projects/hfa.html#takeaway",
+    "href": "projects/hfa.html#takeaway",
+    "title": "Max Avramis",
+    "section": "Takeaway",
+    "text": "Takeaway\nThe sequence — stakeholder research first, spatial analysis second — is a pattern I keep coming back to: qualitative fieldwork tells you who matters, and GIS tells you where to act on it."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "All Research & Projects\n\n\n\n\n\n\n🌊 Strait of Hormuz Vulnerability Index\n\n\n\nGIS · Geopolitics · Collaborative\n\n\nMapping the Chokepoint\n\n\nA 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi.\n\n\nQGISPythonGitHub\n\n\n\n\n\n🔥 Attica Wildfire MCDA\n\n\n\nGIS · MCDA · Policy\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\n24-year MCDA integrating fire incidents, emergency services, and population density. Outputs applicable to Greece’s €2.1B AEGIS civil protection program.\n\n\nQGISRMCDA\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · GEE · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite audit of FEMA flood maps following the July 4, 2025 flash flood. Six-map series exposing structural gaps between regulatory risk and observed inundation.\n\n\nGEESentinel-1CHIRPSQGIS\n\n\n\n\n\n🗺️ Climate & Conflict\n\n\n\nGIS · Cartography\n\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification\n\n\nSpatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.\n\n\nQGISUCDP/PRIOBeck et al.\n\n\n\n\n\n\n\n\n\n\n\n📊 Ed-Tech Meta-Analysis\n\n\n\nMeta-regression · R · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-regression of 8 RCTs with heterogeneity analysis of J-PAL/IZA Mindspark data (n=535). Key finding: lower electricity access → larger adaptive ed-tech gains.\n\n\nR · metaforJ-PAL/IZAForest Plots\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nML · Big Data · R\n\n\nPredicting Strike vs. Protest Events\n\n\nFull ML pipeline on Cornell’s Labor Action Tracker merged with DCI, SDI, and IRS ZIP-level data. Compared logistic regression, Random Forest, and XGBoost with temporal train/test splits.\n\n\nR · caretXGBoostRandom Forest\n\n\n\n\n\n🏥 UCSD Healthcare\n\n\n\nML · Predictive Modeling · In Progress\n\n\nCapital Program Cost Forecasting — UCSD Healthcare\n\n\nAI-powered vetting tool for UCSD Healthcare’s Capital Program Management division. Analyzing 14+ years and 800+ projects ($1M–$70M+) to surface risk signals for incoming project proposals.\n\n\nRPythonML PipelineGitHub\n\n\n\n\n\n\n\n\n\n\n\n🎭 AI Regulation\n\n\n\nPolicy Analysis · Empirical Research\n\n\nAI Regulation in the U.S. Acting Industry\n\n\nPolicy analysis using original BLS QCEW data to quantify AI’s impact on performing arts employment. Argues collective bargaining is structurally insufficient — a federal statutory baseline is required.\n\n\nBLS QCEWRRegulatory Analysis\n\n\n\n\n\n🦟 iDEWS Impact Evaluation Plan\n\n\n\nProgram Evaluation · Global Health · PSM\n\n\nDesigning an Impact Evaluation for a Dengue Early Warning System\n\n\nFull evaluation design for a proposed barangay-level surveillance and ML alert system across 150 Philippine municipalities — PSM stress-tested on real barangay data, with a matched-sample effect that replicates across two independent city samples.\n\n\nPython/RPSMProgram Evaluation\n\n\n\n\n\n🌍 HFA Private-Sector Strategy\n\n\n\nStrategy · GIS · Global Health\n\n\nFrom Stakeholder Strategy to a Spatial Prioritization Framework\n\n\nHow a health-forecasting network’s private-sector partnership strategy evolved from five forces stakeholder research into an independent GIS framework ranking where those partnerships should land first.\n\n\nQGISRMCDAFive Forces\n\n\n\n\n\n\n\n\n\n\n\n🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nDownloaded race data, built a custom dataset, and used R + ggplot2 to visualize age/gender group finishing distributions for my family. Top 24th percentile, M25–29.\n\n\nR · ggplot2Excel"
+  },
+  {
+    "objectID": "research.html#spatial-analysis-gis",
+    "href": "research.html#spatial-analysis-gis",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "🌊 Strait of Hormuz Vulnerability Index\n\n\n\nGIS · Geopolitics · Collaborative\n\n\nMapping the Chokepoint\n\n\nA 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi.\n\n\nQGISPythonGitHub\n\n\n\n\n\n🔥 Attica Wildfire MCDA\n\n\n\nGIS · MCDA · Policy\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\n24-year MCDA integrating fire incidents, emergency services, and population density. Outputs applicable to Greece’s €2.1B AEGIS civil protection program.\n\n\nQGISRMCDA\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · GEE · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite audit of FEMA flood maps following the July 4, 2025 flash flood. Six-map series exposing structural gaps between regulatory risk and observed inundation.\n\n\nGEESentinel-1CHIRPSQGIS\n\n\n\n\n\n🗺️ Climate & Conflict\n\n\n\nGIS · Cartography\n\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification\n\n\nSpatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.\n\n\nQGISUCDP/PRIOBeck et al."
+  },
+  {
+    "objectID": "research.html#machine-learning-quantitative-research",
+    "href": "research.html#machine-learning-quantitative-research",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "📊 Ed-Tech Meta-Analysis\n\n\n\nMeta-regression · R · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-regression of 8 RCTs with heterogeneity analysis of J-PAL/IZA Mindspark data (n=535). Key finding: lower electricity access → larger adaptive ed-tech gains.\n\n\nR · metaforJ-PAL/IZAForest Plots\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nML · Big Data · R\n\n\nPredicting Strike vs. Protest Events\n\n\nFull ML pipeline on Cornell’s Labor Action Tracker merged with DCI, SDI, and IRS ZIP-level data. Compared logistic regression, Random Forest, and XGBoost with temporal train/test splits.\n\n\nR · caretXGBoostRandom Forest\n\n\n\n\n\n🏥 UCSD Healthcare\n\n\n\nML · Predictive Modeling · In Progress\n\n\nCapital Program Cost Forecasting — UCSD Healthcare\n\n\nAI-powered vetting tool for UCSD Healthcare’s Capital Program Management division. Analyzing 14+ years and 800+ projects ($1M–$70M+) to surface risk signals for incoming project proposals.\n\n\nRPythonML PipelineGitHub"
+  },
+  {
+    "objectID": "research.html#policy-writing-strategy",
+    "href": "research.html#policy-writing-strategy",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "🎭 AI Regulation\n\n\n\nPolicy Analysis · Empirical Research\n\n\nAI Regulation in the U.S. Acting Industry\n\n\nPolicy analysis using original BLS QCEW data to quantify AI’s impact on performing arts employment. Argues collective bargaining is structurally insufficient — a federal statutory baseline is required.\n\n\nBLS QCEWRRegulatory Analysis\n\n\n\n\n\n🦟 iDEWS Impact Evaluation Plan\n\n\n\nProgram Evaluation · Global Health · PSM\n\n\nDesigning an Impact Evaluation for a Dengue Early Warning System\n\n\nFull evaluation design for a proposed barangay-level surveillance and ML alert system across 150 Philippine municipalities — PSM stress-tested on real barangay data, with a matched-sample effect that replicates across two independent city samples.\n\n\nPython/RPSMProgram Evaluation\n\n\n\n\n\n🌍 HFA Private-Sector Strategy\n\n\n\nStrategy · GIS · Global Health\n\n\nFrom Stakeholder Strategy to a Spatial Prioritization Framework\n\n\nHow a health-forecasting network’s private-sector partnership strategy evolved from five forces stakeholder research into an independent GIS framework ranking where those partnerships should land first.\n\n\nQGISRMCDAFive Forces"
+  },
+  {
+    "objectID": "research.html#personal-projects",
+    "href": "research.html#personal-projects",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nDownloaded race data, built a custom dataset, and used R + ggplot2 to visualize age/gender group finishing distributions for my family. Top 24th percentile, M25–29.\n\n\nR · ggplot2Excel"
+  },
+  {
+    "objectID": "projects/honolulu-10k.html",
+    "href": "projects/honolulu-10k.html",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "",
+    "text": "← Back to Research\n\n\n\nType: Personal Project Date: December 2025 Tools: R · ggplot2 · Excel"
+  },
+  {
+    "objectID": "projects/honolulu-10k.html#the-question",
+    "href": "projects/honolulu-10k.html#the-question",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "The Question",
+    "text": "The Question\nAfter finishing the Honolulu Start to Park 10K, I wanted to know exactly how my family and I performed relative to our respective age and gender groups — not just our raw finishing times."
+  },
+  {
+    "objectID": "projects/honolulu-10k.html#what-i-did",
+    "href": "projects/honolulu-10k.html#what-i-did",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "What I Did",
+    "text": "What I Did\nDownloaded the official race results, built a custom dataset in Excel, and wrote an R script to:\n\nParse chip times from Excel datetime format into minutes\nCalculate within-age-group percentile rankings\nProduce distribution histograms with individual result markers\n\ndf &lt;- df %&gt;%\n  mutate(\n    chip_min = as.numeric(ChipTime - floor_date(ChipTime, \"day\"), \n                          units = \"mins\")\n  ) %&gt;%\n  arrange(chip_min) %&gt;%\n  mutate(\n    rank_time = row_number(),\n    pct_time  = rank_time / n()\n  )"
+  },
+  {
+    "objectID": "projects/honolulu-10k.html#result",
+    "href": "projects/honolulu-10k.html#result",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "Result",
+    "text": "Result\nTop 24th percentile, M25–29. My parents were equally pleased with their results.\n\n[Histogram: M25-29 finishing time distribution with your result marked — add your image here] ::: {.visual-caption} Distribution of M25–29 finishing times. Orange line marks James Avramis at ~64.3 minutes."
+  },
+  {
+    "objectID": "projects/honolulu-10k.html#why-its-here",
+    "href": "projects/honolulu-10k.html#why-its-here",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "Why It’s Here",
+    "text": "Why It’s Here\nThis project isn’t technically impressive. But it illustrates something I believe about data work: the instinct to find a question and build the analysis yourself — even when nobody asked you to — is the thing that actually makes someone good at this. I crossed the finish line and immediately wanted to know more than the race app would tell me. So I built the tool to find out."
+  },
+  {
+    "objectID": "projects/honolulu-10k.html#code",
+    "href": "projects/honolulu-10k.html#code",
+    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "section": "Code",
+    "text": "Code\nView on GitHub\n:::"
+  },
+  {
     "objectID": "projects/edtech-meta-analysis.html",
     "href": "projects/edtech-meta-analysis.html",
     "title": "Does Educational Technology Narrow or Widen Achievement Gaps?",
@@ -280,193 +406,109 @@
     "text": "Paper & Code\nRead Full Paper (PDF)"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Max Avramis",
+    "objectID": "projects/south-america-conflicts.html",
+    "href": "projects/south-america-conflicts.html",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "",
-    "text": "All Research & Projects\n\n\n\n\n\n\n🔥 Attica Wildfire MCDA\n\n\n\nGIS · MCDA · Policy\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\n24-year MCDA integrating fire incidents, emergency services, and population density. Outputs applicable to Greece’s €2.1B AEGIS civil protection program.\n\n\nQGISRMCDA\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · GEE · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite audit of FEMA flood maps following the July 4, 2025 flash flood. Six-map series exposing structural gaps between regulatory risk and observed inundation.\n\n\nGEESentinel-1CHIRPSQGIS\n\n\n\n\n\n🗺️ Climate & Conflict\n\n\n\nGIS · Cartography\n\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification\n\n\nSpatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.\n\n\nQGISUCDP/PRIOBeck et al.\n\n\n\n\n\n🌍 HFA GIS Strategy\n\n\n\nGIS · Global Health · In Progress\n\n\n174-Country Prioritization Framework — HFA\n\n\nGIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.\n\n\nQGISRMCDAFive Forces\n\n\n\n\n\n\n\n\n\n\n\n📊 Ed-Tech Meta-Analysis\n\n\n\nMeta-regression · R · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-regression of 8 RCTs with heterogeneity analysis of J-PAL/IZA Mindspark data (n=535). Key finding: lower electricity access → larger adaptive ed-tech gains.\n\n\nR · metaforJ-PAL/IZAForest Plots\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nML · Big Data · R\n\n\nPredicting Strike vs. Protest Events\n\n\nFull ML pipeline on Cornell’s Labor Action Tracker merged with DCI, SDI, and IRS ZIP-level data. Compared logistic regression, Random Forest, and XGBoost with temporal train/test splits.\n\n\nR · caretXGBoostRandom Forest\n\n\n\n\n\n🏥 UCSD Healthcare\n\n\n\nML · Predictive Modeling · In Progress\n\n\nCapital Program Cost Forecasting — UCSD Healthcare\n\n\nAI-powered vetting tool for UCSD Healthcare’s Capital Program Management division. Analyzing 14+ years and 800+ projects ($1M–$70M+) to surface risk signals for incoming project proposals.\n\n\nRPythonML PipelineGitHub\n\n\n\n\n\n\n\n\n\n\n\n🎭 AI Regulation\n\n\n\nPolicy Analysis · Empirical Research\n\n\nAI Regulation in the U.S. Acting Industry\n\n\nPolicy analysis using original BLS QCEW data to quantify AI’s impact on performing arts employment. Argues collective bargaining is structurally insufficient — a federal statutory baseline is required.\n\n\nBLS QCEWRRegulatory Analysis\n\n\n\n\n\n🌐 HFA Strategy\n\n\n\nStrategy · Global Health · Stakeholder Research\n\n\nPrivate-Sector Strategy for the Health Forecasting Alliance\n\n\nStakeholder interviews with VitalWave CTO, CDC Forecasting Analytics, and HFA partners synthesized into a five forces heatmap identifying pharma, dev finance, and tech/AI as priority targets.\n\n\nFive ForcesPlatform EconomicsWHO/USAID/IHME\n\n\n\n\n\n\n\n\n\n\n\n🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nDownloaded race data, built a custom dataset, and used R + ggplot2 to visualize age/gender group finishing distributions for my family. Top 24th percentile, M25–29.\n\n\nR · ggplot2Excel"
+    "text": "← Back to Research\n\n\n\nCourse: GIS & Spatial Data Analysis Instructor: Prof. Gordon McCord Term: Fall 2025 Tools: QGIS · UCDP/PRIO v25 · Beck et al. 2018"
   },
   {
-    "objectID": "research.html#spatial-analysis-gis",
-    "href": "research.html#spatial-analysis-gis",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "🔥 Attica Wildfire MCDA\n\n\n\nGIS · MCDA · Policy\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\n24-year MCDA integrating fire incidents, emergency services, and population density. Outputs applicable to Greece’s €2.1B AEGIS civil protection program.\n\n\nQGISRMCDA\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · GEE · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite audit of FEMA flood maps following the July 4, 2025 flash flood. Six-map series exposing structural gaps between regulatory risk and observed inundation.\n\n\nGEESentinel-1CHIRPSQGIS\n\n\n\n\n\n🗺️ Climate & Conflict\n\n\n\nGIS · Cartography\n\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification\n\n\nSpatial overlay of UCDP/PRIO conflict event data with Beck et al. 2018 climate classification zones across Northern South America.\n\n\nQGISUCDP/PRIOBeck et al.\n\n\n\n\n\n🌍 HFA GIS Strategy\n\n\n\nGIS · Global Health · In Progress\n\n\n174-Country Prioritization Framework — HFA\n\n\nGIS-driven weighted MCDA scoring 174 countries on digital health maturity, CSR landscape, regulatory environment, and infrastructure readiness for private-sector partnership targeting.\n\n\nQGISRMCDAFive Forces"
-  },
-  {
-    "objectID": "research.html#machine-learning-quantitative-research",
-    "href": "research.html#machine-learning-quantitative-research",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "📊 Ed-Tech Meta-Analysis\n\n\n\nMeta-regression · R · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-regression of 8 RCTs with heterogeneity analysis of J-PAL/IZA Mindspark data (n=535). Key finding: lower electricity access → larger adaptive ed-tech gains.\n\n\nR · metaforJ-PAL/IZAForest Plots\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nML · Big Data · R\n\n\nPredicting Strike vs. Protest Events\n\n\nFull ML pipeline on Cornell’s Labor Action Tracker merged with DCI, SDI, and IRS ZIP-level data. Compared logistic regression, Random Forest, and XGBoost with temporal train/test splits.\n\n\nR · caretXGBoostRandom Forest\n\n\n\n\n\n🏥 UCSD Healthcare\n\n\n\nML · Predictive Modeling · In Progress\n\n\nCapital Program Cost Forecasting — UCSD Healthcare\n\n\nAI-powered vetting tool for UCSD Healthcare’s Capital Program Management division. Analyzing 14+ years and 800+ projects ($1M–$70M+) to surface risk signals for incoming project proposals.\n\n\nRPythonML PipelineGitHub"
-  },
-  {
-    "objectID": "research.html#policy-writing-strategy",
-    "href": "research.html#policy-writing-strategy",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "🎭 AI Regulation\n\n\n\nPolicy Analysis · Empirical Research\n\n\nAI Regulation in the U.S. Acting Industry\n\n\nPolicy analysis using original BLS QCEW data to quantify AI’s impact on performing arts employment. Argues collective bargaining is structurally insufficient — a federal statutory baseline is required.\n\n\nBLS QCEWRRegulatory Analysis\n\n\n\n\n\n🌐 HFA Strategy\n\n\n\nStrategy · Global Health · Stakeholder Research\n\n\nPrivate-Sector Strategy for the Health Forecasting Alliance\n\n\nStakeholder interviews with VitalWave CTO, CDC Forecasting Analytics, and HFA partners synthesized into a five forces heatmap identifying pharma, dev finance, and tech/AI as priority targets.\n\n\nFive ForcesPlatform EconomicsWHO/USAID/IHME"
-  },
-  {
-    "objectID": "research.html#personal-projects",
-    "href": "research.html#personal-projects",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nDownloaded race data, built a custom dataset, and used R + ggplot2 to visualize age/gender group finishing distributions for my family. Top 24th percentile, M25–29.\n\n\nR · ggplot2Excel"
-  },
-  {
-    "objectID": "projects/honolulu-10k.html",
-    "href": "projects/honolulu-10k.html",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
-    "section": "",
-    "text": "← Back to Research\n\n\n\nType: Personal Project Date: December 2025 Tools: R · ggplot2 · Excel"
-  },
-  {
-    "objectID": "projects/honolulu-10k.html#the-question",
-    "href": "projects/honolulu-10k.html#the-question",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
+    "objectID": "projects/south-america-conflicts.html#the-question",
+    "href": "projects/south-america-conflicts.html#the-question",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "The Question",
-    "text": "The Question\nAfter finishing the Honolulu Start to Park 10K, I wanted to know exactly how my family and I performed relative to our respective age and gender groups — not just our raw finishing times."
+    "text": "The Question\nDo violent conflict events cluster in specific climate zones — and what does the spatial overlap between climate type and conflict density tell us about environmental stress as a threat multiplier?"
   },
   {
-    "objectID": "projects/honolulu-10k.html#what-i-did",
-    "href": "projects/honolulu-10k.html#what-i-did",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
-    "section": "What I Did",
-    "text": "What I Did\nDownloaded the official race results, built a custom dataset in Excel, and wrote an R script to:\n\nParse chip times from Excel datetime format into minutes\nCalculate within-age-group percentile rankings\nProduce distribution histograms with individual result markers\n\ndf &lt;- df %&gt;%\n  mutate(\n    chip_min = as.numeric(ChipTime - floor_date(ChipTime, \"day\"), \n                          units = \"mins\")\n  ) %&gt;%\n  arrange(chip_min) %&gt;%\n  mutate(\n    rank_time = row_number(),\n    pct_time  = rank_time / n()\n  )"
-  },
-  {
-    "objectID": "projects/honolulu-10k.html#result",
-    "href": "projects/honolulu-10k.html#result",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
-    "section": "Result",
-    "text": "Result\nTop 24th percentile, M25–29. My parents were equally pleased with their results.\n\n[Histogram: M25-29 finishing time distribution with your result marked — add your image here] ::: {.visual-caption} Distribution of M25–29 finishing times. Orange line marks James Avramis at ~64.3 minutes."
-  },
-  {
-    "objectID": "projects/honolulu-10k.html#why-its-here",
-    "href": "projects/honolulu-10k.html#why-its-here",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
-    "section": "Why It’s Here",
-    "text": "Why It’s Here\nThis project isn’t technically impressive. But it illustrates something I believe about data work: the instinct to find a question and build the analysis yourself — even when nobody asked you to — is the thing that actually makes someone good at this. I crossed the finish line and immediately wanted to know more than the race app would tell me. So I built the tool to find out."
-  },
-  {
-    "objectID": "projects/honolulu-10k.html#code",
-    "href": "projects/honolulu-10k.html#code",
-    "title": "Race Results Analysis — Honolulu Start to Park 10K",
-    "section": "Code",
-    "text": "Code\nView on GitHub\n:::"
-  },
-  {
-    "objectID": "projects/hfa-strategy.html",
-    "href": "projects/hfa-strategy.html",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "← Back to Research # Private-Sector Strategy for the Health Forecasting Alliance ::: {.project-meta} Type: UCSD GPS Capstone Client: VitalWave / Brooke Partridge Term: Spring 2026\n::: ::: {.container style=“max-width: 860px; margin: 0 auto; padding-bottom: 5rem;”}"
-  },
-  {
-    "objectID": "projects/hfa-strategy.html#overview",
-    "href": "projects/hfa-strategy.html#overview",
-    "title": "Max Avramis",
+    "objectID": "projects/south-america-conflicts.html#overview",
+    "href": "projects/south-america-conflicts.html#overview",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Overview",
-    "text": "Overview\nFull write-up coming soon. Stakeholder interviews with VitalWave CTO, CDC Forecasting Analytics lead, and HFA Engagement Manager synthesized into a five forces heatmap and value chain map identifying pharma, development finance, and tech/AI as priority private-sector targets for HFA’s partnership strategy.\n:::"
+    "text": "Overview\nThis analysis overlays the UCDP/PRIO v25 (2024) violent conflict event dataset with Beck et al. (2018) Köppen-Geiger climate classification zones across Northern South America — a region chosen for its unusually high conflict density and stark contrasts between adjacent climate zones."
   },
   {
-    "objectID": "projects/hfa-gis.html",
-    "href": "projects/hfa-gis.html",
-    "title": "Max Avramis",
-    "section": "",
-    "text": "← Back to Research # 174-Country GIS Prioritization — Health Forecasting Alliance ::: {.project-meta} Type: Independent Research Project (GPGN 492) Advisor: Prof. Ulrike Schaede Term: Spring 2026 · In Progress Tools: QGIS · R · MCDA · Five Forces\n:::"
-  },
-  {
-    "objectID": "projects/hfa-gis.html#overview",
-    "href": "projects/hfa-gis.html#overview",
-    "title": "Max Avramis",
-    "section": "Overview",
-    "text": "Overview\nThis project is currently in progress. Full write-up coming Spring 2026.\nBuilding a GIS-driven weighted prioritization framework across 174 countries to identify which global markets represent the highest-value private-sector partnership opportunities for the Health Forecasting Alliance (HFA) — a network-of-networks connecting regional health data across 37 countries for global pandemic preparedness."
-  },
-  {
-    "objectID": "projects/hfa-gis.html#deliverables",
-    "href": "projects/hfa-gis.html#deliverables",
-    "title": "Max Avramis",
-    "section": "Deliverables",
-    "text": "Deliverables\n\n10 Country Market Profiles — scored on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness\nCorporate Targeting Matrix — 15–20 multinationals scored on growth trajectory, CSR history, and HFA strategic fit\nGIS Data Package — QGIS-ready datasets (CSV + XLSX) with weighted composite scores across 174 countries\nMethodology White Paper — documenting the multi-criteria scoring framework and its broader applicability"
-  },
-  {
-    "objectID": "projects/hfa-gis.html#background-hfa-private-sector-strategy-capstone-2026",
-    "href": "projects/hfa-gis.html#background-hfa-private-sector-strategy-capstone-2026",
-    "title": "Max Avramis",
-    "section": "Background: HFA Private-Sector Strategy (Capstone, 2026)",
-    "text": "Background: HFA Private-Sector Strategy (Capstone, 2026)\nThis project extends my GPS capstone work with VitalWave CEO Brooke Partridge. The capstone identified pharma, development finance, and tech/AI as HFA’s priority private-sector targets through stakeholder interviews and five forces analysis. This independent project adds the spatial dimension: where should HFA focus first?"
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html",
-    "href": "projects/kerr-county-floods.html",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "",
-    "text": "← Back to Research\n\n\n\nCourse: Advanced GIS & Remote Sensing Instructor: Prof. Morgan Levy Term: Winter 2026 Tools: Google Earth Engine · CHIRPS · Sentinel-1 SAR · QGIS"
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#the-question",
-    "href": "projects/kerr-county-floods.html#the-question",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "The Question",
-    "text": "The Question\nCan satellite-derived precipitation data expose structural gaps in FEMA’s regulatory flood maps — and what do those gaps mean for communities that just experienced a catastrophic flood?"
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#why-it-matters",
-    "href": "projects/kerr-county-floods.html#why-it-matters",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nOn July 4, 2025, a catastrophic flash flood struck Kerr County, Texas — killing 27+ people at Camp Mystic, many in structures that were outside FEMA’s mapped flood zones. FEMA’s Flood Insurance Rate Maps had not been substantially updated in decades. Built on historical river hydrology data, they have no account for rainfall intensity patterns, upstream land use change, or shifting climate conditions.\nThis is not a Kerr County problem. Approximately 75% of U.S. flood insurance maps are considered outdated. The binary SFHA zoning framework — you’re either in the flood zone or you’re not — leaves millions of at-risk properties uninsured and countless communities underprepared. The July 4 disaster made this structural failure impossible to ignore."
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#my-contribution",
-    "href": "projects/kerr-county-floods.html#my-contribution",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "My Contribution",
-    "text": "My Contribution\nThis analysis was completed as part of a six-person team project. The work shown here represents my individual contributions: the CHIRPS precipitation analysis and the FEMA SFHA boundary audit against satellite-observed flood extent."
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#data-sources",
-    "href": "projects/kerr-county-floods.html#data-sources",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "objectID": "projects/south-america-conflicts.html#data-sources",
+    "href": "projects/south-america-conflicts.html#data-sources",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Data Sources",
-    "text": "Data Sources\n\n\n\n\n\n\n\n\nDataset\nSource\nWhat it measures\n\n\n\n\nCHIRPS precipitation\nUCSB Climate Hazards Group\nDaily rainfall estimates, 1981–present\n\n\nFEMA NFHL\nFEMA\nRegulatory Special Flood Hazard Areas\n\n\nJRC GLOFAS\nEuropean Commission\nModeled 100-year flood hazard zones"
+    "text": "Data Sources\n\n\n\n\n\n\n\nDataset\nSource\n\n\n\n\nKöppen-Geiger climate zones\nBeck et al. (2018), 1-km resolution\n\n\nViolent conflict events\nUCDP/PRIO Armed Conflict Dataset v25 (2024)\n\n\nRegional boundary\nGADM v4.1"
   },
   {
-    "objectID": "projects/kerr-county-floods.html#methodology",
-    "href": "projects/kerr-county-floods.html#methodology",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "objectID": "projects/south-america-conflicts.html#methodology",
+    "href": "projects/south-america-conflicts.html#methodology",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Methodology",
-    "text": "Methodology\nCHIRPS precipitation analysis: I wrote JavaScript scripts in Google Earth Engine to filter CHIRPS daily precipitation grids by date range (July 3–7, 2025) and geographic boundary, extracting total accumulated rainfall across Kerr County at 5km resolution. This allowed direct comparison of where the heaviest rainfall fell against where FEMA’s regulatory risk boundaries are drawn.\nFEMA SFHA audit: I overlaid FEMA’s Special Flood Hazard Area boundaries against the CHIRPS precipitation surface and JRC 100-year modeled flood zones to identify structural gaps — places where observed precipitation intensity exceeded what the regulatory framework would predict, and where flood-affected areas extended beyond FEMA’s mapped boundaries."
+    "text": "Methodology\nAfter cleaning the Beck et al. climate data in Excel to remove extraneous columns, I imported both layers into QGIS and used Extract by Location and Clip tools to isolate conflict points within Northern South America. The Count Points in Polygon tool calculated total violent conflict events per distinct Köppen-Geiger climate zone. Results were exported to Excel and summarized with a pivot table to produce quantitative conflict counts by zone."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#results",
-    "href": "projects/kerr-county-floods.html#results",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "objectID": "projects/south-america-conflicts.html#results",
+    "href": "projects/south-america-conflicts.html#results",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Results",
-    "text": "Results\n\nFEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA’s regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured."
+    "text": "Results\n\nConflicts in Northern South America by Köppen-Geiger Climate Classification. Blue dots = UCDP/PRIO conflict events (2024). Background = climate zones per Beck et al. (2018). Data: UCDP/PRIO v25 (2024), GADM v4.1."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
-    "href": "projects/kerr-county-floods.html#total-chirps-precipitation-accumulation-july-37-2025.-the-heaviest-rainfall-fell-outside-the-jrc-modeled-100-year-flood-hazard-corridor-a-structural-gap-between-where-rain-falls-and-where-regulatory-risk-is-mapped.",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped.",
-    "text": "Total CHIRPS precipitation accumulation, July 3–7 2025. The heaviest rainfall fell outside the JRC-modeled 100-year flood hazard corridor — a structural gap between where rain falls and where regulatory risk is mapped."
-  },
-  {
-    "objectID": "projects/kerr-county-floods.html#key-findings",
-    "href": "projects/kerr-county-floods.html#key-findings",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
+    "objectID": "projects/south-america-conflicts.html#key-findings",
+    "href": "projects/south-america-conflicts.html#key-findings",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
     "section": "Key Findings",
-    "text": "Key Findings\nTwo structural gaps emerge clearly from the analysis:\nPrecipitation is not modeled in FEMA maps. FEMA predicts where water goes after entering river channels — not where rainfall is heaviest. The CHIRPS surface shows dramatic within-county variation that FEMA’s static boundaries cannot capture.\nBinary zoning creates false safety. The SFHA/non-SFHA distinction communicates certainty where none exists. Many of the Camp Mystic structures were outside the SFHA — uninsured, and with no regulatory signal that they were at risk."
+    "text": "Key Findings\nThe equatorial savanna (Aw), equatorial fully humid (Af), and equatorial monsoon (Am) zones exhibit the highest conflict concentration — regions with moderate to high rainfall and strong agricultural potential. Arid zones (BWh, BSh) show substantially fewer conflict events, likely reflecting lower population densities and limited agricultural productivity.\nThe pattern supports the climate-conflict hypothesis: climatic variability interacts with political and economic factors to shape instability. As Chassang and Padró i Miquel (2009) note, adverse climatic conditions reduce crop yields, raise food prices, and amplify the opportunity cost of rebellion — particularly when compounded by weak governance. Environmental stressors act not as isolated causes of violence but as threat multipliers that exacerbate existing vulnerabilities."
   },
   {
-    "objectID": "projects/kerr-county-floods.html#policy-implications",
-    "href": "projects/kerr-county-floods.html#policy-implications",
-    "title": "Flood Risk & Hazard Mapping, Kerr County TX",
-    "section": "Policy Implications",
-    "text": "Policy Implications\nThe natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk specturm. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace."
+    "objectID": "projects/south-america-conflicts.html#paper",
+    "href": "projects/south-america-conflicts.html#paper",
+    "title": "Conflicts in Northern South America by Köppen-Geiger Climate Classification",
+    "section": "Paper",
+    "text": "Paper\nRead Full Paper (PDF)"
+  },
+  {
+    "objectID": "projects/idews.html",
+    "href": "projects/idews.html",
+    "title": "Max Avramis",
+    "section": "",
+    "text": "← Back to Research # Impact Evaluation Plan — Dengue Early Warning System ::: {.project-meta} Type: Independent Program Evaluation Design Term: Spring 2026 Methods: Propensity Score Matching · Difference-in-Differences (prospective) · Theory of Change\n:::"
+  },
+  {
+    "objectID": "projects/idews.html#the-question",
+    "href": "projects/idews.html#the-question",
+    "title": "Max Avramis",
+    "section": "The Question",
+    "text": "The Question\nCan a barangay-level digital surveillance and machine-learning alert system reduce dengue incidence and mortality in the Philippines — and can that impact be evaluated credibly when the program wasn’t randomly assigned?"
+  },
+  {
+    "objectID": "projects/idews.html#why-it-matters",
+    "href": "projects/idews.html#why-it-matters",
+    "title": "Max Avramis",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nThe Philippines carries one of Southeast Asia’s highest dengue burdens, and passive surveillance catches only about a fifth of true cases (Undurraga et al., 2017). The 2017 collapse of the national Dengvaxia vaccination program — after the manufacturer disclosed it could worsen outcomes in previously unexposed people — closed off vaccination as a near-term prevention tool, leaving early detection and rapid response as the primary lever available. Climate projections point to a rising burden through 2050. This is the strategic backdrop for a proposed early-warning system: a mobile case-reporting platform, an ML alert layer, and a training program for roughly 4,800 barangay health workers across 150 municipalities."
+  },
+  {
+    "objectID": "projects/idews.html#the-design-problem",
+    "href": "projects/idews.html#the-design-problem",
+    "title": "Max Avramis",
+    "section": "The Design Problem",
+    "text": "The Design Problem\nA program like this is never randomly assigned — the government targets it at the highest-burden areas. That means a naive before/after comparison mostly measures the targeting rule, not the program. This evaluation plan builds a Propensity Score Matching framework to construct a credible comparison group, with a prospective difference-in-differences layer once real post-deployment data exists."
+  },
+  {
+    "objectID": "projects/idews.html#proof-of-concept",
+    "href": "projects/idews.html#proof-of-concept",
+    "title": "Max Avramis",
+    "section": "Proof-of-Concept",
+    "text": "Proof-of-Concept\nSince the program hasn’t deployed, the deliverable is the evaluation design itself — stress-tested against real barangay-level data (Project CCHAIN, Epimetrics/HDX) to confirm the matching machinery actually works. In Cagayan de Oro (79 barangays), caliper matching narrowed the treated–control gap in annual dengue cases from 118 to 41 (p &lt; 0.001). A pooled two-city robustness check (172 barangays, 43 matched pairs) returned an almost identical 40-case gap and meaningfully improved covariate balance — evidence that the design scales."
+  },
+  {
+    "objectID": "projects/idews.html#honest-limits",
+    "href": "projects/idews.html#honest-limits",
+    "title": "Max Avramis",
+    "section": "Honest Limits",
+    "text": "Honest Limits\nThe matching pool is small, the proof-of-concept cities are proxies rather than the actual target regions, and treatment assignment is simulated from baseline burden rather than real deployment records. None of that undermines the design — it’s exactly what a proof-of-concept is supposed to surface before a full evaluation runs on real data."
+  },
+  {
+    "objectID": "projects/idews.html#takeaway",
+    "href": "projects/idews.html#takeaway",
+    "title": "Max Avramis",
+    "section": "Takeaway",
+    "text": "Takeaway\nA null result on incidence or mortality wouldn’t mean the program failed — it could mean the binding constraint is response capacity rather than detection speed. Building that distinction into the evaluation from the start is what makes it useful to whoever eventually has to decide whether to scale the program up."
   },
   {
     "objectID": "projects/ai-regulation.html",
@@ -487,6 +529,6 @@
     "href": "index.html",
     "title": "Making complex arguments",
     "section": "",
-    "text": "Policy Researcher · Spatial Analyst · Data Scientist\n\n\nMaking complex arguments\nlegible to anyone in the room.\n\nI’m Max Avramis — a graduate researcher at UC San Diego’s School of Global Policy and Strategy combining GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land.\n\n\nView Research About Me\n\n\n\n\n\n\n\nFeatured Projects\n\n\n\n\n🔥 Attica Wildfire MCDA\n\n\n\nGIS · Policy Analysis\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\nMulti-criteria decision analysis integrating 24 years of fire incident data, emergency service proximity, and population density to identify infrastructure investment priorities for Greece’s €2.1B AEGIS program.\n\n\nQGISRMCDASpatial Analysis\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite-based audit of FEMA flood maps following the catastrophic July 4, 2025 Camp Mystic flash flood. Used CHIRPS, Sentinel-1 SAR, and Dynamic World to expose structural gaps in regulatory risk mapping.\n\n\nGoogle Earth EngineCHIRPSSentinel-1 SARQGIS\n\n\n\n\n\n📊 Ed-Tech Meta-Analysis\n\n\n\nQuantitative Research · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-analysis of 8 RCTs testing whether adaptive ed-tech effects vary with national infrastructure. Found a consistent negative gradient: lower electricity access → larger learning gains.\n\n\nR · metaforJ-PAL/IZA DataMeta-regression\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nMachine Learning · Big Data\n\n\nPredicting Strike vs. Protest Events\n\n\nML pipeline comparing logistic regression, Random Forest, and XGBoost on the Cornell Labor Action Tracker (2021–2025), merged with DCI, SDI, and IRS socioeconomic data at ZIP level.\n\n\nR · caretXGBoostRandom ForestAUC/ROC\n\n\n\n\n\n🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nAfter finishing the Honolulu Start to Park 10K, I downloaded the race data and built my own dataset to see exactly how my family and I placed within our respective age and gender groups. Top 24th percentile, M25–29.\n\n\nR · ggplot2ExcelData Wrangling\n\n\n\n\n\n🌍 HFA GIS Strategy\n\n\n\nGIS · Global Health · In Progress\n\n\n174-Country Prioritization Framework for the Health Forecasting Alliance\n\n\nIndependent research project (Spring 2026) building a GIS-driven weighted MCDA framework to identify which global markets represent the highest-value private-sector partnership opportunities for HFA.\n\n\nQGISRMCDAFive Forces"
+    "text": "Policy Researcher · Spatial Analyst · Data Scientist\n\n\nMaking complex arguments\nlegible to anyone in the room.\n\nI’m Max Avramis — a recent Master of Public Policy graduate from UC San Diego’s School of Global Policy and Strategy, specializing in American and Comparative Business Regulation and Program Design and Evaluation. I combine GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land. Open to full-time roles and consulting engagements.\n\n\nView Research About Me\n\n\n\n\n\n\n\nFeatured Projects\n\n\n\n\n🌊 Strait of Hormuz Vulnerability Index\n\n\n\nGIS · Geopolitics · Collaborative\n\n\nMapping the Chokepoint\n\n\nA 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi. Headline finding: vulnerability isn’t volume — the biggest importers are cushioned, thin-margin economies carry the real exposure.\n\n\nQGISPythonGitHub\n\n\n\n\n\n🦟 iDEWS Impact Evaluation Plan\n\n\n\nProgram Evaluation · Global Health · PSM\n\n\nDesigning an Impact Evaluation for a Dengue Early Warning System\n\n\nA full evaluation design for a proposed barangay-level surveillance and ML alert system across 150 Philippine municipalities — Propensity Score Matching stress-tested on real barangay data, with a matched-sample effect that holds up almost identically across two independent city samples.\n\n\nPython/RPSMProgram Evaluation\n\n\n\n\n\n📊 Ed-Tech Meta-Analysis\n\n\n\nQuantitative Research · Policy\n\n\nDoes Ed-Tech Narrow or Widen Achievement Gaps?\n\n\nCross-national meta-analysis of 8 RCTs testing whether adaptive ed-tech effects vary with national infrastructure. Found a consistent negative gradient: lower electricity access → larger learning gains.\n\n\nR · metaforJ-PAL/IZA DataMeta-regression\n\n\n\n\n\n🌊 Kerr County Flood Risk\n\n\n\nRemote Sensing · Policy\n\n\nFlood Risk & Hazard Mapping, Kerr County TX\n\n\nSatellite-based audit of FEMA flood maps following the catastrophic July 4, 2025 Camp Mystic flash flood. Used CHIRPS, Sentinel-1 SAR, and Dynamic World to expose structural gaps in regulatory risk mapping.\n\n\nGoogle Earth EngineCHIRPSSentinel-1 SARQGIS\n\n\n\n\n\n🌍 HFA Private-Sector Strategy\n\n\n\nStrategy · GIS · Global Health\n\n\nFrom Stakeholder Strategy to a Spatial Prioritization Framework\n\n\nHow a health-forecasting network’s private-sector partnership strategy evolved from five forces stakeholder research into an independent GIS framework ranking where those partnerships should land first.\n\n\nQGISRMCDAFive Forces\n\n\n\n\n\n🔥 Attica Wildfire MCDA\n\n\n\nGIS · Policy Analysis\n\n\nWildfire Vulnerability Mapping, Attica Greece\n\n\nMulti-criteria decision analysis integrating 24 years of fire incident data, emergency service proximity, and population density to identify infrastructure investment priorities for Greece’s €2.1B AEGIS program.\n\n\nQGISRMCDASpatial Analysis\n\n\n\n\n\n⚙️ Labor Action ML\n\n\n\nMachine Learning · Big Data\n\n\nPredicting Strike vs. Protest Events\n\n\nML pipeline comparing logistic regression, Random Forest, and XGBoost on the Cornell Labor Action Tracker (2021–2025), merged with DCI, SDI, and IRS socioeconomic data at ZIP level.\n\n\nR · caretXGBoostRandom ForestAUC/ROC\n\n\n\n\n\n🏃 Honolulu 10K\n\n\n\nPersonal · R · Excel\n\n\nRace Results Analysis, Honolulu 10K 2025\n\n\nAfter finishing the Honolulu Start to Park 10K, I downloaded the race data and built my own dataset to see exactly how my family and I placed within our respective age and gender groups. Top 24th percentile, M25–29.\n\n\nR · ggplot2ExcelData Wrangling"
   }
 ]
