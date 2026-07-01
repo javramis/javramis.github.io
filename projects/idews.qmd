@@ -5,13 +5,17 @@ page-layout: full
 
 ::: {.project-header}
 ::: {.container}
+
 [← Back to Research](../research.qmd){.back-link}
+
 # Impact Evaluation Plan — Dengue Early Warning System
+
 ::: {.project-meta}
 <span><strong>Type:</strong> Independent Program Evaluation Design</span>
 <span><strong>Term:</strong> Spring 2026</span>
 <span><strong>Methods:</strong> Propensity Score Matching · Difference-in-Differences (prospective) · Theory of Change</span>
 :::
+
 :::
 :::
 

@@ -5,13 +5,17 @@ page-layout: full
 
 ::: {.project-header}
 ::: {.container}
+
 [← Back to Research](../research.qmd){.back-link}
+
 # Health Forecasting Alliance — Private-Sector Strategy
+
 ::: {.project-meta}
 <span><strong>Type:</strong> GPS Capstone → Independent Research</span>
 <span><strong>Term:</strong> Winter–Spring 2026</span>
 <span><strong>Tools:</strong> QGIS · R · MCDA · Five Forces</span>
 :::
+
 :::
 :::
 

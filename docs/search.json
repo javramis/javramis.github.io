@@ -233,35 +233,35 @@
   {
     "objectID": "projects/hfa.html",
     "href": "projects/hfa.html",
-    "title": "Max Avramis",
+    "title": "Health Forecasting Alliance — Private-Sector Strategy",
     "section": "",
-    "text": "← Back to Research # Health Forecasting Alliance — Private-Sector Strategy ::: {.project-meta} Type: GPS Capstone → Independent Research Term: Winter–Spring 2026 Tools: QGIS · R · MCDA · Five Forces\n:::"
+    "text": "← Back to Research\n\n\n\nType: GPS Capstone → Independent Research Term: Winter–Spring 2026 Tools: QGIS · R · MCDA · Five Forces"
   },
   {
     "objectID": "projects/hfa.html#overview",
     "href": "projects/hfa.html#overview",
-    "title": "Max Avramis",
+    "title": "Health Forecasting Alliance — Private-Sector Strategy",
     "section": "Overview",
     "text": "Overview\nA look at how a global pandemic-preparedness network’s private-sector partnership strategy took shape over two terms — moving from stakeholder-facing strategy work to an independent spatial extension of it."
   },
   {
     "objectID": "projects/hfa.html#winter-2026-stakeholder-strategy",
     "href": "projects/hfa.html#winter-2026-stakeholder-strategy",
-    "title": "Max Avramis",
+    "title": "Health Forecasting Alliance — Private-Sector Strategy",
     "section": "Winter 2026 — Stakeholder Strategy",
     "text": "Winter 2026 — Stakeholder Strategy\nThe engagement began as a capstone project for a health-forecasting network connecting regional health data across dozens of countries for pandemic preparedness. Through a round of stakeholder interviews, the work mapped the organization’s private-sector landscape and used a five forces framework to identify where partnership value was most likely to materialize — landing on pharma, development finance, and tech/AI as the priority categories."
   },
   {
     "objectID": "projects/hfa.html#spring-2026-spatial-extension",
     "href": "projects/hfa.html#spring-2026-spatial-extension",
-    "title": "Max Avramis",
+    "title": "Health Forecasting Alliance — Private-Sector Strategy",
     "section": "Spring 2026 — Spatial Extension",
     "text": "Spring 2026 — Spatial Extension\nThe natural follow-on question was where, not just who. I took the five forces findings and built an independent GIS-driven prioritization framework, scoring candidate countries on digital health ecosystem maturity, CSR landscape, regulatory environment, and infrastructure readiness — turning a qualitative targeting list into a spatial one that could rank markets side by side."
   },
   {
     "objectID": "projects/hfa.html#takeaway",
     "href": "projects/hfa.html#takeaway",
-    "title": "Max Avramis",
+    "title": "Health Forecasting Alliance — Private-Sector Strategy",
     "section": "Takeaway",
     "text": "Takeaway\nThe sequence — stakeholder research first, spatial analysis second — is a pattern I keep coming back to: qualitative fieldwork tells you who matters, and GIS tells you where to act on it."
   },
@@ -464,49 +464,49 @@
   {
     "objectID": "projects/idews.html",
     "href": "projects/idews.html",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "",
-    "text": "← Back to Research # Impact Evaluation Plan — Dengue Early Warning System ::: {.project-meta} Type: Independent Program Evaluation Design Term: Spring 2026 Methods: Propensity Score Matching · Difference-in-Differences (prospective) · Theory of Change\n:::"
+    "text": "← Back to Research\n\n\n\nType: Independent Program Evaluation Design Term: Spring 2026 Methods: Propensity Score Matching · Difference-in-Differences (prospective) · Theory of Change"
   },
   {
     "objectID": "projects/idews.html#the-question",
     "href": "projects/idews.html#the-question",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "The Question",
     "text": "The Question\nCan a barangay-level digital surveillance and machine-learning alert system reduce dengue incidence and mortality in the Philippines — and can that impact be evaluated credibly when the program wasn’t randomly assigned?"
   },
   {
     "objectID": "projects/idews.html#why-it-matters",
     "href": "projects/idews.html#why-it-matters",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "Why It Matters",
     "text": "Why It Matters\nThe Philippines carries one of Southeast Asia’s highest dengue burdens, and passive surveillance catches only about a fifth of true cases (Undurraga et al., 2017). The 2017 collapse of the national Dengvaxia vaccination program — after the manufacturer disclosed it could worsen outcomes in previously unexposed people — closed off vaccination as a near-term prevention tool, leaving early detection and rapid response as the primary lever available. Climate projections point to a rising burden through 2050. This is the strategic backdrop for a proposed early-warning system: a mobile case-reporting platform, an ML alert layer, and a training program for roughly 4,800 barangay health workers across 150 municipalities."
   },
   {
     "objectID": "projects/idews.html#the-design-problem",
     "href": "projects/idews.html#the-design-problem",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "The Design Problem",
     "text": "The Design Problem\nA program like this is never randomly assigned — the government targets it at the highest-burden areas. That means a naive before/after comparison mostly measures the targeting rule, not the program. This evaluation plan builds a Propensity Score Matching framework to construct a credible comparison group, with a prospective difference-in-differences layer once real post-deployment data exists."
   },
   {
     "objectID": "projects/idews.html#proof-of-concept",
     "href": "projects/idews.html#proof-of-concept",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "Proof-of-Concept",
     "text": "Proof-of-Concept\nSince the program hasn’t deployed, the deliverable is the evaluation design itself — stress-tested against real barangay-level data (Project CCHAIN, Epimetrics/HDX) to confirm the matching machinery actually works. In Cagayan de Oro (79 barangays), caliper matching narrowed the treated–control gap in annual dengue cases from 118 to 41 (p &lt; 0.001). A pooled two-city robustness check (172 barangays, 43 matched pairs) returned an almost identical 40-case gap and meaningfully improved covariate balance — evidence that the design scales."
   },
   {
     "objectID": "projects/idews.html#honest-limits",
     "href": "projects/idews.html#honest-limits",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "Honest Limits",
     "text": "Honest Limits\nThe matching pool is small, the proof-of-concept cities are proxies rather than the actual target regions, and treatment assignment is simulated from baseline burden rather than real deployment records. None of that undermines the design — it’s exactly what a proof-of-concept is supposed to surface before a full evaluation runs on real data."
   },
   {
     "objectID": "projects/idews.html#takeaway",
     "href": "projects/idews.html#takeaway",
-    "title": "Max Avramis",
+    "title": "Impact Evaluation Plan — Dengue Early Warning System",
     "section": "Takeaway",
     "text": "Takeaway\nA null result on incidence or mortality wouldn’t mean the program failed — it could mean the binding constraint is response capacity rather than detection speed. Building that distinction into the evaluation from the start is what makes it useful to whoever eventually has to decide whether to scale the program up."
   },
