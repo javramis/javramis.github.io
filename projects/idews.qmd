@@ -45,4 +45,8 @@ The matching pool is small, the proof-of-concept cities are proxies rather than 
 
 A null result on incidence or mortality wouldn't mean the program failed — it could mean the binding constraint is response capacity rather than detection speed. Building that distinction into the evaluation from the start is what makes it useful to whoever eventually has to decide whether to scale the program up.
 
+## Paper
+
+[Read Full Impact Evaluation Plan (PDF)](../assets/idews-iep-paper.pdf){target="_blank"}
+
 :::
