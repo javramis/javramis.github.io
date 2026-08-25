@@ -14,7 +14,11 @@ Policy Researcher · Spatial Analyst · Data Scientist
 
 
 ::: {.hero-sub}
-I'm Max Avramis — a recent Master of Public Policy graduate from UC San Diego's School of Global Policy and Strategy, specializing in American and Comparative Business Regulation and Program Design and Evaluation. I combine GIS, machine learning, and policy analysis to turn messy, multi-source data into decisions that actually land. Open to full-time roles and consulting engagements.
+I'm Max Avramis — a recent Master of Public Policy graduate from UC San Diego's School of Global Policy and Strategy, specializing in American and Comparative Business Regulation and Program Design and Evaluation. 
+
+I use a creative, iterative process to combine GIS, machine learning, and policy analysis — turning messy, multi-source data into clean, objective insights for the decision-makers and leaders shaping the policies and programs around us.
+
+Open to full-time roles and consulting engagements.
 :::
 
 ::: {.hero-cta}
