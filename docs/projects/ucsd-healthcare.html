@@ -138,20 +138,60 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="project-header">
 <div class="container">
-<p><a href="../research.html" class="back-link">← Back to Research</a> # Capital Program Cost Forecasting — UCSD Healthcare ::: {.project-meta} <span><strong>Type:</strong> i4X Fellowship, The Basement (Blackstone LaunchPad) UCSD</span> <span><strong>Client:</strong> UCSD Healthcare Capital Program Management</span> <span><strong>Term:</strong> Dec 2025–Jun 2026 · In Progress</span> <span><strong>Tools:</strong> R · Python · GitHub · ML Pipeline</span></p>
+<p><a href="../research.html" class="back-link">← Back to Research</a></p>
+<section id="capital-project-cashflow-predictor-ucsd-health" class="level1">
+<h1>Capital Project Cashflow Predictor — UCSD Health</h1>
+<div class="project-meta">
+<p><span><strong>Program:</strong> i4X Fellowship, The Basement (Blackstone LaunchPad), UCSD</span> <span><strong>Client:</strong> UCSD Health, Capital Program Management</span> <span><strong>Term:</strong> Dec 2025 – May 2026</span> <span><strong>Tools:</strong> Python · R · Random Forest · LightGBM · Streamlit · GitHub</span></p>
 </div>
-</div>
-<p>::: ::: {.container style=“max-width: 860px; margin: 0 auto; padding-bottom: 5rem;”}</p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><em>Project in progress. Write-up coming June 2026.</em></p>
-<p>Building an AI-powered vetting tool for the head of UCSD Healthcare’s Capital Program Management division. The tool analyzes 14+ years and 800+ capital construction projects ($1M–$70M+) to surface risk signals and spending benchmarks for incoming project proposals — enabling faster, more defensible approval decisions.</p>
-<p><strong>Team:</strong> 6-person data science team<br>
-<strong>Role:</strong> Research design, analytical framework, team direction, stakeholder presentations</p>
-<p>:::</p>
-
-
 </section>
+</div>
+</div>
+<div class="container" style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;">
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The Question</h2>
+<p>UCSD Health’s Capital Program Management (CPM) office oversees a $6.6B portfolio of construction projects, ranging from sub-$250K renovations to $50M+ builds. Without a forecasting tool, project managers approving new proposals were relying on intuition to estimate how a project’s spend would actually unfold over time. Could 14 years of historical project data train a model accurate enough to replace that guesswork?</p>
+</section>
+<section id="the-data-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-problem">The Data Problem</h2>
+<p>CPM’s history lived in 14 years of multi-format eBuilder spreadsheets. Of 869 projects with complete records, only 228 also had the gross square footage data needed to train a predictive model — cleaning and reconciling that data was as much the project’s real bottleneck as the modeling itself.</p>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<p>Working directly with CPM’s Executive Director, Chris Hickman, I led a 6-person i4X Fellowship team — Gayathri Kuniyil, Harshini Kanakala, Jai Anish Penumarthi, Jiya Sreejesh, Tom Ragus, and me — through four stages:</p>
+<ol type="1">
+<li><strong>Tier classification</strong> — splitting the portfolio into Small (&lt;$250K), Medium ($250K–$5M), Large ($5M–$50M), and Mega (&gt;$50M) projects, since spend behavior differs sharply by scale.</li>
+<li><strong>S-curve modeling</strong> — fitting a logistic growth curve to each project to extract a growth rate (k) and spending midpoint (t₀), reaching total R² values of roughly 0.62–0.76.</li>
+<li><strong>Line 6 overhead analysis</strong> — quantifying CPM’s internal FD&amp;C overhead as a share of total project cost, by tier.</li>
+<li><strong>Deployment</strong> — an ensemble of Random Forest and LightGBM models, using square footage as the primary feature, packaged into a live web tool for PMs.</li>
+</ol>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="project-visual">
+<p><img src="../assets/img/cpm-scurve-tiers.png" class="img-fluid"></p>
+<p>S-curve spend envelopes by project tier (median + 10th–90th percentile band, n=41/89/60/21). Median project duration scales from 18 months for Small projects to 67 months for Mega projects — and CPM’s internal overhead share moves the opposite direction, from 39.1% of total cost on Small projects down to 1.7% on Mega projects, meaning fee estimates can be set with far more confidence as projects scale up.</p>
+</div>
+<div class="project-visual">
+<p><img src="../assets/img/cpm-tool-screenshot.png" class="img-fluid"></p>
+<p>The deployed Capital Project Cashflow Predictor. A project manager uploads a budget CSV (or enters figures manually) along with gross square footage, and the tool returns a standardized S-curve forecast — duration, growth rate, and spending midpoint — for that specific project.</p>
+</div>
+</section>
+<section id="outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="outcomes">Outcomes</h2>
+<p>The team shipped a production tool now in use by the CPM team, presenting final results to Chris Hickman and CPM leadership at the close of the Spring 2026 fellowship term. Next steps identified for the project: scaling the model across the full UC system, and integrating NLP to auto-extract project features directly from proposal descriptions.</p>
+</section>
+<section id="team-role" class="level2">
+<h2 class="anchored" data-anchor-id="team-role">Team &amp; Role</h2>
+<p>Six-person i4X Fellowship team: Gayathri Kuniyil, Harshini Kanakala, Jai Anish Penumarthi, Jiya Sreejesh, Tom Ragus, and Max Avramis. I led research design, the analytical framework, and stakeholder presentations to CPM leadership; the tool is deployed and maintained under Tom Ragus’s GitHub, reflecting how the team split up deployment ownership.</p>
+</section>
+<section id="try-it-see-the-code" class="level2">
+<h2 class="anchored" data-anchor-id="try-it-see-the-code">Try It / See the Code</h2>
+<p><a href="https://i4x-capital-project-cashflow-predictor.streamlit.app/" target="_blank">Live Tool: Capital Project Cashflow Predictor</a> <a href="https://github.com/tomragus/i4X-CPM-Model-Backend" target="_blank">Model Backend (GitHub)</a> <a href="../assets/CPM_Poster.pdf" target="_blank">View Full Poster (PDF)</a></p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
