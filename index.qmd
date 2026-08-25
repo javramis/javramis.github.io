@@ -10,7 +10,7 @@ page-layout: full
 Policy Researcher · Spatial Analyst · Data Scientist
 :::
 
-# Making *complex arguments*  
+# Making *complex data*
 legible to anyone in the room.
 
 ::: {.hero-sub}
@@ -45,6 +45,20 @@ Featured Projects
 <div class="card-desc">A 166-country vulnerability index scoring energy exposure against substitution capacity along the Strait of Hormuz, extended into a nitrogen-fertilizer cascade tracing the shock from gas to food security. Built with Nahaleh Lotfi Malakabadi. Headline finding: vulnerability isn't volume — the biggest importers are cushioned, thin-margin economies carry the real exposure.</div>
 <div class="card-tools">
 <span>QGIS</span><span>Python</span><span>GitHub</span>
+</div>
+</div>
+</a>
+
+<a href="projects/ucsd-healthcare.qmd" class="project-card">
+<div class="card-img" style="background: #1a4a3a;">
+💰 Capital Project Cashflow Predictor
+</div>
+<div class="card-body">
+<div class="card-tag">ML · Forecasting · Deployed Tool</div>
+<div class="card-title">Forecasting $6.6B in Capital Spend, Tier by Tier</div>
+<div class="card-desc">Led a 6-person i4X Fellowship team building an ensemble ML tool (Random Forest + LightGBM) that predicts capital project spend curves for UCSD Health's Capital Program Management office — now deployed and in active use.</div>
+<div class="card-tools">
+<span>Python</span><span>ML Ensemble</span><span>Streamlit</span>
 </div>
 </div>
 </a>
