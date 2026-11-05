@@ -82,9 +82,9 @@ Recipient of the Ambassador's Award
 
 ---
 
-## Download CV
+## Resume
 
-[Download CV (PDF)]{.cta-primary style="padding: 0.6rem 1.4rem; background: #1a1a2e; color: #fff; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 1rem;"}
+[Download Resume (PDF)](assets/Max_Avramis_Resume.pdf){target="_blank" .cta-primary style="padding: 0.6rem 1.4rem; background: #1a1a2e; color: #fff; border-radius: 2px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; display: inline-block; margin-top: 1rem;"}
 
 :::
 :::

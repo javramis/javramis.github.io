@@ -4,16 +4,21 @@ page-layout: full
 ---
 ::: {.project-header}
 ::: {.container}
+
 [← Back to Research](../research.qmd){.back-link}
+
 # AI Regulation in the U.S. Acting Industry
+
 ::: {.project-meta}
 <span><strong>Course:</strong> Government and Regulation</span>
 <span><strong>Instructor:</strong> Prof. Ruixue Jia</span>
 <span><strong>Term:</strong> Winter 2026</span>
 <span><strong>Tools:</strong> R · BLS QCEW Data</span>
 :::
+
 :::
 :::
+
 ::: {.container style="max-width: 860px; margin: 0 auto; padding-bottom: 5rem;"}
 
 ## Overview

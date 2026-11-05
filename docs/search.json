@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "Max Avramis",
     "section": "",
-    "text": "javramis@ucsd.edu\nBased in Chicago, IL\nLinkedIn · GitHub\n\nEducation\nUC San Diego, GPS\nMaster of Public Policy · 2026\nAmerican and Comparative Business Regulation\nProgram Design and Evaluation\nPace University\nBachelor of Fine Arts · 2020\n\nSkills\n\nRPythonQGISGoogle Earth EngineSQLGitHubQuartoggplot2metafortidyverseRandom ForestArcGIS ProTableauMCDAExcelSharePoint\n\nLanguages\n\nEnglish (native)Spanish (intermediate)Greek (beginner)\n\n\n\n\n\nI came to policy school from a career as a professional actor, which left me with a particular sensitivity to audience — to whether an idea is actually being communicated, not just being said.\nWhat really drew me into GIS and data science was realizing these tools could do something no other analytical framework could: make a rigorous, multi-variable argument legible to essentially anyone in any room. I had spent a year building a foundation in quantitative policy analysis — cost-effectiveness, benefit-cost analysis, and my personal favorite, multi-criteria decision analysis. GIS gave me the communication layer. Combining them felt like gaining a universal language.\nThat instinct runs through everything I build: the question is never just “is this accurate?” but “will this land for the person making the decision?”\n\n\n\n\nMy work sits at the intersection of spatial analysis, machine learning, and policy research — with a particular interest in:\n\nClimate and disaster risk mapping (flood hazards, wildfire vulnerability)\nGlobal health infrastructure and pandemic preparedness\nEducation technology and learning inequality\nAI regulation\n\n\n\n\n\nHealth Forecasting Alliance (VitalWave) · Strategy & Research Consultant · Jan–Jun 2026\nUCSD GPS Capstone with Brooke Partridge, CEO of VitalWave\nThe Basement, UCSD (Blackstone LaunchPad) · i4X Innovation Fellow · Dec 2025–Jun 2026\nCapital Program Management AI tool for UCSD Healthcare\nThe Asia Foundation · Programs Intern · Jul–Aug 2025\nInnovation & Impact Fund dashboard; Let’s Read donor strategy\nUC San Diego, Dept. of Theatre & Dance · Teaching Assistant · Sept 2024–Jun 2026\nIntroduction to Theatre; 4.75/5 teaching evaluation\nUS Embassy Luxembourg · Personal Assistant to the Ambassador · 2018, 2020\nRecipient of the Ambassador’s Award\n\n\n\n\nDownload CV (PDF)"
+    "text": "javramis@ucsd.edu\nBased in Chicago, IL\nLinkedIn · GitHub\n\nEducation\nUC San Diego, GPS\nMaster of Public Policy · 2026\nAmerican and Comparative Business Regulation\nProgram Design and Evaluation\nPace University\nBachelor of Fine Arts · 2020\n\nSkills\n\nRPythonQGISGoogle Earth EngineSQLGitHubQuartoggplot2metafortidyverseRandom ForestArcGIS ProTableauMCDAExcelSharePoint\n\nLanguages\n\nEnglish (native)Spanish (intermediate)Greek (beginner)\n\n\n\n\n\nI came to policy school from a career as a professional actor, which left me with a particular sensitivity to audience — to whether an idea is actually being communicated, not just being said.\nWhat really drew me into GIS and data science was realizing these tools could do something no other analytical framework could: make a rigorous, multi-variable argument legible to essentially anyone in any room. I had spent a year building a foundation in quantitative policy analysis — cost-effectiveness, benefit-cost analysis, and my personal favorite, multi-criteria decision analysis. GIS gave me the communication layer. Combining them felt like gaining a universal language.\nThat instinct runs through everything I build: the question is never just “is this accurate?” but “will this land for the person making the decision?”\n\n\n\n\nMy work sits at the intersection of spatial analysis, machine learning, and policy research — with a particular interest in:\n\nClimate and disaster risk mapping (flood hazards, wildfire vulnerability)\nGlobal health infrastructure and pandemic preparedness\nEducation technology and learning inequality\nAI regulation\n\n\n\n\n\nHealth Forecasting Alliance (VitalWave) · Strategy & Research Consultant · Jan–Jun 2026\nUCSD GPS Capstone with Brooke Partridge, CEO of VitalWave\nThe Basement, UCSD (Blackstone LaunchPad) · i4X Innovation Fellow · Dec 2025–Jun 2026\nCapital Program Management AI tool for UCSD Healthcare\nThe Asia Foundation · Programs Intern · Jul–Aug 2025\nInnovation & Impact Fund dashboard; Let’s Read donor strategy\nUC San Diego, Dept. of Theatre & Dance · Teaching Assistant · Sept 2024–Jun 2026\nIntroduction to Theatre; 4.75/5 teaching evaluation\nUS Embassy Luxembourg · Personal Assistant to the Ambassador · 2018, 2020\nRecipient of the Ambassador’s Award\n\n\n\n\nDownload Resume (PDF)"
   },
   {
     "objectID": "about.html#about",
@@ -28,11 +28,11 @@
     "text": "Health Forecasting Alliance (VitalWave) · Strategy & Research Consultant · Jan–Jun 2026\nUCSD GPS Capstone with Brooke Partridge, CEO of VitalWave\nThe Basement, UCSD (Blackstone LaunchPad) · i4X Innovation Fellow · Dec 2025–Jun 2026\nCapital Program Management AI tool for UCSD Healthcare\nThe Asia Foundation · Programs Intern · Jul–Aug 2025\nInnovation & Impact Fund dashboard; Let’s Read donor strategy\nUC San Diego, Dept. of Theatre & Dance · Teaching Assistant · Sept 2024–Jun 2026\nIntroduction to Theatre; 4.75/5 teaching evaluation\nUS Embassy Luxembourg · Personal Assistant to the Ambassador · 2018, 2020\nRecipient of the Ambassador’s Award"
   },
   {
-    "objectID": "about.html#download-cv",
-    "href": "about.html#download-cv",
+    "objectID": "about.html#resume",
+    "href": "about.html#resume",
     "title": "Max Avramis",
     "section": "",
-    "text": "Download CV (PDF)"
+    "text": "Download Resume (PDF)"
   },
   {
     "objectID": "projects/ucsd-healthcare.html",
@@ -422,23 +422,23 @@
   {
     "objectID": "projects/ai-regulation.html",
     "href": "projects/ai-regulation.html",
-    "title": "Max Avramis",
+    "title": "AI Regulation in the U.S. Acting Industry",
     "section": "",
-    "text": "← Back to Research # AI Regulation in the U.S. Acting Industry ::: {.project-meta} Course: Government and Regulation Instructor: Prof. Ruixue Jia Term: Winter 2026 Tools: R · BLS QCEW Data\n::: ::: {.container style=“max-width: 860px; margin: 0 auto; padding-bottom: 5rem;”}"
+    "text": "← Back to Research\n\n\n\nCourse: Government and Regulation Instructor: Prof. Ruixue Jia Term: Winter 2026 Tools: R · BLS QCEW Data"
   },
   {
     "objectID": "projects/ai-regulation.html#overview",
     "href": "projects/ai-regulation.html#overview",
-    "title": "Max Avramis",
+    "title": "AI Regulation in the U.S. Acting Industry",
     "section": "Overview",
     "text": "Overview\nPolicy analysis of how the 2023 SAG-AFTRA contract governs AI and digital replicas. Using BLS QCEW employment data, it documents Los Angeles’s post-strike employment collapse in the motion picture industry, applies Stigler’s theory of regulatory capture to the contract negotiations, and argues that collective bargaining alone is structurally insufficient as an AI governance mechanism: a federal statutory baseline is needed."
   },
   {
     "objectID": "projects/ai-regulation.html#paper",
     "href": "projects/ai-regulation.html#paper",
-    "title": "Max Avramis",
+    "title": "AI Regulation in the U.S. Acting Industry",
     "section": "Paper",
-    "text": "Paper\nRead Full Paper (PDF)\n:::"
+    "text": "Paper\nRead Full Paper (PDF)"
   },
   {
     "objectID": "index.html",
