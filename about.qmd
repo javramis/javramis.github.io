@@ -10,7 +10,7 @@ page-layout: full
 ### Max Avramis
 
 **javramis@ucsd.edu**  
-Relocating to Chicago, IL · October 2026  
+Based in Chicago, IL  
 
 [LinkedIn](https://www.linkedin.com/in/maxavramis) · [GitHub](https://github.com/javramis)
 
@@ -31,7 +31,7 @@ Pace University
 **Skills**
 
 ::: {.skills-list}
-<span>R</span><span>Python</span><span>QGIS</span><span>Google Earth Engine</span><span>SQL</span><span>GitHub</span><span>Quarto</span><span>ggplot2</span><span>caret</span><span>metafor</span><span>tidyverse</span><span>XGBoost</span><span>Random Forest</span><span>Excel</span><span>SharePoint</span>
+<span>R</span><span>Python</span><span>QGIS</span><span>Google Earth Engine</span><span>SQL</span><span>GitHub</span><span>Quarto</span><span>ggplot2</span><span>metafor</span><span>tidyverse</span><span>Random Forest</span><span>ArcGIS Pro</span><span>Tableau</span><span>MCDA</span><span>Excel</span><span>SharePoint</span>
 :::
 
 **Languages**
@@ -59,23 +59,23 @@ My work sits at the intersection of **spatial analysis**, **machine learning**, 
 - Climate and disaster risk mapping (flood hazards, wildfire vulnerability)
 - Global health infrastructure and pandemic preparedness
 - Education technology and learning inequality
-- Labor markets and AI regulation
+- AI regulation
 
 ---
 
 ## Experience
 
-**Health Forecasting Alliance (VitalWave)** · Strategy & Research Consultant · *Jan 2026–Present*  
+**Health Forecasting Alliance (VitalWave)** · Strategy & Research Consultant · *Jan–Jun 2026*  
 UCSD GPS Capstone with Brooke Partridge, CEO of VitalWave
 
-**The Basement, UCSD (Blackstone LaunchPad)** · i4X Innovation Fellow · *Dec 2025–Present*  
+**The Basement, UCSD (Blackstone LaunchPad)** · i4X Innovation Fellow · *Dec 2025–Jun 2026*  
 Capital Program Management AI tool for UCSD Healthcare
 
 **The Asia Foundation** · Programs Intern · *Jul–Aug 2025*  
 Innovation & Impact Fund dashboard; Let's Read donor strategy
 
-**UC San Diego, Dept. of Theatre & Dance** · Teaching Assistant · *FA 2025–SP 2026*  
-Theatre 101; 4.75/5 teaching evaluation
+**UC San Diego, Dept. of Theatre & Dance** · Teaching Assistant · *Sept 2024–Jun 2026*  
+Introduction to Theatre; 4.75/5 teaching evaluation
 
 **US Embassy Luxembourg** · Personal Assistant to the Ambassador · *2018, 2020*  
 Recipient of the Ambassador's Award

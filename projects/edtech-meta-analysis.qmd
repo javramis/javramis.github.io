@@ -80,7 +80,7 @@ The heterogeneity regressions interact treatment with SES and baseline achieveme
 
 In low-infrastructure contexts — conflict-displaced schools, climate-displaced communities, humanitarian education programs — students span multiple grade levels in a single classroom, teachers face overwhelming implementation challenges, and the counterfactual to technology is instruction that genuinely cannot meet students where they are. If ed-tech effects are largest precisely where infrastructure is most constrained, programs like Mindspark may offer unusually high returns in exactly these settings.
 
-The policy implication: deploy in low-infrastructure contexts, choose adaptive over hardware-only where resources allow, and expect near-universal gains rather than gains concentrated among the already-advantaged.
+The tentative policy implication, given only eight studies: deploy in low-infrastructure contexts, choose adaptive over hardware-only where resources allow, and expect near-universal gains rather than gains concentrated among the already-advantaged.
 
 ## Paper & Code
 

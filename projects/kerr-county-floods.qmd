@@ -14,7 +14,7 @@ page-layout: full
 <span><strong>Course:</strong> Advanced GIS & Remote Sensing</span>
 <span><strong>Instructor:</strong> Prof. Morgan Levy</span>
 <span><strong>Term:</strong> Winter 2026</span>
-<span><strong>Tools:</strong> Google Earth Engine · CHIRPS · Sentinel-1 SAR · QGIS</span>
+<span><strong>Tools:</strong> Google Earth Engine · CHIRPS · QGIS</span>
 :::
 
 :::
@@ -56,7 +56,7 @@ I overlaid FEMA's Special Flood Hazard Area boundaries against the CHIRPS precip
 
 ![](../assets/img/Kerr-map1.png)
 
-*FEMA Special Flood Hazard Area (SFHA) boundaries vs. satellite-observed flood extent, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA's regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured.*
+*My FEMA Special Flood Hazard Area (SFHA) audit, overlaid on a teammate's Sentinel-1 flood-extent proxy, Kerr County TX. The July 4, 2025 Camp Mystic flood extended significantly beyond FEMA's regulatory boundaries — many affected structures were outside the mapped flood zone and therefore uninsured.*
 
 ---
 
@@ -75,6 +75,6 @@ Two structural gaps emerge clearly from the analysis:
 
 ## Policy Implications
 
-The natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk specturm. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace.
+The natural next step is a multi-criteria flood susceptibility index combining precipitation intensity, topography, and land cover change to establish a flash flood risk spectrum. Static regulatory maps need dynamic, satellite-informed updates to reflect actual risk distributions. The tools exist. The question is whether the regulatory framework can keep pace.
 
 :::
